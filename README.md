@@ -1,0 +1,1 @@
+alphacloud项目中provider依赖的vo对象，接口返回转换
