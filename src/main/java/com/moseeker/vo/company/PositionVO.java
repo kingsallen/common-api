@@ -9,18 +9,10 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class PositionVO {
+public class PositionVO extends JobPositionVO{
 
-    private JobPositionVO positionVO;
     private Integer topicId;
 
-    public JobPositionVO getPositionVO() {
-        return positionVO;
-    }
-
-    public void setPositionVO(JobPositionVO positionVO) {
-        this.positionVO = positionVO;
-    }
 
     public Integer getTopicId() {
         return topicId;

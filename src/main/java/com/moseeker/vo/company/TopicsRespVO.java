@@ -13,7 +13,7 @@ public class TopicsRespVO {
 
     private int id;
     private List<PositionVO> positions ;
-    private TopicCoverPOJO cover;
+    private TopicCoverVO cover;
     private TopicStyleVO style;
     private TopicsCompanyVO company;
     private int accountType;
@@ -37,11 +37,12 @@ public class TopicsRespVO {
         this.positions = positions;
     }
 
-    public TopicCoverPOJO getCover() {
+
+    public TopicCoverVO getCover() {
         return cover;
     }
 
-    public void setCover(TopicCoverPOJO cover) {
+    public void setCover(TopicCoverVO cover) {
         this.cover = cover;
     }
 
