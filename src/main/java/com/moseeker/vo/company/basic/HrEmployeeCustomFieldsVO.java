@@ -4,6 +4,9 @@
 package com.moseeker.vo.company.basic;
 
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 /**
  * 员工认证自定义字段表
  */

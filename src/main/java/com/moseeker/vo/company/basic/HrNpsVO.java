@@ -25,4 +25,52 @@ public class HrNpsVO   {
     private Timestamp createTime;
     private Timestamp updateTime;
 
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getHrAccountId() {
+        return hrAccountId;
+    }
+
+    public void setHrAccountId(Integer hrAccountId) {
+        this.hrAccountId = hrAccountId;
+    }
+
+    public Byte getIntention() {
+        return intention;
+    }
+
+    public void setIntention(Byte intention) {
+        this.intention = intention;
+    }
+
+    public Byte getAcceptContact() {
+        return acceptContact;
+    }
+
+    public void setAcceptContact(Byte acceptContact) {
+        this.acceptContact = acceptContact;
+    }
+
+    public Timestamp getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Timestamp createTime) {
+        this.createTime = createTime;
+    }
+
+    public Timestamp getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Timestamp updateTime) {
+        this.updateTime = updateTime;
+    }
 }

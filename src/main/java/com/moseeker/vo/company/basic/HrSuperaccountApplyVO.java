@@ -30,5 +30,91 @@ public class HrSuperaccountApplyVO   {
     private Timestamp migrateTime;
     private Integer   accountLimit;
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Integer companyId) {
+        this.companyId = companyId;
+    }
+
+    public byte[] getLicence() {
+        return licence;
+    }
+
+    public void setLicence(byte[] licence) {
+        this.licence = licence;
+    }
+
+    public Timestamp getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Timestamp createTime) {
+        this.createTime = createTime;
+    }
+
+    public Timestamp getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Timestamp updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public Integer getOperate() {
+        return operate;
+    }
+
+    public void setOperate(Integer operate) {
+        this.operate = operate;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getChildCompanyId() {
+        return childCompanyId;
+    }
+
+    public void setChildCompanyId(String childCompanyId) {
+        this.childCompanyId = childCompanyId;
+    }
+
+    public Timestamp getMigrateTime() {
+        return migrateTime;
+    }
+
+    public void setMigrateTime(Timestamp migrateTime) {
+        this.migrateTime = migrateTime;
+    }
+
+    public Integer getAccountLimit() {
+        return accountLimit;
+    }
+
+    public void setAccountLimit(Integer accountLimit) {
+        this.accountLimit = accountLimit;
+    }
 }

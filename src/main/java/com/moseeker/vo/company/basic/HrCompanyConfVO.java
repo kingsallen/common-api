@@ -43,4 +43,199 @@ public class HrCompanyConfVO  {
     private Byte      talentpoolStatus;
     private String    displayLocale;
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public Integer getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Integer companyId) {
+        this.companyId = companyId;
+    }
+
+    public Integer getThemeId() {
+        return themeId;
+    }
+
+    public void setThemeId(Integer themeId) {
+        this.themeId = themeId;
+    }
+
+    public Integer getHbThrottle() {
+        return hbThrottle;
+    }
+
+    public void setHbThrottle(Integer hbThrottle) {
+        this.hbThrottle = hbThrottle;
+    }
+
+    public String getAppReply() {
+        return appReply;
+    }
+
+    public void setAppReply(String appReply) {
+        this.appReply = appReply;
+    }
+
+    public Timestamp getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Timestamp createTime) {
+        this.createTime = createTime;
+    }
+
+    public Timestamp getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Timestamp updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public String getEmployeeBinding() {
+        return employeeBinding;
+    }
+
+    public void setEmployeeBinding(String employeeBinding) {
+        this.employeeBinding = employeeBinding;
+    }
+
+    public String getRecommendPresentee() {
+        return recommendPresentee;
+    }
+
+    public void setRecommendPresentee(String recommendPresentee) {
+        this.recommendPresentee = recommendPresentee;
+    }
+
+    public String getRecommendSuccess() {
+        return recommendSuccess;
+    }
+
+    public void setRecommendSuccess(String recommendSuccess) {
+        this.recommendSuccess = recommendSuccess;
+    }
+
+    public String getForwardMessage() {
+        return forwardMessage;
+    }
+
+    public void setForwardMessage(String forwardMessage) {
+        this.forwardMessage = forwardMessage;
+    }
+
+    public Short getApplicationCountLimit() {
+        return applicationCountLimit;
+    }
+
+    public void setApplicationCountLimit(Short applicationCountLimit) {
+        this.applicationCountLimit = applicationCountLimit;
+    }
+
+    public Short getSchoolApplicationCountLimit() {
+        return schoolApplicationCountLimit;
+    }
+
+    public void setSchoolApplicationCountLimit(Short schoolApplicationCountLimit) {
+        this.schoolApplicationCountLimit = schoolApplicationCountLimit;
+    }
+
+    public String getJobCustomTitle() {
+        return jobCustomTitle;
+    }
+
+    public void setJobCustomTitle(String jobCustomTitle) {
+        this.jobCustomTitle = jobCustomTitle;
+    }
+
+    public String getSearchSeq() {
+        return searchSeq;
+    }
+
+    public void setSearchSeq(String searchSeq) {
+        this.searchSeq = searchSeq;
+    }
+
+    public String getSearchImg() {
+        return searchImg;
+    }
+
+    public void setSearchImg(String searchImg) {
+        this.searchImg = searchImg;
+    }
+
+    public String getJobOccupation() {
+        return jobOccupation;
+    }
+
+    public void setJobOccupation(String jobOccupation) {
+        this.jobOccupation = jobOccupation;
+    }
+
+    public String getTeamnameCustom() {
+        return teamnameCustom;
+    }
+
+    public void setTeamnameCustom(String teamnameCustom) {
+        this.teamnameCustom = teamnameCustom;
+    }
+
+    public Timestamp getApplicationTime() {
+        return applicationTime;
+    }
+
+    public void setApplicationTime(Timestamp applicationTime) {
+        this.applicationTime = applicationTime;
+    }
+
+    public Integer getNewjdStatus() {
+        return newjdStatus;
+    }
+
+    public void setNewjdStatus(Integer newjdStatus) {
+        this.newjdStatus = newjdStatus;
+    }
+
+    public Byte getHrChat() {
+        return hrChat;
+    }
+
+    public void setHrChat(Byte hrChat) {
+        this.hrChat = hrChat;
+    }
+
+    public Byte getShowInQx() {
+        return showInQx;
+    }
+
+    public void setShowInQx(Byte showInQx) {
+        this.showInQx = showInQx;
+    }
+
+    public String getEmployeeSlug() {
+        return employeeSlug;
+    }
+
+    public void setEmployeeSlug(String employeeSlug) {
+        this.employeeSlug = employeeSlug;
+    }
+
+    public Byte getTalentpoolStatus() {
+        return talentpoolStatus;
+    }
+
+    public void setTalentpoolStatus(Byte talentpoolStatus) {
+        this.talentpoolStatus = talentpoolStatus;
+    }
+
+    public String getDisplayLocale() {
+        return displayLocale;
+    }
+
+    public void setDisplayLocale(String displayLocale) {
+        this.displayLocale = displayLocale;
+    }
 }

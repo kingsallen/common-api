@@ -36,4 +36,147 @@ public class HrWxModuleVO {
     private String platformMenus;
 
 
+    public Byte getId() {
+        return id;
+    }
+
+    public void setId(Byte id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    public String getAbility() {
+        return ability;
+    }
+
+    public void setAbility(String ability) {
+        this.ability = ability;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public Byte getSettings() {
+        return settings;
+    }
+
+    public void setSettings(Byte settings) {
+        this.settings = settings;
+    }
+
+    public String getSubscribes() {
+        return subscribes;
+    }
+
+    public void setSubscribes(String subscribes) {
+        this.subscribes = subscribes;
+    }
+
+    public String getHandles() {
+        return handles;
+    }
+
+    public void setHandles(String handles) {
+        this.handles = handles;
+    }
+
+    public Byte getIsrulefields() {
+        return isrulefields;
+    }
+
+    public void setIsrulefields(Byte isrulefields) {
+        this.isrulefields = isrulefields;
+    }
+
+    public Byte getHome() {
+        return home;
+    }
+
+    public void setHome(Byte home) {
+        this.home = home;
+    }
+
+    public Byte getIssystem() {
+        return issystem;
+    }
+
+    public void setIssystem(Byte issystem) {
+        this.issystem = issystem;
+    }
+
+    public String getOptions() {
+        return options;
+    }
+
+    public void setOptions(String options) {
+        this.options = options;
+    }
+
+    public Byte getProfile() {
+        return profile;
+    }
+
+    public void setProfile(Byte profile) {
+        this.profile = profile;
+    }
+
+    public String getSiteMenus() {
+        return siteMenus;
+    }
+
+    public void setSiteMenus(String siteMenus) {
+        this.siteMenus = siteMenus;
+    }
+
+    public String getPlatformMenus() {
+        return platformMenus;
+    }
+
+    public void setPlatformMenus(String platformMenus) {
+        this.platformMenus = platformMenus;
+    }
 }
