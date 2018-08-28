@@ -1,4 +1,4 @@
-package com.moseeker.vo.dict;
+package com.moseeker.vo.dict.response;
 
 import com.moseeker.vo.dict.basic.DictCollegeVO;
 
