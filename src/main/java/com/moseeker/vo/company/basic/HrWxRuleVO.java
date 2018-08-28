@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * 微信回复规则表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrWxRuleVO{
 
     private static final long serialVersionUID = -76037994;

@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * nps打分推荐表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrNpsVO   {
 
     private static final long serialVersionUID = 1253734684;

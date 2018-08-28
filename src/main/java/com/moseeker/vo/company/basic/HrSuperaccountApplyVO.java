@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 升级超级账号申请表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrSuperaccountApplyVO   {
 
     private static final long serialVersionUID = -75232993;

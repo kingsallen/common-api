@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
  * Created by moseeker on 2018/8/21.
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class ConfigSysH5StyleTplVO {
 
 

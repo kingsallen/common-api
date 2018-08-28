@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 资源集合表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrResourceVO   {
 
     private static final long serialVersionUID = 548971392;

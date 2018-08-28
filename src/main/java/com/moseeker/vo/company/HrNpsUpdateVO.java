@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 public class HrNpsUpdateVO {
 
-    private Integer userId;
+    private Integer hrId;
     private String startDate;
     private String endDate;
     private Byte intention;
@@ -19,12 +19,12 @@ public class HrNpsUpdateVO {
     private String mobile;
     private String company;
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getHrId() {
+        return hrId;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setHrId(Integer hrId) {
+        this.hrId = hrId;
     }
 
     public String getStartDate() {

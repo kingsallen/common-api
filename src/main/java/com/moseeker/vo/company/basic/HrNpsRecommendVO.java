@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * hr推荐同行表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrNpsRecommendVO  {
 
     private static final long serialVersionUID = 785201733;

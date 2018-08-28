@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 部门主题表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class ConfigSysThemeVO{
 
     private static final long serialVersionUID = 160105368;

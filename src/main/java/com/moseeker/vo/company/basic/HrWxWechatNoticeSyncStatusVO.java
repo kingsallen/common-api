@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 微信消息通知同步状态
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrWxWechatNoticeSyncStatusVO {
 
     private static final long serialVersionUID = 192885980;

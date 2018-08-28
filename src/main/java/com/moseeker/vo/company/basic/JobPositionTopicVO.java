@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 职位主题活动关系表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class JobPositionTopicVO implements Serializable {
 
     private static final long serialVersionUID = -1172716168;

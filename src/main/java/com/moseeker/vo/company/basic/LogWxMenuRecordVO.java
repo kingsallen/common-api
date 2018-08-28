@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 微信菜单操作日志表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class LogWxMenuRecordVO {
 
     private static final long serialVersionUID = 1056568374;
@@ -26,4 +26,60 @@ public class LogWxMenuRecordVO {
     private Integer   errcode;
     private String    errmsg;
 
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getWechatId() {
+        return wechatId;
+    }
+
+    public void setWechatId(Integer wechatId) {
+        this.wechatId = wechatId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJson() {
+        return json;
+    }
+
+    public void setJson(String json) {
+        this.json = json;
+    }
+
+    public Timestamp get_CreateTime() {
+        return _CreateTime;
+    }
+
+    public void set_CreateTime(Timestamp _CreateTime) {
+        this._CreateTime = _CreateTime;
+    }
+
+    public Integer getErrcode() {
+        return errcode;
+    }
+
+    public void setErrcode(Integer errcode) {
+        this.errcode = errcode;
+    }
+
+    public String getErrmsg() {
+        return errmsg;
+    }
+
+    public void setErrmsg(String errmsg) {
+        this.errmsg = errmsg;
+    }
 }

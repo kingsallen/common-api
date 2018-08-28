@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 候选人列表常用筛选项
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrSearchConditionVO   {
 
     private static final long serialVersionUID = -1291749181;

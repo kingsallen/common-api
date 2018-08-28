@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 微信图片回复
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrWxImageReplyVO{
 
     private static final long serialVersionUID = 101740927;

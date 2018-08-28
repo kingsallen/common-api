@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 微信公众号表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrWxWechatVO  {
 
     private static final long serialVersionUID = -1567730135;

@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * 员工认证自定义字段表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrEmployeeCustomFieldsVO {
 
     private static final long serialVersionUID = 1615556927;

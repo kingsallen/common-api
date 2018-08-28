@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
  * 微信图文回复表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrWxNewsReplyVO {
 
     private static final long serialVersionUID = 1455846310;

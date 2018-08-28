@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 公司级别的配置信息表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrCompanyConfVO  {
 
     private static final long serialVersionUID = 149409684;
