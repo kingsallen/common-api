@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,12 +16,15 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "微信图片回复")
 public class HrWxImageReplyVO{
 
     private static final long serialVersionUID = 101740927;
 
     private Integer   id;
+    @ApiModelProperty(value = "wx_rule.id, 规则ID")
     private Integer   rid;
+    @ApiModelProperty(value = "回复图片的相对路径")
     private String    image;
     private Timestamp createTime;
     private Timestamp updateTime;

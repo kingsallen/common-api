@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,18 +14,26 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "微信回复规则")
 public class HrWxRuleVO{
 
     private static final long serialVersionUID = -76037994;
 
     private Integer id;
     private Integer wechatId;
+    @ApiModelProperty(value = "")
     private Integer cid;
+    @ApiModelProperty(value = "回复规则名称")
     private String  name;
+    @ApiModelProperty(value = "模块名称")
     private String  module;
+    @ApiModelProperty(value = "排序")
     private Integer displayorder;
+    @ApiModelProperty(value = "规则状态，0禁用，1启用，2置顶")
     private Byte    status;
+    @ApiModelProperty(value = "规则获取权限，0：所有，1：员工")
     private Integer accessLevel;
+    @ApiModelProperty(value = "关键字")
     private String  keywords;
 
 

@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,17 +16,25 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "雇主活动主题")
 public class HrTopicVO {
 
     private static final long serialVersionUID = 1713160320;
 
+
     private Integer   id;
     private Integer   companyId;
+    @ApiModelProperty(value = "分享标题")
     private String    shareTitle;
+    @ApiModelProperty(value = "分享Logo")
     private String    shareLogo;
+    @ApiModelProperty(value = "分享描述")
     private String    shareDescription;
+    @ApiModelProperty(value = "wx_group_user.id， 推荐者微信ID")
     private Integer   styleId;
+    @ApiModelProperty(value = "hr_account.id")
     private Integer   creator;
+    @ApiModelProperty(value = "是否有效  0：有效 1：无效")
     private Byte      disable;
     private Timestamp createTime;
     private Timestamp updateTime;

@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,14 +16,60 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "微信消息通知同步状态")
 public class HrWxWechatNoticeSyncStatusVO {
 
     private static final long serialVersionUID = 192885980;
 
     private Integer   id;
     private Integer   wechatId;
+    @ApiModelProperty(value = "同步状态 0:成功, 1:行业修改失败, 2:模板数量超出上限, 3:接口调用失败")
     private Integer   status;
+    @ApiModelProperty(value = "同步状态提示应该删除信息的数量")
     private Integer   count;
     private Timestamp updateTime;
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getWechatId() {
+        return wechatId;
+    }
+
+    public void setWechatId(Integer wechatId) {
+        this.wechatId = wechatId;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
+    public Timestamp getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Timestamp updateTime) {
+        this.updateTime = updateTime;
+    }
 }

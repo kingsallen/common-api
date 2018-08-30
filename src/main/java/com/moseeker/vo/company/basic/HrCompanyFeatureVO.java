@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,15 +16,18 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "公司福利特色")
 public class HrCompanyFeatureVO {
 
     private static final long serialVersionUID = -2101772719;
 
     private Integer   id;
     private Integer   companyId;
+    @ApiModelProperty(value = "福利特色内容")
     private String    feature;
     private Timestamp createTime;
     private Timestamp updateTime;
+    @ApiModelProperty(value = "0:无效 1:有效")
     private Integer   disable;
 
 

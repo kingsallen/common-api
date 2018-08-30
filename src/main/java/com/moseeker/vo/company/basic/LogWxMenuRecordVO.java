@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,16 +16,22 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "微信菜单操作日志")
 public class LogWxMenuRecordVO {
 
     private static final long serialVersionUID = 1056568374;
 
+
     private Integer   id;
+    @ApiModelProperty(value = "公众号编号")
     private Integer   wechatId;
     private String    name;
+    @ApiModelProperty(value = "菜单的json数据")
     private String    json;
     private Timestamp _CreateTime;
+    @ApiModelProperty(value = "微信调用返回的errcode")
     private Integer   errcode;
+    @ApiModelProperty(value = "微信调用返回的errmsg")
     private String    errmsg;
 
 
