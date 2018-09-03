@@ -1,6 +1,6 @@
-package com.moseeker.vo.dict.response;
+package com.moseeker.vo.dict.request;
 
-import com.moseeker.vo.dict.basic.DictConstantVO;
+import com.moseeker.vo.dict.basic.DictConstantPO;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class ConstantVO {
     private long updateTime;
     private List<ConstantVO> constants;
 
-    public void cloneFromDictConstant(DictConstantVO dictConstant) {
+    public void cloneFromDictConstant(DictConstantPO dictConstant) {
         if (dictConstant == null) {
             return;
         }

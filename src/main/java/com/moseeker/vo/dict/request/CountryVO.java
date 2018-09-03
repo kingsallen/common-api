@@ -1,6 +1,6 @@
-package com.moseeker.vo.dict.response;
+package com.moseeker.vo.dict.request;
 
-import com.moseeker.vo.dict.basic.DictCountryVO;
+import com.moseeker.vo.dict.basic.DictCountryPO;
 
 /**
  * Created by jack on 2018/5/30.
@@ -18,7 +18,7 @@ public class CountryVO {
     private int continentCode;
     private int priority;
 
-    public void cloneFromDictCountry(DictCountryVO country) {
+    public void cloneFromDictCountry(DictCountryPO country) {
         if (country == null) {
             return;
         }

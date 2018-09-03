@@ -1,6 +1,6 @@
-package com.moseeker.vo.dict.response;
+package com.moseeker.vo.dict.request;
 
-import com.moseeker.vo.dict.basic.DictPositionVO;
+import com.moseeker.vo.dict.basic.DictPositionPO;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class PositionVO {
     private int level;
     private List<PositionVO> positions;
 
-    public void cloneFromDictPosition(DictPositionVO dictPosition) {
+    public void cloneFromDictPosition(DictPositionPO dictPosition) {
         if (dictPosition == null) {
             return;
         }

@@ -1,6 +1,6 @@
-package com.moseeker.vo.dict.response;
+package com.moseeker.vo.dict.request;
 
-import com.moseeker.vo.dict.basic.DictMajorVO;
+import com.moseeker.vo.dict.basic.DictMajorPO;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class MajorVO {
     private int level;
     private List<MajorVO> majors;
 
-    public void cloneFromDictMajor(DictMajorVO dictMajor) {
+    public void cloneFromDictMajor(DictMajorPO dictMajor) {
         if (dictMajor == null) {
             return;
         }
