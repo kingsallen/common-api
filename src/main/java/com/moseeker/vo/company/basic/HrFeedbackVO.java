@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * HR反馈表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrFeedbackVO {
 
     private static final long serialVersionUID = 1170798295;

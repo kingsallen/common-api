@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * 微信模块表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrWxModuleVO {
 
     private static final long serialVersionUID = 1619127644;

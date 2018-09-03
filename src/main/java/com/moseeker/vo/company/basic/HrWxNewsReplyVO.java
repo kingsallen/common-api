@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,18 +14,25 @@ import lombok.EqualsAndHashCode;
  * 微信图文回复表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "微信图文回复")
 public class HrWxNewsReplyVO {
 
     private static final long serialVersionUID = 1455846310;
 
     private Integer id;
+    @ApiModelProperty(value = "wx_rule.id, 规则ID")
     private Integer rid;
+    @ApiModelProperty(value = "图文回复id，本表编号")
     private Integer parentid;
+    @ApiModelProperty(value = "回复名称")
     private String  title;
+    @ApiModelProperty(value = "回复描述")
     private String  description;
+    @ApiModelProperty(value = "")
     private String  thumb;
     private String  content;
+    @ApiModelProperty(value = "回复图片链接")
     private String  url;
 
 

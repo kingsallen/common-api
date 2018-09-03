@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,21 +15,30 @@ import lombok.EqualsAndHashCode;
  * 团队成员信息
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "团队成员信息")
 public class HrTeamMemberVO   {
 
     private static final long serialVersionUID = 283238950;
 
     private Integer   id;
+    @ApiModelProperty(value = "成员名称")
     private String    name;
+    @ApiModelProperty(value = "成员职称")
     private String    title;
+    @ApiModelProperty(value = "成员描述")
     private String    description;
+    @ApiModelProperty(value = "成员所属团队")
     private Integer   teamId;
+    @ApiModelProperty(value = "成员对应用户")
     private Integer   userId;
     private Timestamp createTime;
     private Timestamp updateTime;
+    @ApiModelProperty(value = "成员头像hr_resource.id")
     private Integer   resId;
+    @ApiModelProperty(value = "0是正常1是删除")
     private Integer   disable;
+    @ApiModelProperty(value = "团队成员显示顺序")
     private Integer   orders;
 
 

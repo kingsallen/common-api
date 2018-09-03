@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 企业用户导入数据异步处理监控操作表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrImporterMonitorVO   {
 
     private static final long serialVersionUID = -451730042;

@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,21 +15,28 @@ import lombok.EqualsAndHashCode;
  * 升级超级账号申请表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "升级超级账号申请")
 public class HrSuperaccountApplyVO   {
 
     private static final long serialVersionUID = -75232993;
 
     private Integer   id;
     private Integer   companyId;
+    @ApiModelProperty(value = "营业执照")
     private byte[]    licence;
     private Timestamp createTime;
     private Timestamp updateTime;
+    @ApiModelProperty(value = "config_sys_administrator.id")
     private Integer   operate;
+    @ApiModelProperty(value = "申请状态 0表示已经通过，1表示未处理，2表示未通过")
     private Integer   status;
+    @ApiModelProperty(value = "审核留言")
     private String    message;
     private String    childCompanyId;
+    @ApiModelProperty(value = "迁移时间")
     private Timestamp migrateTime;
+    @ApiModelProperty(value = "子账号数量限制")
     private Integer   accountLimit;
 
     public Integer getId() {

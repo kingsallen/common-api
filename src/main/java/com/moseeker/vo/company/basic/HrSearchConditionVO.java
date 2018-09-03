@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,39 +15,60 @@ import lombok.EqualsAndHashCode;
  * 候选人列表常用筛选项
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "候选人列表常用筛选项")
 public class HrSearchConditionVO   {
 
     private static final long serialVersionUID = -1291749181;
 
     private Integer   id;
+    @ApiModelProperty(value = "常用搜索条件名称，长度不超过12个字符")
     private String    name;
+    @ApiModelProperty(value = "发布人id(user_hr_account.id)，多个发布人用,隔开")
     private String    publisher;
+    @ApiModelProperty(value = "职位id,多个职位用,隔开")
     private String    positionId;
+    @ApiModelProperty(value = "关键字")
     private String    keyword;
+    @ApiModelProperty(value = "投递时间")
     private String    submitTime;
+    @ApiModelProperty(value = "工作年限、工龄")
     private String    workYears;
+    @ApiModelProperty(value = "现居住地")
     private String    cityName;
+    @ApiModelProperty(value = "学历")
     private String    degree;
+    @ApiModelProperty(value = "曾任职务")
     private String    pastPosition;
+    @ApiModelProperty(value = "是否只在最近一份工作中搜索曾任职务(0:否，1:是)")
     private Integer   inLastJobSearchPosition;
     private Integer   minAge;
     private Integer   maxAge;
+    @ApiModelProperty(value = "期望工作地")
     private String    intentionCityName;
+    @ApiModelProperty(value = "性别")
     private Integer   sex;
+    @ApiModelProperty(value = "期望薪资")
     private String    intentionSalaryCode;
     private String    companyName;
+    @ApiModelProperty(value = "是否只在最近一份工作中搜索公司名称（0:否，1:是）")
     private Integer   inLastJobSearchCompany;
     private Integer   hrAccountId;
+    @ApiModelProperty(value = "创建时间")
     private Timestamp createTime;
+    @ApiModelProperty(value = "简历更新时间选项（0：不限，1：最近一周，2：最近两周，3：最近一个月）")
     private Integer   updateTime;
+    @ApiModelProperty(value = "类型（0：候选人列表筛选条件，1：人才库列表筛选条件）")
     private Integer   type;
+    @ApiModelProperty(value = "0，社招，1，校招，2定向招聘")
     private Byte      candidateSource;
-    private String    favoriteHrs;
-    private Byte      isFreshGraduates;
+    @ApiModelProperty(value = "是否公开 1是")
     private Byte      isPublic;
+    @ApiModelProperty(value = "是否内推 1是")
     private Byte      isRecommend;
+    @ApiModelProperty(value = "简历来源，申请来源，是否上传，多个之间用,隔开")
     private String    origins;
+    @ApiModelProperty(value = "标签id  -1 全部公开0我的收藏 其他则为tag_id，多个之间用逗号隔开")
     private String    tagIds;
 
     public Integer getId() {
@@ -230,22 +253,6 @@ public class HrSearchConditionVO   {
 
     public void setCandidateSource(Byte candidateSource) {
         this.candidateSource = candidateSource;
-    }
-
-    public String getFavoriteHrs() {
-        return favoriteHrs;
-    }
-
-    public void setFavoriteHrs(String favoriteHrs) {
-        this.favoriteHrs = favoriteHrs;
-    }
-
-    public Byte getIsFreshGraduates() {
-        return isFreshGraduates;
-    }
-
-    public void setIsFreshGraduates(Byte isFreshGraduates) {
-        this.isFreshGraduates = isFreshGraduates;
     }
 
     public Byte getIsPublic() {

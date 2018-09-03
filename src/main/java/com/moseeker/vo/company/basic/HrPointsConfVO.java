@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 雇主积分规则配置表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrPointsConfVO {
 
     private static final long serialVersionUID = 461233877;

@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,18 +15,26 @@ import lombok.EqualsAndHashCode;
  * 部门主题表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "部门主题")
 public class ConfigSysThemeVO{
 
     private static final long serialVersionUID = 160105368;
 
     private Integer   id;
+    @ApiModelProperty(value = "背景色")
     private String    backgroundColor;
+    @ApiModelProperty(value = "标题颜色")
     private String    titleColor;
+    @ApiModelProperty(value = "按钮颜色")
     private String    buttonColor;
+    @ApiModelProperty(value = "other")
     private String    otherColor;
+    @ApiModelProperty(value = "是否免费 0：免费 1：收费，只能在大岂后台操作收费主题")
     private Byte      free;
+    @ApiModelProperty(value = "排序优先级")
     private Short     prority;
+    @ApiModelProperty(value = "是否禁用 0：可用1：不可用")
     private Byte      disable;
     private Timestamp createTime;
     private Timestamp updateTime;

@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,26 +15,41 @@ import lombok.EqualsAndHashCode;
  * 团队信息
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "团队信息")
 public class HrTeamVO  {
 
     private static final long serialVersionUID = 1998937487;
 
     private Integer   id;
+    @ApiModelProperty(value = "团队/部门名称")
     private String    name;
+    @ApiModelProperty(value = "职能概述")
     private String    summary;
+    @ApiModelProperty(value = "团队介绍")
     private String    description;
+    @ApiModelProperty(value = "团队显示顺序")
     private Integer   showOrder;
+    @ApiModelProperty(value = "成员一天信息hr_media.id: [1, 23, 32]")
     private String    jdMedia;
     private Integer   companyId;
     private Timestamp createTime;
     private Timestamp updateTime;
+    @ApiModelProperty(value = "当前团队在列表等处是否显示, 0:不显示, 1:显示")
     private Integer   isShow;
+    @ApiModelProperty(value = "团队标语")
     private String    slogan;
+    @ApiModelProperty(value = "团队主图片hr_resource.id")
     private Integer   resId;
+    @ApiModelProperty(value = "团队详情页配置hr_media.id: [1, 23, 32]")
     private String    teamDetail;
+    @ApiModelProperty(value = "0是正常 1是删除")
     private Integer   disable;
+    @ApiModelProperty(value = "团队小标题")
     private String    subTitle;
+//    @ApiModelProperty(value = "素材库图片处理参数,七牛格式")
+//    private String    res_attrs;
+    @ApiModelProperty(value = "模板链接")
     private String    link;
 
     public Integer getId() {

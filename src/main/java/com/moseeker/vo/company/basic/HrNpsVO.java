@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,14 +15,17 @@ import lombok.EqualsAndHashCode;
  * nps打分推荐表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "nps打分推荐")
 public class HrNpsVO   {
 
     private static final long serialVersionUID = 1253734684;
 
     private Integer   id;
     private Integer   hrAccountId;
+    @ApiModelProperty(value = "推荐同行的意愿【0-10】")
     private Byte      intention;
+    @ApiModelProperty(value = "是否愿意接听电话 0-未确认，1-愿意，2-不愿意")
     private Byte      acceptContact;
     private Timestamp createTime;
     private Timestamp updateTime;

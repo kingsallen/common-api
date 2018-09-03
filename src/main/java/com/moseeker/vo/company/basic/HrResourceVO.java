@@ -4,6 +4,8 @@
 package com.moseeker.vo.company.basic;
 
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,20 +15,27 @@ import lombok.EqualsAndHashCode;
  * 资源集合表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "资源集合")
 public class HrResourceVO   {
 
     private static final long serialVersionUID = 548971392;
 
     private Integer   id;
+    @ApiModelProperty(value = "资源链接")
     private String    resUrl;
+    @ApiModelProperty(value = "0: image  1: video")
     private Integer   resType;
+    @ApiModelProperty(value = "备注资源")
     private String    remark;
     private Integer   companyId;
+    @ApiModelProperty(value = "资源名称")
     private String    title;
+    @ApiModelProperty(value = "0是正常 1是删除")
     private Integer   disable;
     private Timestamp updateTime;
     private Timestamp createTime;
+    @ApiModelProperty(value = "视频封面")
     private String    cover;
 
 

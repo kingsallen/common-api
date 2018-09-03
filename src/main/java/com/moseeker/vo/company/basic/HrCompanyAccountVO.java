@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
  * 账号公司关联记录
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrCompanyAccountVO  {
 
     private static final long serialVersionUID = -990527953;

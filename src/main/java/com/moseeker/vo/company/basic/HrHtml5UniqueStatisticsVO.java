@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * 专题传播统计去重信息表
  */
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = false)
 public class HrHtml5UniqueStatisticsVO   {
 
     private static final long serialVersionUID = 1770418267;
