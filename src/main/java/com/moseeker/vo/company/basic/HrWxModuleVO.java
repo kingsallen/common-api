@@ -14,8 +14,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 public class HrWxModuleVO {
 
-    private static final long serialVersionUID = 1619127644;
-
     private Byte   id;
     private String name;
     private String title;

@@ -5,6 +5,7 @@ package com.moseeker.vo.company.basic;
 
 
 import java.sql.Timestamp;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,8 +16,6 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class HrImporterMonitorVO   {
-
-    private static final long serialVersionUID = -451730042;
 
     private Integer   id;
     private Integer   companyId;

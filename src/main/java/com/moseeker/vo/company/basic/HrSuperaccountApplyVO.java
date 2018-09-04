@@ -4,9 +4,10 @@
 package com.moseeker.vo.company.basic;
 
 
+import java.sql.Timestamp;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -18,8 +19,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 @ApiModel(description = "升级超级账号申请")
 public class HrSuperaccountApplyVO   {
-
-    private static final long serialVersionUID = -75232993;
 
     private Integer   id;
     private Integer   companyId;

@@ -4,9 +4,10 @@
 package com.moseeker.vo.company.basic;
 
 
+import java.sql.Timestamp;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -18,8 +19,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 @ApiModel(description = "公司信息")
 public class HrCompanyVO {
-
-    private static final long serialVersionUID = -557446569;
 
     private Integer   id;
     @ApiModelProperty(value = " 企业用户:0 ,免费用户:1 , 其它:2")

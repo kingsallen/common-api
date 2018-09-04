@@ -4,9 +4,10 @@
 package com.moseeker.vo.company.basic;
 
 
+import java.sql.Timestamp;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -18,8 +19,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 @ApiModel(description = "候选人列表常用筛选项")
 public class HrSearchConditionVO   {
-
-    private static final long serialVersionUID = -1291749181;
 
     private Integer   id;
     @ApiModelProperty(value = "常用搜索条件名称，长度不超过12个字符")

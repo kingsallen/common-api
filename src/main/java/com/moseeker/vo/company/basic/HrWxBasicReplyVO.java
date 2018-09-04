@@ -17,8 +17,6 @@ import lombok.EqualsAndHashCode;
 @ApiModel(description = "微信文本回复")
 public class HrWxBasicReplyVO {
 
-    private static final long serialVersionUID = 606270012;
-
     private Integer id;
     @ApiModelProperty(value = "wx_rule.id, 规则ID")
     private Integer rid;

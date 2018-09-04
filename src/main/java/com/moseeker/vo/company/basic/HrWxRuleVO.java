@@ -17,8 +17,6 @@ import lombok.EqualsAndHashCode;
 @ApiModel(description = "微信回复规则")
 public class HrWxRuleVO{
 
-    private static final long serialVersionUID = -76037994;
-
     private Integer id;
     private Integer wechatId;
     @ApiModelProperty(value = "")

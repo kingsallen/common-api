@@ -5,6 +5,7 @@ package com.moseeker.vo.company.basic;
 
 
 import java.sql.Timestamp;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -16,8 +17,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 public class HrFeedbackVO {
 
-    private static final long serialVersionUID = 1170798295;
-
     private Integer   id;
     private Integer   hraccountId;
     private String    name;
@@ -26,6 +25,5 @@ public class HrFeedbackVO {
     private String    content;
     private Timestamp createTime;
     private Timestamp updateTime;
-
 
 }

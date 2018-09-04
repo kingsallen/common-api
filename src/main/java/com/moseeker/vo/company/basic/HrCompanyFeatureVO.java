@@ -4,9 +4,10 @@
 package com.moseeker.vo.company.basic;
 
 
+import java.sql.Timestamp;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -19,8 +20,6 @@ import lombok.EqualsAndHashCode;
 @ApiModel(description = "公司福利特色")
 public class HrCompanyFeatureVO {
 
-    private static final long serialVersionUID = -2101772719;
-
     private Integer   id;
     private Integer   companyId;
     @ApiModelProperty(value = "福利特色内容")
@@ -30,52 +29,4 @@ public class HrCompanyFeatureVO {
     @ApiModelProperty(value = "0:无效 1:有效")
     private Integer   disable;
 
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Integer companyId) {
-        this.companyId = companyId;
-    }
-
-    public String getFeature() {
-        return feature;
-    }
-
-    public void setFeature(String feature) {
-        this.feature = feature;
-    }
-
-    public Timestamp getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
-    }
-
-    public Timestamp getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Timestamp updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public Integer getDisable() {
-        return disable;
-    }
-
-    public void setDisable(Integer disable) {
-        this.disable = disable;
-    }
 }

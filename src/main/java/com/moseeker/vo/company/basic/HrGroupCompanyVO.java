@@ -5,6 +5,7 @@ package com.moseeker.vo.company.basic;
 
 
 import java.sql.Timestamp;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,8 +16,6 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class HrGroupCompanyVO   {
-
-    private static final long serialVersionUID = -137763830;
 
     private Integer   id;
     private String    name;

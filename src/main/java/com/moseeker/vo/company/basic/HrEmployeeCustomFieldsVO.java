@@ -14,8 +14,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 public class HrEmployeeCustomFieldsVO {
 
-    private static final long serialVersionUID = 1615556927;
-
     private Integer id;
     private Integer companyId;
     private String  fname;

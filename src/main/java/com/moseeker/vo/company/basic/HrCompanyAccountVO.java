@@ -15,8 +15,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 public class HrCompanyAccountVO  {
 
-    private static final long serialVersionUID = -990527953;
-
     private Integer companyId;
     private Integer accountId;
 

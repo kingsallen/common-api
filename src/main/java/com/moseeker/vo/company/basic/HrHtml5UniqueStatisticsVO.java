@@ -5,6 +5,7 @@ package com.moseeker.vo.company.basic;
 
 
 import java.sql.Date;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,8 +16,6 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class HrHtml5UniqueStatisticsVO   {
-
-    private static final long serialVersionUID = 1770418267;
 
     private Integer id;
     private Integer topicId;
