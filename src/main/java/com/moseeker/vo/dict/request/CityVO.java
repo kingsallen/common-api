@@ -1,22 +1,32 @@
 package com.moseeker.vo.dict.request;
 
 import com.moseeker.vo.dict.basic.DictCityPO;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.List;
 
 /**
- * Created by jack on 2018/5/18.
+ * @author cjm
+ * @date 2018/09/04
  */
 @Data
+@ApiModel
 public class CityVO {
-
-    private int code;
+    @ApiModelProperty(value = "city_code", name = "code", dataType = "Integer")
+    private Integer code;
+    @ApiModelProperty(value = "city_name", name = "name", dataType = "string")
     private String name;
-    private int level;
-    private boolean hotCity;
+    @ApiModelProperty(value = "city_level", name = "level", dataType = "Integer")
+    private Integer level;
+    @ApiModelProperty(value = "is_hot_city", name = "hotCity", dataType = "Boolean")
+    private Boolean hotCity;
+    @ApiModelProperty(value = "英语城市名", name = "ename", dataType = "string")
     private String ename;
-    private boolean active;
+    @ApiModelProperty(value = "is_using 0:没在用 1:在使用", name = "active", dataType = "Boolean")
+    private Boolean active;
+    @ApiModelProperty(value = "当前城市下级地区，请求时不需要传", name = "cities", dataType = "list")
     private List<CityVO> cities;
 
     public void cloneFromDictCity(DictCityPO city) {
@@ -27,7 +37,7 @@ public class CityVO {
             setCode(city.getCode());
         }
         if (city.getLevel() != null) {
-            setLevel(city.getLevel());
+            setLevel(city.getLevel().intValue());
         }
         setName(city.getName());
         setActive(city.getIsUsing() == 1);
@@ -46,7 +56,7 @@ public class CityVO {
 
         CityVO city = (CityVO) o;
 
-        return getCode() == city.getCode();
+        return getCode().equals(city.getCode());
     }
 
     @Override

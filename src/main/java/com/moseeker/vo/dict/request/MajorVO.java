@@ -1,17 +1,23 @@
 package com.moseeker.vo.dict.request;
 
 import com.moseeker.vo.dict.basic.DictMajorPO;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import java.util.List;
 
 /**
- * Created by jack on 2018/5/30.
+ * @author cjm
+ * @date 2018/09/03
  */
+@Data
+@ToString
 public class MajorVO {
 
-    private int code;
+    private String code;
     private String name;
-    private int level;
+    private Integer level;
     private List<MajorVO> majors;
 
     public void cloneFromDictMajor(DictMajorPO dictMajor) {
@@ -20,13 +26,13 @@ public class MajorVO {
         }
         if (dictMajor.getCode() != null) {
             try {
-                setCode(Integer.parseInt(dictMajor.getCode()));
+                setCode(dictMajor.getCode());
             } catch (NumberFormatException e) {
                 //do nothing
             }
         }
         if (dictMajor.getLevel() != null) {
-            setLevel(dictMajor.getLevel());
+            setLevel(dictMajor.getLevel().intValue());
         }
         setName(dictMajor.getName());
     }
@@ -38,43 +44,6 @@ public class MajorVO {
 
         MajorVO major = (MajorVO) o;
 
-        return getCode() == major.getCode();
-    }
-
-    @Override
-    public int hashCode() {
-        return getCode();
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
-    public List<MajorVO> getMajors() {
-        return majors;
-    }
-
-    public void setMajors(List<MajorVO> majors) {
-        this.majors = majors;
+        return getCode().equals(major.getCode());
     }
 }
