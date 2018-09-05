@@ -1,6 +1,8 @@
 package com.moseeker.vo.jooq;
 
-import com.moseeker.vo.BasePagerVo;
+import java.util.List;
+
+import com.moseeker.vo.BaseVo;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -8,7 +10,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class JooqVo extends BasePagerVo<JooqVo> {
+public class JooqVo extends BaseVo {
 
 	private static final long serialVersionUID = 4607611443712168790L;
 
@@ -23,5 +25,8 @@ public class JooqVo extends BasePagerVo<JooqVo> {
 	
 	@ApiModelProperty(value = "状态")
 	private String status;
+	
+	@ApiModelProperty(value = "描述（数组）")
+	private List<String> description;
 	
 }
