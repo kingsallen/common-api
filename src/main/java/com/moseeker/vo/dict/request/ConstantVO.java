@@ -1,6 +1,8 @@
 package com.moseeker.vo.dict.request;
 
 import com.moseeker.vo.dict.basic.DictConstantPO;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.ToString;
 
@@ -11,14 +13,18 @@ import java.util.List;
  */
 @Data
 @ToString
+@ApiModel
 public class ConstantVO {
-
-    private int code;
+    @ApiModelProperty(name = "code", value = "常量code", dataType = "Integer")
+    private Integer code;
+    @ApiModelProperty(name = "name", value = "常量name", dataType = "string")
     private String name;
-    private int priority;
-    private int parentCode;
-    private long createTime;
-    private long updateTime;
+    @ApiModelProperty(name = "priority", value = "常量优先级", dataType = "Integer")
+    private Integer priority;
+    @ApiModelProperty(name = "parentCode", value = "常量父code", dataType = "Integer")
+    private Integer parentCode;
+    private Long createTime;
+    private Long updateTime;
     private List<ConstantVO> constants;
 
     public void cloneFromDictConstant(DictConstantPO dictConstant) {
@@ -30,7 +36,7 @@ public class ConstantVO {
         }
         setName(dictConstant.getName());
         if (dictConstant.getPriority() != null) {
-            setPriority(dictConstant.getPriority());
+            setPriority(dictConstant.getPriority().intValue());
         }
         if (dictConstant.getParentCode() != null) {
             setParentCode(dictConstant.getParentCode());
@@ -50,8 +56,8 @@ public class ConstantVO {
 
         ConstantVO constant = (ConstantVO) o;
 
-        if (getCode() != constant.getCode()) return false;
-        return getParentCode() == constant.getParentCode();
+        if (!getCode().equals(constant.getCode())) return false;
+        return getParentCode().equals(constant.getParentCode());
     }
 
     @Override
