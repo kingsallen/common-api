@@ -1,22 +1,36 @@
 package com.moseeker.vo.dict.request;
 
 import com.moseeker.vo.dict.basic.DictCountryPO;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+import lombok.ToString;
 
 /**
  * Created by jack on 2018/5/30.
  */
+@Data
+@ToString
+@ApiModel
 public class CountryVO {
-    private int id;
+    private Integer id;
+    @ApiModelProperty(name = "name", value = "国家名称", dataType = "string")
     private String name;
+    @ApiModelProperty(name = "ename", value = "国家英语名称", dataType = "string")
     private String ename;
     private String isoCode2;
     private String isoCode3;
+    @ApiModelProperty(name = "code", value = "国家code", dataType = "string")
     private String code;
-    private boolean supportMobileMessage;
+    private Boolean supportMobileMessage;
+    @ApiModelProperty(name = "iconClass", value = "国旗样式", dataType = "string")
     private String iconClass;
-    private boolean hotCountry;
-    private int continentCode;
-    private int priority;
+    @ApiModelProperty(name = "hotCountry", value = "热门国家", dataType = "boolean")
+    private Boolean hotCountry;
+    @ApiModelProperty(name = "continentCode", value = "7大洲code", dataType = "Integer")
+    private Integer continentCode;
+    @ApiModelProperty(name = "priority", value = "优先级", dataType = "Integer")
+    private Integer priority;
 
     public void cloneFromDictCountry(DictCountryPO country) {
         if (country == null) {
@@ -37,7 +51,7 @@ public class CountryVO {
             setContinentCode(country.getContinentCode());
         }
         if (country.getPriority() != null) {
-            setPriority(country.getPriority());
+            setPriority(country.getPriority().intValue());
         }
     }
 
@@ -48,99 +62,11 @@ public class CountryVO {
 
         CountryVO country = (CountryVO) o;
 
-        return getId() == country.getId();
+        return getId().equals(country.getId());
     }
 
     @Override
     public int hashCode() {
         return getId();
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEname() {
-        return ename;
-    }
-
-    public void setEname(String ename) {
-        this.ename = ename;
-    }
-
-    public String getIsoCode2() {
-        return isoCode2;
-    }
-
-    public void setIsoCode2(String isoCode2) {
-        this.isoCode2 = isoCode2;
-    }
-
-    public String getIsoCode3() {
-        return isoCode3;
-    }
-
-    public void setIsoCode3(String isoCode3) {
-        this.isoCode3 = isoCode3;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public boolean isSupportMobileMessage() {
-        return supportMobileMessage;
-    }
-
-    public void setSupportMobileMessage(boolean supportMobileMessage) {
-        this.supportMobileMessage = supportMobileMessage;
-    }
-
-    public String getIconClass() {
-        return iconClass;
-    }
-
-    public void setIconClass(String iconClass) {
-        this.iconClass = iconClass;
-    }
-
-    public boolean isHotCountry() {
-        return hotCountry;
-    }
-
-    public void setHotCountry(boolean hotCountry) {
-        this.hotCountry = hotCountry;
-    }
-
-    public int getContinentCode() {
-        return continentCode;
-    }
-
-    public void setContinentCode(int continentCode) {
-        this.continentCode = continentCode;
-    }
-
-    public int getPriority() {
-        return priority;
-    }
-
-    public void setPriority(int priority) {
-        this.priority = priority;
     }
 }

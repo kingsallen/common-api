@@ -1,5 +1,7 @@
 package com.moseeker.vo.jooq.redis;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.ToString;
 
@@ -9,12 +11,17 @@ import lombok.ToString;
  **/
 @Data
 @ToString
+@ApiModel
 public class RedisVO {
-
+    @ApiModelProperty(name = "appId", value = "项目号", dataType = "Integer")
     private Integer appId;
+    @ApiModelProperty(name = "keyIdentifier", value = "key修饰符", dataType = "string")
     private String keyIdentifier;
+    @ApiModelProperty(name = "str", value = "key_pattern中的第一个%s", dataType = "string")
     private String str;
+    @ApiModelProperty(name = "str1", value = "key_pattern中的第二个%s", dataType = "string")
     private String str1;
+    @ApiModelProperty(name = "value", value = "value", dataType = "string")
     private String value;
 
     public RedisVO(Integer appId, String keyIdentifier, String str, String str1, String value) {

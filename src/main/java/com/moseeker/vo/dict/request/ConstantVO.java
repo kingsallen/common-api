@@ -1,12 +1,16 @@
 package com.moseeker.vo.dict.request;
 
 import com.moseeker.vo.dict.basic.DictConstantPO;
+import lombok.Data;
+import lombok.ToString;
 
 import java.util.List;
 
 /**
  * Created by jack on 2018/5/30.
  */
+@Data
+@ToString
 public class ConstantVO {
 
     private int code;
@@ -55,61 +59,5 @@ public class ConstantVO {
         int result = getCode();
         result = 31 * result + getParentCode();
         return result;
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPriority() {
-        return priority;
-    }
-
-    public void setPriority(int priority) {
-        this.priority = priority;
-    }
-
-    public int getParentCode() {
-        return parentCode;
-    }
-
-    public void setParentCode(int parentCode) {
-        this.parentCode = parentCode;
-    }
-
-    public long getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(long createTime) {
-        this.createTime = createTime;
-    }
-
-    public long getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(long updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public List<ConstantVO> getConstants() {
-        return constants;
-    }
-
-    public void setConstants(List<ConstantVO> constants) {
-        this.constants = constants;
     }
 }

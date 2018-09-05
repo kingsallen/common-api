@@ -46,4 +46,5 @@ public class MajorVO {
 
         return getCode().equals(major.getCode());
     }
+
 }

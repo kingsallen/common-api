@@ -1,10 +1,13 @@
 package com.moseeker.vo.dict.request;
 
 import com.moseeker.vo.dict.basic.DictPositionPO;
+import lombok.Data;
+import lombok.ToString;
 
 import java.util.List;
 
-
+@Data
+@ToString
 public class PositionVO {
 
     private int code;
@@ -44,43 +47,4 @@ public class PositionVO {
         return getCode();
     }
 
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getParent() {
-        return parent;
-    }
-
-    public void setParent(int parent) {
-        this.parent = parent;
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
-    public List<PositionVO> getPositions() {
-        return positions;
-    }
-
-    public void setPositions(List<PositionVO> positions) {
-        this.positions = positions;
-    }
 }

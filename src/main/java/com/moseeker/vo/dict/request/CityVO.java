@@ -4,6 +4,7 @@ import com.moseeker.vo.dict.basic.DictCityPO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.ToString;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  */
 @Data
 @ApiModel
+@ToString
 public class CityVO {
     @ApiModelProperty(value = "city_code", name = "code", dataType = "Integer")
     private Integer code;

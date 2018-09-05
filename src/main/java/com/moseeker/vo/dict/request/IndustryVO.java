@@ -24,12 +24,14 @@ public class IndustryVO {
 
     public void cloneFromIndustryType(DictIndustryPO dictIndustryPO, DictIndustryTypePO dictIndustryTypePO) {
         if (dictIndustryPO != null && dictIndustryTypePO != null) {
+            setCode(dictIndustryPO.getCode());
+            setName(dictIndustryPO.getName());
             setParentName(dictIndustryTypePO.getName());
             setCompanyImg(dictIndustryTypePO.getCompanyImg());
             setJobImg(dictIndustryTypePO.getJobImg());
             setTeamImg(dictIndustryTypePO.getTeamImg());
             setPcImg(dictIndustryTypePO.getPcImg());
-            setParentCode(dictIndustryPO.getCode());
+            setParentCode(dictIndustryPO.getType());
         }
     }
 
@@ -47,4 +49,9 @@ public class IndustryVO {
         return getCode().equals(industry.getCode());
     }
 
+
+    @Override
+    public int hashCode() {
+        return getCode();
+    }
 }
