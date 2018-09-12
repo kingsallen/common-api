@@ -1,5 +1,7 @@
 package com.moseeker.vo.company;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import java.util.List;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -9,6 +11,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@ApiModel(description = "公司信息")
 public class HrCompanyAddVO {
     private String code;
     private Integer   id;
@@ -31,6 +34,7 @@ public class HrCompanyAddVO {
     private String    slogan;
     private String    feature;
     private Byte      fortune;
+    @ApiModelProperty(value = "关联的hr编号列表")
     private List<Integer> hrs;
 
     public String getCode() {
