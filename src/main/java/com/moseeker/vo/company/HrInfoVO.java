@@ -2,18 +2,21 @@ package com.moseeker.vo.company;
 
 
 import com.moseeker.vo.company.basic.UserHrAccountVO;
+import com.moseeker.vo.user.basic.UserWxUserVO;
 
 /**
  * Created by moseeker on 2018/5/23.
  */
 public class HrInfoVO {
-    public UserHrAccountVO account;
-    public String nickname;
-    public String country;
-    public String province;
-    public int companyCreated;
-    public String headimgurl;
-    public String openid;
+    private UserHrAccountVO account;
+    private String nickname;
+    private String country;
+    private String province;
+    private int companyCreated;
+    private String headimgurl;
+    private String openid;
+    private UserWxUserVO wxUser;
+    private String signature;
 
     public UserHrAccountVO getAccount() {
         return account;
@@ -69,5 +72,21 @@ public class HrInfoVO {
 
     public void setOpenid(String openid) {
         this.openid = openid;
+    }
+
+    public UserWxUserVO getWxUser() {
+        return wxUser;
+    }
+
+    public void setWxUser(UserWxUserVO wxUser) {
+        this.wxUser = wxUser;
+    }
+
+    public String getSignature() {
+        return signature;
+    }
+
+    public void setSignature(String signature) {
+        this.signature = signature;
     }
 }
