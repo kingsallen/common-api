@@ -34,6 +34,24 @@ public class IndustryVO {
             setParentCode(dictIndustryPO.getType());
         }
     }
+    /**
+     * 获取一级行业类型
+     * @param   dictIndustryTypePO 行业类型po
+     * @author  cjm
+     * @date  2018/9/12
+     */
+    public void cloneFromIndustryType(DictIndustryTypePO dictIndustryTypePO) {
+        if (dictIndustryTypePO != null) {
+            setCode(dictIndustryTypePO.getCode());
+            setName(dictIndustryTypePO.getName());
+            setParentName("");
+            setCompanyImg(dictIndustryTypePO.getCompanyImg());
+            setJobImg(dictIndustryTypePO.getJobImg());
+            setTeamImg(dictIndustryTypePO.getTeamImg());
+            setPcImg(dictIndustryTypePO.getPcImg());
+            setParentCode(0);
+        }
+    }
 
     @Override
     public boolean equals(Object o) {

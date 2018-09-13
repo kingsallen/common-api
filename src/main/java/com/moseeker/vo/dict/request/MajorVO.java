@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author cjm
@@ -47,4 +48,8 @@ public class MajorVO {
         return getCode().equals(major.getCode());
     }
 
+    @Override
+    public int hashCode() {
+        return Integer.parseInt(getCode());
+    }
 }
