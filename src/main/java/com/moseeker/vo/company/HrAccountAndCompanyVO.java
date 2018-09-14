@@ -27,9 +27,9 @@ public class HrAccountAndCompanyVO {
     private Integer   accountType;
     @ApiModelProperty(value = "子账号邀请使用，账号是否激活，1：激活；0：未激活")
     private Byte      activation;
-    private Timestamp registerTime;
+    private String registerTime;
     private String    registerIp;
-    private Timestamp lastLoginTime;
+    private String lastLoginTime;
     private String    lastLoginIp;
     private Integer   loginCount;
     @ApiModelProperty(value = "hr来源1:雇主 2:官网 3:微信扫描 4:我也要招人(聚合号) 5:我也要招人(企业号) 6:我也要招人(手机官网)")
@@ -151,11 +151,11 @@ public class HrAccountAndCompanyVO {
         this.activation = activation;
     }
 
-    public Timestamp getRegisterTime() {
+    public String getRegisterTime() {
         return registerTime;
     }
 
-    public void setRegisterTime(Timestamp registerTime) {
+    public void setRegisterTime(String registerTime) {
         this.registerTime = registerTime;
     }
 
@@ -167,11 +167,11 @@ public class HrAccountAndCompanyVO {
         this.registerIp = registerIp;
     }
 
-    public Timestamp getLastLoginTime() {
+    public String getLastLoginTime() {
         return lastLoginTime;
     }
 
-    public void setLastLoginTime(Timestamp lastLoginTime) {
+    public void setLastLoginTime(String lastLoginTime) {
         this.lastLoginTime = lastLoginTime;
     }
 
