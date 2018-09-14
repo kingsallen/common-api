@@ -1,19 +1,16 @@
 package com.moseeker.vo.dict.request;
 
-import com.moseeker.vo.dict.basic.DictMajorPO;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
-
 import java.util.List;
-import java.util.Objects;
+
+import com.moseeker.vo.dict.basic.DictMajorPO;
+
+import lombok.Data;
 
 /**
  * @author cjm
  * @date 2018/09/03
  */
 @Data
-@ToString
 public class MajorVO {
 
     private String code;

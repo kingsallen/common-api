@@ -1,8 +1,9 @@
 package com.moseeker.vo.company;
 
+import java.util.List;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.util.List;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -21,28 +22,4 @@ public class ConfigThemeReqVO {
     @ApiModelProperty(value = "表示是否可以开启企业自定义颜色配置 0是否 1是开启 (用于 修改公司的自定义颜色配置开关接口)")
     private Integer status;
 
-
-    public Integer getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Integer companyId) {
-        this.companyId = companyId;
-    }
-
-    public List<ColorDataVO> getDataList() {
-        return dataList;
-    }
-
-    public void setDataList(List<ColorDataVO> dataList) {
-        this.dataList = dataList;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
 }
