@@ -51,6 +51,7 @@ public class UserHrAccountVO {
     private Timestamp createTime;
     private Timestamp updateTime;
     private String    headimgurl;
+    private String    remarkName;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -214,5 +215,13 @@ public class UserHrAccountVO {
 
     public void setHeadimgurl(String headimgurl) {
         this.headimgurl = headimgurl;
+    }
+
+    public String getRemarkName() {
+        return remarkName;
+    }
+
+    public void setRemarkName(String remarkName) {
+        this.remarkName = remarkName;
     }
 }
