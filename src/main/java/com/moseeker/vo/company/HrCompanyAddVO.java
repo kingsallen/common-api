@@ -1,8 +1,9 @@
 package com.moseeker.vo.company;
 
+import java.util.List;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.util.List;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

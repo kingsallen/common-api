@@ -3,6 +3,7 @@ package com.moseeker.vo.company;
 
 import com.moseeker.vo.company.basic.HrNpsRecommendVO;
 import com.moseeker.vo.company.basic.HrNpsVO;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,8 +13,8 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class HrNpsResultVO {
+	
     private HrNpsVO hrNps;
     private HrNpsRecommendVO hrNpsRecommend;
-
 
 }

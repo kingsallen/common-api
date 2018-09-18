@@ -1,6 +1,5 @@
 package com.moseeker.vo.company;
 
-
 import com.moseeker.vo.company.basic.UserHrAccountVO;
 import com.moseeker.vo.user.basic.UserWxUserVO;
 import lombok.Data;

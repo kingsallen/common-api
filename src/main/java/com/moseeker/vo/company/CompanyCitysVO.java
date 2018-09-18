@@ -1,6 +1,7 @@
 package com.moseeker.vo.company;
 
 import java.util.Set;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -10,6 +11,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class CompanyCitysVO {
+	
     private Integer companyId;
     private Set<String> citys;
 

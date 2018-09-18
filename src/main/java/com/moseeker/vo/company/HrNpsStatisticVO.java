@@ -1,6 +1,7 @@
 package com.moseeker.vo.company;
 
 import java.util.List;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -10,10 +11,10 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class HrNpsStatisticVO {
+	
     private int total;
     private int page;
     private int pageSize;
     private List<HrNpsInfoVO> data;
-
 
 }

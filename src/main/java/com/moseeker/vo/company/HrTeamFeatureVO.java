@@ -1,8 +1,10 @@
 package com.moseeker.vo.company;
 
 
-import com.moseeker.vo.company.basic.HrTeamVO;
 import java.util.List;
+
+import com.moseeker.vo.company.basic.HrTeamVO;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,6 +14,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class HrTeamFeatureVO {
+	
     private HrTeamVO hrTeam;
     private String  resType;
     private String teamImageLink;

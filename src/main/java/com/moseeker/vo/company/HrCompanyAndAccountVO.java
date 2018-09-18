@@ -1,9 +1,10 @@
 package com.moseeker.vo.company;
 
-import com.moseeker.vo.company.basic.UserHrAccountVO;
-import io.swagger.annotations.ApiModelProperty;
-import java.sql.Timestamp;
 import java.util.List;
+
+import com.moseeker.vo.company.basic.UserHrAccountVO;
+
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -14,6 +15,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class HrCompanyAndAccountVO {
+	
     private Integer   id;
     private Byte      type;
     private String    name;
@@ -43,6 +45,5 @@ public class HrCompanyAndAccountVO {
     @ApiModelProperty(value = "是否世界500强，0：不是 1：是")
     private Byte      fortune;
     private List<UserHrAccountVO> hrs;
-
 
 }

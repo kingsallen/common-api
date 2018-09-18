@@ -9,6 +9,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class HrNpsInfoVO {
+	
     private int id;
     private String date;
     private int hrAccountId;
