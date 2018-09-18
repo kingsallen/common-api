@@ -22,21 +22,5 @@ public class JobPositionTopicVO implements Serializable {
     private Integer topicId;
 
 
-    public Integer getPositionId() {
-        return this.positionId;
-    }
-
-    public void setPositionId(Integer positionId) {
-        this.positionId = positionId;
-    }
-
-    public Integer getTopicId() {
-        return this.topicId;
-    }
-
-    public void setTopicId(Integer topicId) {
-        this.topicId = topicId;
-    }
-
 
 }

@@ -15,27 +15,4 @@ public class HrTeamInfoVO {
     private Integer hasPic;
     private List<HrTeamPositionDetailVO> teamPosition;
 
-    public Integer getTeamNum() {
-        return teamNum;
-    }
-
-    public void setTeamNum(Integer teamNum) {
-        this.teamNum = teamNum;
-    }
-
-    public Integer getHasPic() {
-        return hasPic;
-    }
-
-    public void setHasPic(Integer hasPic) {
-        this.hasPic = hasPic;
-    }
-
-    public List<HrTeamPositionDetailVO> getTeamPosition() {
-        return teamPosition;
-    }
-
-    public void setTeamPosition(List<HrTeamPositionDetailVO> teamPosition) {
-        this.teamPosition = teamPosition;
-    }
 }

@@ -20,43 +20,4 @@ public class TeamDetailVO {
     private List<HrTeamPositionDetailVO> teamList;
     private Set<String> positionCity;
 
-    public HrCompanyVO getCompany() {
-        return company;
-    }
-
-    public void setCompany(HrCompanyVO company) {
-        this.company = company;
-    }
-
-    public Integer getNewJD() {
-        return newJD;
-    }
-
-    public void setNewJD(Integer newJD) {
-        this.newJD = newJD;
-    }
-
-    public HrTeamPositionDetailVO getTeamInfo() {
-        return teamInfo;
-    }
-
-    public void setTeamInfo(HrTeamPositionDetailVO teamInfo) {
-        this.teamInfo = teamInfo;
-    }
-
-    public List<HrTeamPositionDetailVO> getTeamList() {
-        return teamList;
-    }
-
-    public void setTeamList(List<HrTeamPositionDetailVO> teamList) {
-        this.teamList = teamList;
-    }
-
-    public Set<String> getPositionCity() {
-        return positionCity;
-    }
-
-    public void setPositionCity(Set<String> positionCity) {
-        this.positionCity = positionCity;
-    }
 }

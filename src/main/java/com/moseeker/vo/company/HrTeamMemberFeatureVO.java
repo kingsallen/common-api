@@ -15,27 +15,4 @@ public class HrTeamMemberFeatureVO {
     private String imageLink;
     private String  resType;
 
-    public String getImageLink() {
-        return imageLink;
-    }
-
-    public void setImageLink(String imageLink) {
-        this.imageLink = imageLink;
-    }
-
-    public HrTeamMemberVO getTeamMember() {
-        return teamMember;
-    }
-
-    public void setTeamMember(HrTeamMemberVO teamMember) {
-        this.teamMember = teamMember;
-    }
-
-    public String getResType() {
-        return resType;
-    }
-
-    public void setResType(String resType) {
-        this.resType = resType;
-    }
 }

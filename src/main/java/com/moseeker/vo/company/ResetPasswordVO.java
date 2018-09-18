@@ -20,35 +20,4 @@ public class ResetPasswordVO {
     private String password;
     private Integer companyId;
 
-    public Integer getAccountId() {
-        return accountId;
-    }
-
-    public void setAccountId(Integer accountId) {
-        this.accountId = accountId;
-    }
-
-    public String getOriginPassword() {
-        return originPassword;
-    }
-
-    public void setOriginPassword(String originPassword) {
-        this.originPassword = originPassword;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Integer getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Integer companyId) {
-        this.companyId = companyId;
-    }
 }

@@ -20,27 +20,4 @@ public class ReplyWelcomeUpdateReqVO {
     @ApiModelProperty(value = "公众号变阿豪", required = true)
     private Integer wechatId;
 
-    public Integer getRid() {
-        return rid;
-    }
-
-    public void setRid(Integer rid) {
-        this.rid = rid;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public Integer getWechatId() {
-        return wechatId;
-    }
-
-    public void setWechatId(Integer wechatId) {
-        this.wechatId = wechatId;
-    }
 }

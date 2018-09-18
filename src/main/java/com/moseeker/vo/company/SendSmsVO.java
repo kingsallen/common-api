@@ -3,10 +3,14 @@ package com.moseeker.vo.company;
 
 import com.moseeker.util.SmsType;
 import java.util.Map;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Created by moseeker on 2018/5/16.
  */
+@Data
+@EqualsAndHashCode(callSuper = false)
 public class SendSmsVO {
     private SmsType smsType;
     private String mobile;
@@ -22,23 +26,7 @@ public class SendSmsVO {
         this.ip = ip;
     }
 
-    public SmsType getSmsType() {
-        return smsType;
-    }
+    public SendSmsVO(){
 
-    public String getMobile() {
-        return mobile;
-    }
-
-    public Map<String, String> getParams() {
-        return params;
-    }
-
-    public String getSys() {
-        return sys;
-    }
-
-    public String getIp() {
-        return ip;
     }
 }

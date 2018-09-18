@@ -1,25 +1,15 @@
 package com.moseeker.vo.company;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 /**
  * Created by moseeker on 2018/6/19.
  */
+@Data
+@EqualsAndHashCode(callSuper = false)
 public class SubAccountVO {
     private boolean addAccountStatus;
     private Integer accountLimit;
 
-    public boolean isAddAccountStatus() {
-        return addAccountStatus;
-    }
-
-    public void setAddAccountStatus(boolean addAccountStatus) {
-        this.addAccountStatus = addAccountStatus;
-    }
-
-    public Integer getAccountLimit() {
-        return accountLimit;
-    }
-
-    public void setAccountLimit(Integer accountLimit) {
-        this.accountLimit = accountLimit;
-    }
 }

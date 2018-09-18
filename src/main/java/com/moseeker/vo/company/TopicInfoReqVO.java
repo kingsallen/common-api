@@ -20,19 +20,4 @@ public class TopicInfoReqVO {
     @ApiModelProperty(value = "参加主题活动的职位编号")
     private List<Integer> positions;
 
-    public HrTopicVO getTopicVO() {
-        return topicVO;
-    }
-
-    public void setTopicVO(HrTopicVO topicVO) {
-        this.topicVO = topicVO;
-    }
-
-    public List<Integer> getPositions() {
-        return positions;
-    }
-
-    public void setPositions(List<Integer> positions) {
-        this.positions = positions;
-    }
 }

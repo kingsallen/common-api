@@ -15,19 +15,5 @@ public class HrNpsResultVO {
     private HrNpsVO hrNps;
     private HrNpsRecommendVO hrNpsRecommend;
 
-    public HrNpsVO getHrNps() {
-        return hrNps;
-    }
 
-    public void setHrNps(HrNpsVO hrNps) {
-        this.hrNps = hrNps;
-    }
-
-    public HrNpsRecommendVO getHrNpsRecommend() {
-        return hrNpsRecommend;
-    }
-
-    public void setHrNpsRecommend(HrNpsRecommendVO hrNpsRecommend) {
-        this.hrNpsRecommend = hrNpsRecommend;
-    }
 }

@@ -14,27 +14,4 @@ public class ThemeColorVO {
     private boolean customrized;
     private Integer selectedId;
 
-    public List<ColorDataVO> getColorList() {
-        return colorList;
-    }
-
-    public void setColorList(List<ColorDataVO> colorList) {
-        this.colorList = colorList;
-    }
-
-    public boolean isCustomrized() {
-        return customrized;
-    }
-
-    public void setCustomrized(boolean customrized) {
-        this.customrized = customrized;
-    }
-
-    public Integer getSelectedId() {
-        return selectedId;
-    }
-
-    public void setSelectedId(Integer selectedId) {
-        this.selectedId = selectedId;
-    }
 }

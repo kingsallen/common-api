@@ -20,27 +20,4 @@ public class HrWxLoginReqVO {
     @ApiModelProperty(value = "登录ip", required = true)
     private String lastLoginIp;
 
-    public String getUnionid() {
-        return unionid;
-    }
-
-    public void setUnionid(String unionid) {
-        this.unionid = unionid;
-    }
-
-    public Integer getWechatId() {
-        return wechatId;
-    }
-
-    public void setWechatId(Integer wechatId) {
-        this.wechatId = wechatId;
-    }
-
-    public String getLastLoginIp() {
-        return lastLoginIp;
-    }
-
-    public void setLastLoginIp(String lastLoginIp) {
-        this.lastLoginIp = lastLoginIp;
-    }
 }

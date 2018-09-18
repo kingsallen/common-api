@@ -15,27 +15,4 @@ public class ColorDataVO {
     private List<String> colors;
     private Integer type;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public List<String> getColors() {
-        return colors;
-    }
-
-    public void setColors(List<String> colors) {
-        this.colors = colors;
-    }
-
-    public Integer getType() {
-        return type;
-    }
-
-    public void setType(Integer type) {
-        this.type = type;
-    }
 }

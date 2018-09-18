@@ -20,27 +20,5 @@ public class WeChatUnauthorizedReqVO {
     @ApiModelProperty(value = "解除授权的时间戳")
     private Integer unauthorizedTime;
 
-    public String getAppid() {
-        return appid;
-    }
 
-    public void setAppid(String appid) {
-        this.appid = appid;
-    }
-
-    public Byte getAuthorized() {
-        return authorized;
-    }
-
-    public void setAuthorized(Byte authorized) {
-        this.authorized = authorized;
-    }
-
-    public Integer getUnauthorizedTime() {
-        return unauthorizedTime;
-    }
-
-    public void setUnauthorizedTime(Integer unauthorizedTime) {
-        this.unauthorizedTime = unauthorizedTime;
-    }
 }

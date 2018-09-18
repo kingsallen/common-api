@@ -29,36 +29,4 @@ public class HrWxRuleReqVO {
     @ApiModelProperty(value = "图文回复信息（专用）")
     private List<HrWxNewsReplyVO> newsReplys;
 
-
-    public HrWxRuleVO getRule() {
-        return rule;
-    }
-
-    public void setRule(HrWxRuleVO rule) {
-        this.rule = rule;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public List<HrWxNewsReplyVO> getNewsReplys() {
-        return newsReplys;
-    }
-
-    public void setNewsReplys(List<HrWxNewsReplyVO> newsReplys) {
-        this.newsReplys = newsReplys;
-    }
 }

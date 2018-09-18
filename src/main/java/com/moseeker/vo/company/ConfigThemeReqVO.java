@@ -22,27 +22,4 @@ public class ConfigThemeReqVO {
     private Integer status;
 
 
-    public Integer getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Integer companyId) {
-        this.companyId = companyId;
-    }
-
-    public List<ColorDataVO> getDataList() {
-        return dataList;
-    }
-
-    public void setDataList(List<ColorDataVO> dataList) {
-        this.dataList = dataList;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
 }

@@ -15,19 +15,4 @@ public class HrTeamMemberResourceVO {
     private HrTeamMemberVO memberInfo;
     private HrResourceVO memberPic;
 
-    public HrTeamMemberVO getMemberInfo() {
-        return memberInfo;
-    }
-
-    public void setMemberInfo(HrTeamMemberVO memberInfo) {
-        this.memberInfo = memberInfo;
-    }
-
-    public HrResourceVO getMemberPic() {
-        return memberPic;
-    }
-
-    public void setMemberPic(HrResourceVO memberPic) {
-        this.memberPic = memberPic;
-    }
 }

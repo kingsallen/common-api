@@ -17,35 +17,4 @@ public class HrTeamFeatureVO {
     private String teamImageLink;
     private List<HrTeamMemberFeatureVO> memberList;
 
-    public HrTeamVO getHrTeam() {
-        return hrTeam;
-    }
-
-    public void setHrTeam(HrTeamVO hrTeam) {
-        this.hrTeam = hrTeam;
-    }
-
-    public String getTeamImageLink() {
-        return teamImageLink;
-    }
-
-    public void setTeamImageLink(String teamImageLink) {
-        this.teamImageLink = teamImageLink;
-    }
-
-    public List<HrTeamMemberFeatureVO> getMemberList() {
-        return memberList;
-    }
-
-    public void setMemberList(List<HrTeamMemberFeatureVO> memberList) {
-        this.memberList = memberList;
-    }
-
-    public String getResType() {
-        return resType;
-    }
-
-    public void setResType(String resType) {
-        this.resType = resType;
-    }
 }

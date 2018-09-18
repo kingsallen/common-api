@@ -29,47 +29,4 @@ public class HrWxWechatNoticeSyncStatusVO {
     private Integer   count;
     private Timestamp updateTime;
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getWechatId() {
-        return wechatId;
-    }
-
-    public void setWechatId(Integer wechatId) {
-        this.wechatId = wechatId;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
-    }
-
-    public Timestamp getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Timestamp updateTime) {
-        this.updateTime = updateTime;
-    }
 }
