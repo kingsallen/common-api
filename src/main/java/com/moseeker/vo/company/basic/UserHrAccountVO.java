@@ -51,6 +51,8 @@ public class UserHrAccountVO {
     private Timestamp createTime;
     private Timestamp updateTime;
     private String    headimgurl;
+    @ApiModelProperty(value = "HR聊天是否托管给智能招聘助手，0 不托管，1 托管")
+    private Integer   leaveToMobot;
     private String    remarkName;
 
 }
