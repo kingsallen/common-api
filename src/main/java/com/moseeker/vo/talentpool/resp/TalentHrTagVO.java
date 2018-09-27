@@ -1,5 +1,6 @@
 package com.moseeker.vo.talentpool.resp;
 
+import java.util.List;
 import java.util.Set;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -12,5 +13,5 @@ import lombok.EqualsAndHashCode;
 public class TalentHrTagVO {
 
     private Set<Integer> nopower;
-    private UserTagVO use;
+    private List<UserTagVO> use;
 }

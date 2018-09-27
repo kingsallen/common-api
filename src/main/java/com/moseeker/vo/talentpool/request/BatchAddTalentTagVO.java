@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@ApiModel(description = "批量添加标签")
+@ApiModel(description = "hr标签")
 public class BatchAddTalentTagVO extends BaseVO {
 
     @ApiModelProperty(value = "用户的编号的集合")
