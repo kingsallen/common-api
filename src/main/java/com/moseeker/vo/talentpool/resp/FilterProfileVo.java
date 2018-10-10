@@ -17,4 +17,7 @@ public class FilterProfileVo {
     private boolean enable;
     @ApiModelProperty(value = "上一次发送时间")
     private String lastSendTime;
+    @ApiModelProperty(value = "是否存在初审通过的筛选规则")
+    private boolean isFilter = false;
+
 }

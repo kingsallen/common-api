@@ -12,4 +12,6 @@ public class SearchCompanyTagUserCountVO extends TalentpoolCompanyTagVO {
     private Integer size;
     private Integer from;
     private Integer userId;
+    private Integer pageSize;
+    private Integer pageNumber;
 }

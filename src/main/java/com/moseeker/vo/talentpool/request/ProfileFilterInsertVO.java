@@ -14,7 +14,7 @@ import lombok.Data;
 public class ProfileFilterInsertVO  {
 
     @ApiModelProperty(value = "1有效，0删除，2关闭")
-    private TalentpoolCompanyTagVO companyTagVO;
+    private TalentpoolFilterTagVO filterTagVO;
     @ApiModelProperty(value = "企业筛选规则编号")
     private List<ActionFormVO> actionForm;
     @ApiModelProperty(value = "关联到的职位编号")
