@@ -21,7 +21,7 @@ import lombok.EqualsAndHashCode;
 public class HrWxRuleReqVO {
 
     @ApiModelProperty(value = "微信回复规则")
-    private HrWxRuleVO rule;
+    private WxRuleVO rule;
     @ApiModelProperty(value = "文本回复信息（专用）")
     private String  content;
     @ApiModelProperty(value = "图片回复信息（专用）")
