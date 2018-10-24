@@ -22,6 +22,7 @@ public class TalentpoolTagVO {
     private Integer   id;
     @ApiModelProperty(value = "hr标签名称")
     private String    name;
+    @ApiModelProperty(value = "hr标签ID")
     private Integer   hrId;
     @ApiModelProperty(value = "人才数量")
     private Integer   talentNum;

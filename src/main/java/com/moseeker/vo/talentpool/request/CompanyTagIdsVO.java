@@ -1,6 +1,8 @@
 package com.moseeker.vo.talentpool.request;
 
 import java.util.List;
+
+import io.swagger.annotations.ApiParam;
 import lombok.Data;
 
 /**
