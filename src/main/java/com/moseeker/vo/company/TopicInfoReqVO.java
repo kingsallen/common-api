@@ -16,7 +16,7 @@ import lombok.EqualsAndHashCode;
 public class TopicInfoReqVO {
 
     @ApiModelProperty(value = "公司活动主题", required = true)
-    private HrTopicVO topicVO;
+    private HrTopicVO topicVo;
     @ApiModelProperty(value = "参加主题活动的职位编号")
     private List<Integer> positions;
 
