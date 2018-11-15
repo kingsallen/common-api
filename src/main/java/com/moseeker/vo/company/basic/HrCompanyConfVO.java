@@ -6,9 +6,10 @@ package com.moseeker.vo.company.basic;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.sql.Timestamp;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.sql.Timestamp;
 
 
 /**
@@ -17,7 +18,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @ApiModel(description = "公司配置信息")
-public class HrCompanyConfVO  {
+public class HrCompanyConfVO {
 
     private static final long serialVersionUID = 149409684;
 

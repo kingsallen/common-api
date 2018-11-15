@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class HrCompanyAccountVO  {
+public class HrCompanyAccountVO {
 
     private Integer companyId;
     private Integer accountId;

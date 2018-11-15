@@ -4,12 +4,12 @@
 package com.moseeker.vo.company.basic;
 
 
-import java.sql.Timestamp;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.sql.Timestamp;
 
 
 /**
