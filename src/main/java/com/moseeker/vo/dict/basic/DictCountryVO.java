@@ -13,6 +13,7 @@ import java.io.Serializable;
 @Data
 public class DictCountryVO implements Serializable {
 
+    private static final long serialVersionUID = -8871792540013756948L;
     public Integer id;
     public String  name;
     public String  ename;
