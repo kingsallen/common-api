@@ -4,6 +4,7 @@
 package com.moseeker.vo.company.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -66,7 +67,9 @@ public class HrWxWechatVO {
     private Integer   unauthorizedTime;
     @ApiModelProperty(value = "第三方授权的刷新token，用来刷access_token")
     private String    authorizerRefreshToken;
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Timestamp createTime;
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "显示仟寻聚合号二维码, 0:不允许，1:允许")
     private Integer   showQxQrcode;
