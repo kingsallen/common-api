@@ -8,7 +8,7 @@ import java.sql.Timestamp;
  * Created by zztaiwll on 18/9/20.
  */
 @Data
-public class JobApplicationVo {
+public class JobApplicationVO {
     private Integer   id;
     private Integer   wechatId;
     private Integer   positionId;
