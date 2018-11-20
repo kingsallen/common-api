@@ -1,6 +1,7 @@
 package com.moseeker.vo.dict.request;
 
 import com.moseeker.vo.dict.basic.DictCityPO;
+import com.moseeker.vo.dict.response.DictCityVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
