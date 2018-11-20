@@ -1,4 +1,4 @@
-package com.moseeker.vo.dict.response;
+package com.moseeker.vo.dict.basic;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
