@@ -5,6 +5,7 @@ package com.moseeker.vo.dict.basic;
 
 
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -17,10 +18,15 @@ public class DictCollegeVO implements Serializable {
 
     private static final long serialVersionUID = -5091487502336372827L;
 
+    @ApiModelProperty(name = "code", value = "院校code", dataType = "Integer")
     private Integer code;
+    @ApiModelProperty(name = "name", value = "院校名字", dataType = "string")
     private String  name;
+    @ApiModelProperty(name = "province", value = "院校省份", dataType = "Integer")
     private Integer province;
+    @ApiModelProperty(name = "logo", value = "院校logo", dataType = "string")
     private String  logo;
+    @ApiModelProperty(name = "countryCode", value = "院校所属国家code", dataType = "Integer")
     private Integer countryCode;
 
 

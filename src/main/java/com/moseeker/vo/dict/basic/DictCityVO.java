@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by zztaiwll on 18/8/15.
@@ -14,18 +15,18 @@ import java.io.Serializable;
 public class DictCityVO implements Serializable {
 
     private static final long serialVersionUID = 786604284;
-    @ApiModelProperty(value ="字典code",required = false)
+    @ApiModelProperty(value = "city_code", name = "code", dataType = "Integer")
     private Integer code;
-    @ApiModelProperty(value ="字典name",required = false)
-    private String  name;
-    @ApiModelProperty(value ="字典level",required = false)
-    private Integer     level;
-    @ApiModelProperty(value ="热门城市 0:否 1：是",required = false)
-    private Integer     hotCity;
-    @ApiModelProperty(value ="英文名称",required = false)
-    private String  ename;
-    @ApiModelProperty(value ="正在使用 0:没在用 1:在使用",required = false)
-    private Integer     isUsing;
+    @ApiModelProperty(value = "city_name", name = "name", dataType = "string")
+    private String name;
+    @ApiModelProperty(value = "city_level", name = "level", dataType = "Integer")
+    private Integer level;
+    @ApiModelProperty(value = "is_hot_city", name = "hotCity", dataType = "Boolean")
+    private Boolean hotCity;
+    @ApiModelProperty(value = "英语城市名", name = "ename", dataType = "string")
+    private String ename;
+    @ApiModelProperty(value = "is_using 0:没在用 1:在使用", name = "active", dataType = "Boolean")
+    private Boolean active;
 
-
+    private List<DictCityVO> cities;
 }
