@@ -3,6 +3,7 @@ package com.moseeker.vo.position.basic;
 import java.sql.Timestamp;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 /**
@@ -18,7 +19,9 @@ public class JobPositionVO {
     private String    city;
     private String    department;
     private Integer   lJobid;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp publishDate;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp stopDate;
     private String    accountabilities;
     private String    experience;
@@ -30,6 +33,7 @@ public class JobPositionVO {
     private Integer   visitnum;
     private String    lastvisit;
     private Integer   sourceId;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     private String    businessGroup;
     private Byte      employmentType;

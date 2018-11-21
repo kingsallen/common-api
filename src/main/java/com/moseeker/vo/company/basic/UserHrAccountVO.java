@@ -4,6 +4,7 @@
 package com.moseeker.vo.company.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -37,10 +38,12 @@ public class UserHrAccountVO {
     @ApiModelProperty(value = "1表示可用，0表示不可用")
     private Integer   disable;
     @ApiModelProperty(value = "注册时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp registerTime;
     @ApiModelProperty(value = "注册IP")
     private String    registerIp;
     @ApiModelProperty(value = "最后的登录时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp lastLoginTime;
     @ApiModelProperty(value = "最后一次登录的IP")
     private String    lastLoginIp;
@@ -49,7 +52,9 @@ public class UserHrAccountVO {
     private Integer   source;
     @ApiModelProperty(value = "下载行业报告校验码")
     private String    downloadToken;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     private String    headimgurl;
     @ApiModelProperty(value = "HR聊天是否托管给智能招聘助手，0 不托管，1 托管")

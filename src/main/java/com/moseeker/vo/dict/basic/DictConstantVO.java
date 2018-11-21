@@ -1,5 +1,6 @@
 package com.moseeker.vo.dict.basic;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -24,7 +25,9 @@ public class DictConstantVO implements Serializable {
     private Byte      priority;
     @ApiModelProperty(value = "父级字典code",required = false)
     private Integer       parentCode;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 
 

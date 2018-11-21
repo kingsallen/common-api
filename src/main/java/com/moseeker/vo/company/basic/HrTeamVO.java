@@ -4,6 +4,7 @@
 package com.moseeker.vo.company.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -32,7 +33,9 @@ public class HrTeamVO {
     @ApiModelProperty(value = "成员一天信息hr_media.id: [1, 23, 32]")
     private String    jdMedia;
     private Integer   companyId;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "当前团队在列表等处是否显示, 0:不显示, 1:显示")
     private Integer   isShow;

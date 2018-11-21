@@ -4,6 +4,8 @@
 package com.moseeker.vo.profile.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.annotation.Generated;
 import java.io.Serializable;
 import java.sql.Date;
@@ -42,7 +44,9 @@ public class ProfileProjectexpVO implements Serializable {
     private String    responsibility;
     private String    achievement;
     private String    member;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 
     public ProfileProjectexpVO() {}
