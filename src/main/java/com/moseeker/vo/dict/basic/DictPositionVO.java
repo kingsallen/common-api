@@ -22,10 +22,9 @@ import java.io.Serializable;
 public class DictPositionVO implements Serializable {
 
     private static final long serialVersionUID = 4918810549551173937L;
-    private Integer code;
-    private String  name;
-    private Integer parent;
-    private Byte    level;
-
+    private int code;
+    private String name;
+    private int parent;
+    private int level;
 
 }

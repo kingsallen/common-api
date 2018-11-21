@@ -7,6 +7,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * Created by zztaiwll on 18/5/18.
@@ -22,13 +23,14 @@ public class DictConstantVO implements Serializable {
     @ApiModelProperty(value = "字典name",required = false)
     private String    name;
     @ApiModelProperty(value = "优先级",required = false)
-    private Byte      priority;
+    private Integer priority;
     @ApiModelProperty(value = "父级字典code",required = false)
-    private Integer       parentCode;
+    private Integer parentCode;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 
+    private List<DictConstantVO> constants;
 
 }

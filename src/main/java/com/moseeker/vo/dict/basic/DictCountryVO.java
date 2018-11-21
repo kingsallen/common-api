@@ -1,6 +1,7 @@
 package com.moseeker.vo.dict.basic;
 
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -14,16 +15,23 @@ import java.io.Serializable;
 public class DictCountryVO implements Serializable {
 
     private static final long serialVersionUID = -8871792540013756948L;
-    public Integer id;
-    public String  name;
-    public String  ename;
-    public String  isoCode_2;
-    public String  isoCode_3;
-    public String  code;
-    public Byte    smsEnabled;
-    public String  iconClass;
-    public Byte    hotCountry;
-    public Integer continentCode;
-    public Short   priority;
+    private Integer id;
+    @ApiModelProperty(name = "name", value = "国家名称", dataType = "string")
+    private String name;
+    @ApiModelProperty(name = "ename", value = "国家英语名称", dataType = "string")
+    private String ename;
+    private String isoCode2;
+    private String isoCode3;
+    @ApiModelProperty(name = "code", value = "国家code", dataType = "string")
+    private String code;
+    private Boolean supportMobileMessage;
+    @ApiModelProperty(name = "iconClass", value = "国旗样式", dataType = "string")
+    private String iconClass;
+    @ApiModelProperty(name = "hotCountry", value = "热门国家", dataType = "boolean")
+    private Boolean hotCountry;
+    @ApiModelProperty(name = "continentCode", value = "7大洲code", dataType = "Integer")
+    private Integer continentCode;
+    @ApiModelProperty(name = "priority", value = "优先级", dataType = "Integer")
+    private Integer priority;
 
 }
