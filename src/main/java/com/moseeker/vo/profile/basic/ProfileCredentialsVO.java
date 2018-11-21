@@ -4,6 +4,8 @@
 package com.moseeker.vo.profile.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.annotation.Generated;
 import java.io.Serializable;
 import java.sql.Date;
@@ -33,7 +35,9 @@ public class ProfileCredentialsVO implements Serializable {
     private String    url;
     private Date      getDate;
     private String    score;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 
     public ProfileCredentialsVO() {}

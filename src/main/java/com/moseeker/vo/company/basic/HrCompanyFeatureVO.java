@@ -4,6 +4,7 @@
 package com.moseeker.vo.company.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -24,7 +25,9 @@ public class HrCompanyFeatureVO {
     private Integer   companyId;
     @ApiModelProperty(value = "福利特色内容")
     private String    feature;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "0:无效 1:有效")
     private Integer   disable;

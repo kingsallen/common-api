@@ -1,5 +1,6 @@
 package com.moseeker.vo.company.basic;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -42,16 +43,21 @@ public class UserEmployeeVO implements Serializable
     private String    idcard;
     private String    mobile;
     private Integer   award;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp bindingTime;
     private String    email;
     private Byte      activation;
     private String    activationCode;
     private Byte      disable;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     private Byte      authLevel;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp registerTime;
     private String    registerIp;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp lastLoginTime;
     private String    lastLoginIp;
     private Long      loginCount;

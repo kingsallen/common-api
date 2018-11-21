@@ -4,6 +4,7 @@
 package com.moseeker.vo.company.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -30,8 +31,10 @@ public class HrCompanyConfVO {
     @ApiModelProperty(value = "申请提交成功回复信息")
     private String    appReply;
     @ApiModelProperty(value = "创建时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
     @ApiModelProperty(value = "更新时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "员工认证自定义文案")
     private String    employeeBinding;
@@ -56,6 +59,7 @@ public class HrCompanyConfVO {
     @ApiModelProperty(value = "自定义部门别名")
     private String    teamnameCustom;
     @ApiModelProperty(value = "newjd_status即新的jd页的生效时间，")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp applicationTime;
     @ApiModelProperty(value = "新jd页去设置状态0是为开启，1是用户开启，2是审核通过（使用新jd），3撤销（返回基础版） 默认是0")
     private Integer   newjdStatus;
