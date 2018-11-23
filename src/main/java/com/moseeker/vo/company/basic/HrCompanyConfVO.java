@@ -71,8 +71,10 @@ public class HrCompanyConfVO {
     private String    employeeSlug;
     @ApiModelProperty(value = "人才库状态表 0未开启，1开启普通人才库，2开启高端人才库")
     private Byte      talentpoolStatus;
-    @ApiModelProperty(value = "51薪资面议开关 0：未开启，1：开启")
     private String    displayLocale;
+    private Byte      veryeastSwitch;
+    @ApiModelProperty(value = "51薪资面议开关 0：未开启，1：开启")
+    private Byte      job51SalaryDiscuss;
 
 
 }
