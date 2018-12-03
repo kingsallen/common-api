@@ -12,4 +12,10 @@ public class PositionIdStatusVO {
     private Integer companyId;
     private List<Integer> idList;
     private Integer notStatus;
+
+    public PositionIdStatusVO(Integer companyId, List<Integer> idList, Integer notStatus) {
+        this.companyId = companyId;
+        this.idList = idList;
+        this.notStatus = notStatus;
+    }
 }

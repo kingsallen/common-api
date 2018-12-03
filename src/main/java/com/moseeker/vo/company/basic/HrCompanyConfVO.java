@@ -73,6 +73,8 @@ public class HrCompanyConfVO {
     private Byte      talentpoolStatus;
     @ApiModelProperty(value = "51薪资面议开关 0：未开启，1：开启")
     private String    displayLocale;
+    @ApiModelProperty(value = "是否开启jdpr 0：未开启，1：开启")
+    private Integer isOpenGdpr;
 
 
 }
