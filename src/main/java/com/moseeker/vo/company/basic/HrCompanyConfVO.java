@@ -73,6 +73,8 @@ public class HrCompanyConfVO {
     private Byte      talentpoolStatus;
     @ApiModelProperty(value = "公司页面语言，格式:IETF language tag")
     private String    displayLocale;
+    @ApiModelProperty(value = "是否开启jdpr 0：未开启，1：开启")
+    private Integer isOpenGdpr;
     @ApiModelProperty(value = "最佳东方c端简历导入开关 0：未开启，1：开启")
     private Byte      veryeastSwitch;
     @ApiModelProperty(value = "51薪资面议开关 0：未开启，1：开启")
