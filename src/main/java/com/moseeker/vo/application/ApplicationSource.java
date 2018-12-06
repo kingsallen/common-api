@@ -1,5 +1,7 @@
 package com.moseeker.vo.application;
 
+import com.moseeker.enums.ChannelType;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -93,7 +95,7 @@ public enum ApplicationSource {
      */
     public static int channelToOrigin(int channel) {
         int origin = 0;
-        ChannelType channelType=ChannelType.instaceFromInteger(channel);
+        ChannelType channelType= ChannelType.instaceFromInteger(channel);
         switch (channelType) {
             case JOB51:
                 origin = 8;
