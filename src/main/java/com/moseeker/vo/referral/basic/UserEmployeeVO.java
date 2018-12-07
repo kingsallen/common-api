@@ -1,6 +1,7 @@
 package com.moseeker.vo.referral.basic;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -43,20 +44,25 @@ public class UserEmployeeVO implements Serializable
     private String    idcard;
     private String    mobile;
     private Integer   award;
+    @ApiModelProperty(value = "bindingTime", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp bindingTime;
     private String    email;
     private Byte      activation;
     private String    activationCode;
     private Byte      disable;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     private Byte      authLevel;
+    @ApiModelProperty(value = "registerTime", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp registerTime;
     private String    registerIp;
+    @ApiModelProperty(value = "lastLoginTime", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp lastLoginTime;
     private String    lastLoginIp;

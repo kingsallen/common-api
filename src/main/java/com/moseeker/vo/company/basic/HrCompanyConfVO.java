@@ -30,10 +30,10 @@ public class HrCompanyConfVO {
     private Integer   hbThrottle;
     @ApiModelProperty(value = "申请提交成功回复信息")
     private String    appReply;
-    @ApiModelProperty(value = "创建时间")
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
-    @ApiModelProperty(value = "更新时间")
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "员工认证自定义文案")
@@ -58,7 +58,7 @@ public class HrCompanyConfVO {
     private String    jobOccupation;
     @ApiModelProperty(value = "自定义部门别名")
     private String    teamnameCustom;
-    @ApiModelProperty(value = "newjd_status即新的jd页的生效时间，")
+    @ApiModelProperty(value = "newjd_status即新的jd页的生效时间，", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp applicationTime;
     @ApiModelProperty(value = "新jd页去设置状态0是为开启，1是用户开启，2是审核通过（使用新jd），3撤销（返回基础版） 默认是0")

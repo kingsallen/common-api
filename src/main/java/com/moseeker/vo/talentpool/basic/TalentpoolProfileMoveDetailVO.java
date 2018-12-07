@@ -4,6 +4,7 @@
 package com.moseeker.vo.talentpool.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -27,7 +28,11 @@ public class TalentpoolProfileMoveDetailVO {
     private Integer   profileMoveId;
     @ApiModelProperty(value = "该手机号对应的简历搬家成功状态 0 失败 1 成功", dataType="java.lang.Integer")
     private Byte      profileMoveStatus;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 
 }

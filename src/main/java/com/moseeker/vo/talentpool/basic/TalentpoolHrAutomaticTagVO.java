@@ -2,6 +2,7 @@ package com.moseeker.vo.talentpool.basic;/**
  * Created by zztaiwll on 18/11/27.
  */
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiParam;
@@ -79,10 +80,11 @@ public class TalentpoolHrAutomaticTagVO {
 
     @ApiModelProperty(value = "是否只搜最近一个公司 0否，1是",example = "1")
     private Integer inLastJobSearchCompany;
-
-    @ApiModelProperty(value = "创建时间",dataType = "java.lang.String",example = "2018-11-01")
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
-    @ApiModelProperty(value = "更新时间",dataType = "java.lang.String",example = "2018-11-01")
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 
     @ApiModelProperty(value = "1有效，0删除，2关闭",example = "1")

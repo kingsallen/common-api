@@ -67,8 +67,10 @@ public class HrWxWechatVO {
     private Integer   unauthorizedTime;
     @ApiModelProperty(value = "第三方授权的刷新token，用来刷access_token")
     private String    authorizerRefreshToken;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "显示仟寻聚合号二维码, 0:不允许，1:允许")
