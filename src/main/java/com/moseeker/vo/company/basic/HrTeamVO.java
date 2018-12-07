@@ -33,8 +33,10 @@ public class HrTeamVO {
     @ApiModelProperty(value = "成员一天信息hr_media.id: [1, 23, 32]")
     private String    jdMedia;
     private Integer   companyId;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "当前团队在列表等处是否显示, 0:不显示, 1:显示")
