@@ -1,4 +1,4 @@
-package com.moseeker.vo.company.basic;
+package com.moseeker.vo.referral.basic;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
