@@ -37,12 +37,12 @@ public class UserHrAccountVO {
     private Byte      activation;
     @ApiModelProperty(value = "1表示可用，0表示不可用")
     private Integer   disable;
-    @ApiModelProperty(value = "注册时间")
+    @ApiModelProperty(value = "注册时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp registerTime;
     @ApiModelProperty(value = "注册IP")
     private String    registerIp;
-    @ApiModelProperty(value = "最后的登录时间")
+    @ApiModelProperty(value = "最后的登录时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp lastLoginTime;
     @ApiModelProperty(value = "最后一次登录的IP")
@@ -52,8 +52,10 @@ public class UserHrAccountVO {
     private Integer   source;
     @ApiModelProperty(value = "下载行业报告校验码")
     private String    downloadToken;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     private String    headimgurl;

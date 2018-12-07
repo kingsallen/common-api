@@ -1,15 +1,13 @@
 package com.moseeker.vo.redpacket;
 
-import com.moseeker.util.validation.ValidateUtil;
-import com.moseeker.util.validation.rules.DateType;
-import org.apache.commons.lang3.StringUtils;
-
-import java.util.List;
-
 /**
- * 红包活动数据
+ * @ClassName ActivityListVO
+ * @Description 红包活动列表的红包数据
+ * @Author jack
+ * @Date 2018/12/7 5:34 PM
+ * @Version 1.0
  */
-public class ActivityVO {
+public class ActivityListVO {
 
     private Integer id;
     private Integer type;
@@ -26,40 +24,30 @@ public class ActivityVO {
     private String shareTitle;
     private String shareDesc;
     private String shareImg;
-    private List<Integer> positionIds;
 
-    private Integer hrId;
+    private Integer status;
+    private Integer check;
+    private Integer remain;
 
-    private static final String AMOUNT_CONFIG_ERROR = "红包上下限制设置有误!";
-    private static final String POSITIONS_PARAM_ERROR = "参与红包活动的职位数据选择的有重复数据!";
+    public class Position {
+        private int id;
+        private String title;
 
-    public String validate() {
-        ValidateUtil validateUtil = new ValidateUtil();
-        validateUtil.addDateValidate("活动开始时间", getStartTime(), DateType.longDate);
-        validateUtil.addDateValidate("活动结束时间", getEndTime(), DateType.longDate);
-        validateUtil.addIntTypeValidate("红包总预算", getTotalAmount(), 10, 8888889);
-        validateUtil.addDoubleTypeValidate("红包下限", getRangeMin(), 1d, 201d);
-        validateUtil.addDoubleTypeValidate("红包上限", getRangeMax(), 1d, 201d);
-        validateUtil.addIntTypeValidate("中奖概率", getProbability(), 1, 101);
-        validateUtil.addStringLengthValidate("抽奖页面", getHeadline(), 0, 513);
-        validateUtil.addStringLengthValidate("抽象失败页面标题", getHeadlineFailure(), 0, 513);
-        validateUtil.addStringLengthValidate("转发消息标题", getShareTitle(), 0, 513);
-        validateUtil.addStringLengthValidate("转发消息摘要", getShareDesc(), 0, 513);
-        validateUtil.addStringLengthValidate("转发消息背景图地址", getShareImg(), 0, 513);
-        String validateResult = validateUtil.validate();
-
-        if (getRangeMax() != null && getRangeMin() != null
-                && getRangeMax() < getRangeMin()) {
-            validateResult = StringUtils.isNoneBlank(validateResult)?validateResult+";"+AMOUNT_CONFIG_ERROR:AMOUNT_CONFIG_ERROR;
+        public int getId() {
+            return id;
         }
 
-        if (positionIds != null) {
-            if (positionIds.stream().distinct().count() == positionIds.size()) {
-                validateResult = StringUtils.isNoneBlank(validateResult)?validateResult+";"+POSITIONS_PARAM_ERROR:POSITIONS_PARAM_ERROR;
-            }
+        public void setId(int id) {
+            this.id = id;
         }
 
-        return validateResult;
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
     }
 
     public Integer getId() {
@@ -182,19 +170,27 @@ public class ActivityVO {
         this.shareImg = shareImg;
     }
 
-    public List<Integer> getPositionIds() {
-        return positionIds;
+    public Integer getStatus() {
+        return status;
     }
 
-    public void setPositionIds(List<Integer> positionIds) {
-        this.positionIds = positionIds;
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
-    public Integer getHrId() {
-        return hrId;
+    public Integer getCheck() {
+        return check;
     }
 
-    public void setHrId(Integer hrId) {
-        this.hrId = hrId;
+    public void setCheck(Integer check) {
+        this.check = check;
+    }
+
+    public Integer getRemain() {
+        return remain;
+    }
+
+    public void setRemain(Integer remain) {
+        this.remain = remain;
     }
 }
