@@ -1,5 +1,7 @@
 package com.moseeker.vo.redpacket;
 
+import java.util.List;
+
 /**
  * @ClassName ActivityListVO
  * @Description 红包活动列表的红包数据
@@ -15,7 +17,7 @@ public class ActivityListVO {
     private Integer target;
     private String startTime;
     private String endTime;
-    private Integer totalAmount;
+    private Double totalAmount;
     private Double rangeMin;
     private Double rangeMax;
     private Integer probability;
@@ -27,7 +29,13 @@ public class ActivityListVO {
 
     private Integer status;
     private Integer check;
-    private Integer remain;
+    private Double remain;
+
+    private List<Position> positionList;
+
+    public Position buildPosition() {
+        return new Position();
+    }
 
     public class Position {
         private int id;
@@ -98,11 +106,11 @@ public class ActivityListVO {
         this.endTime = endTime;
     }
 
-    public Integer getTotalAmount() {
+    public Double getTotalAmount() {
         return totalAmount;
     }
 
-    public void setTotalAmount(Integer totalAmount) {
+    public void setTotalAmount(Double totalAmount) {
         this.totalAmount = totalAmount;
     }
 
@@ -186,11 +194,19 @@ public class ActivityListVO {
         this.check = check;
     }
 
-    public Integer getRemain() {
+    public Double getRemain() {
         return remain;
     }
 
-    public void setRemain(Integer remain) {
+    public void setRemain(Double remain) {
         this.remain = remain;
+    }
+
+    public List<Position> getPositionList() {
+        return positionList;
+    }
+
+    public void setPositionList(List<Position> positionList) {
+        this.positionList = positionList;
     }
 }
