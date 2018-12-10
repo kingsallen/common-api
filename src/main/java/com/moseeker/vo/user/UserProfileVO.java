@@ -1,4 +1,4 @@
-package com.moseeker.vo.user.basic;
+package com.moseeker.vo.user;
 
 import lombok.Data;
 
