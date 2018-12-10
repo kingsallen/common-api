@@ -1,5 +1,6 @@
 package com.moseeker.vo.user.basic;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -20,11 +21,13 @@ public class UserUserVO {
     private Byte isDisable;
     @ApiModelProperty("用户等级")
     private Integer rank;
-    @ApiModelProperty("注册时间")
+    @ApiModelProperty(value = "注册时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp registerTime;
     @ApiModelProperty("注册IP")
     private String registerIp;
-    @ApiModelProperty("最近登录时间")
+    @ApiModelProperty(value = "最近登录时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp lastLoginTime;
     @ApiModelProperty("最近登录IP")
     private String lastLoginIp;
@@ -62,6 +65,7 @@ public class UserUserVO {
     private String nickname;
     @ApiModelProperty("邮箱是否认证 2:老数据 1:已认证 0:未认证")
     private Byte emailVerified;
-    @ApiModelProperty("更新时间")
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 }

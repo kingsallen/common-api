@@ -30,6 +30,7 @@ public class ProfileSkillVO implements Serializable {
     private Byte level;
     @ApiModelProperty(value = "使用时长（月）", example = "10", dataType = "Integer")
     private Integer month;
+
     @ApiModelProperty(name = "createTime", value = "创建时间", dataType = "string", example = "2018-11-29 15:30:00")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;

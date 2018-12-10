@@ -25,8 +25,10 @@ public class HrCompanyFeatureVO {
     private Integer   companyId;
     @ApiModelProperty(value = "福利特色内容")
     private String    feature;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "0:无效 1:有效")
