@@ -1,6 +1,7 @@
 package com.moseeker.vo.application;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.sql.Timestamp;
@@ -41,4 +42,6 @@ public class JobApplicationVO {
     private Integer   viewCount;
     private Integer   recommenderUserId;
     private Integer   origin;
+    @ApiModelProperty(value = "接口调用方编号",required = false)
+    private Integer appid;
 }
