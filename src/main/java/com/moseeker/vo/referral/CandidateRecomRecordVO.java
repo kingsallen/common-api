@@ -5,27 +5,27 @@ import lombok.Data;
 @Data
 public class CandidateRecomRecordVO {
 
-    private int id; // optional
-    private int positionId; // optional
-    private int appId; // optional
-    private int presenteeId; // optional
-    private java.lang.String clickTime; // optional
-    private int depth; // optional
-    private int recomId2; // optional
-    private int recomId; // optional
-    private java.lang.String realname; // optional
-    private java.lang.String company; // optional
-    private java.lang.String position; // optional
-    private java.lang.String recomReason; // optional
-    private java.lang.String recomTime; // optional
-    private int isRecom; // optional
-    private java.lang.String createTime; // optional
-    private java.lang.String updateTime; // optional
-    private java.lang.String mobile; // optional
-    private int presenteeUserId; // optional
-    private int repostUserId; // optional
-    private int postUserId; // optional
-    private byte gender; // optional
-    private java.lang.String email; // optional
+    private int id;
+    private int positionId;
+    private int appId;
+    private int presenteeId;
+    private java.lang.String clickTime;
+    private int depth;
+    private int recomId2;
+    private int recomId;
+    private java.lang.String realname;
+    private java.lang.String company;
+    private java.lang.String position;
+    private java.lang.String recomReason;
+    private java.lang.String recomTime;
+    private int isRecom;
+    private java.lang.String createTime;
+    private java.lang.String updateTime;
+    private java.lang.String mobile;
+    private int presenteeUserId;
+    private int repostUserId;
+    private int postUserId;
+    private byte gender;
+    private java.lang.String email;
     
 }
