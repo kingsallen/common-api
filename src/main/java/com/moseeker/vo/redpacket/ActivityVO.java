@@ -2,6 +2,8 @@ package com.moseeker.vo.redpacket;
 
 import com.moseeker.util.validation.ValidateUtil;
 import com.moseeker.util.validation.rules.DateType;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
@@ -9,25 +11,43 @@ import java.util.List;
 /**
  * 红包活动数据
  */
+@ApiModel(value = "红包活动表单信息")
 public class ActivityVO {
 
+    @ApiModelProperty(value = "id",required = false)
     private Integer id;
+    @ApiModelProperty(value = "红包活动类型。0:员工认证红包，1:推荐评价红包，2:转发被点击红包，3:转发被申请红包， 4:推荐通过初筛红包",required = false)
     private Integer type;
+    @ApiModelProperty(value = "公司编号",required = false)
     private Integer companyId;
+    @ApiModelProperty(value = "红包领取对象 0:员工，1:员工及员工二度，2:粉丝",required = false)
     private Integer target;
+    @ApiModelProperty(value = "开始时间",required = false)
     private String startTime;
+    @ApiModelProperty(value = "结束时间",required = false)
     private String endTime;
+    @ApiModelProperty(value = "红包活动预算",required = false)
     private Integer totalAmount;
+    @ApiModelProperty(value = "单个红包金额的下限，大于或等于。",required = false)
     private Double rangeMin;
+    @ApiModelProperty(value = "单个红包金额的上限，小于或等于。",required = false)
     private Double rangeMax;
+    @ApiModelProperty(value = "中奖概率。",required = false)
     private Integer probability;
+    @ApiModelProperty(value = "抽奖页面标题。",required = false)
     private String headline;
+    @ApiModelProperty(value = "抽奖失败页面标题。",required = false)
     private String headlineFailure;
+    @ApiModelProperty(value = "转发消息标题。",required = false)
     private String shareTitle;
+    @ApiModelProperty(value = "转发消息摘要。",required = false)
     private String shareDesc;
+    @ApiModelProperty(value = "转发消息背景图地址。",required = false)
     private String shareImg;
+    @ApiModelProperty(value = "参与红包活动的职位编号集合。",required = false)
     private List<Integer> positionIds;
 
+    @ApiModelProperty(value = "操作红包活动的用户编号。",required = true)
     private Integer hrId;
 
     private static final String AMOUNT_CONFIG_ERROR = "红包上下限制设置有误!";
