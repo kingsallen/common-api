@@ -21,8 +21,10 @@ public class ThirdpartyAccountCompanyVO implements Serializable {
     private Integer   accountId;
     @ApiModelProperty(value = "公司名称")
     private String    companyName;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Timestamp updateTime;
 }

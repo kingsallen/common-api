@@ -4,6 +4,7 @@
 package com.moseeker.vo.talentpool.basic;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -27,5 +28,7 @@ public class TalentpoolExecuteVO {
     private Integer   type;
     @ApiModelProperty(value = "type=0时7 通过 13不通过 type=1时 0 私密 1代表公开")
     private Integer   value;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
 }
