@@ -20,11 +20,11 @@ public class DictCountryVO implements Serializable {
     private String name;
     @ApiModelProperty(name = "ename", value = "国家英语名称", dataType = "string")
     private String ename;
-    private String isoCode2;
-    private String isoCode3;
+    private String isoCode_2;
+    private String isoCode_3;
     @ApiModelProperty(name = "code", value = "国家code", dataType = "string")
     private String code;
-    private Boolean supportMobileMessage;
+    private Boolean smsEnabled;
     @ApiModelProperty(name = "iconClass", value = "国旗样式", dataType = "string")
     private String iconClass;
     @ApiModelProperty(name = "hotCountry", value = "热门国家", dataType = "boolean")
