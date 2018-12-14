@@ -1,5 +1,7 @@
 package com.moseeker.vo.profile;
 
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * 简历导入统计
  * Created by jack on 08/03/2017.
@@ -9,7 +11,9 @@ public class StatisticsForChannelmportVO {
     private int user_id;
     private int profile_id;
     private long import_time;
+    @ApiModelProperty(value = "import_channel", dataType = "java.lang.Integer", example = "1")
     private byte import_channel;
+    @ApiModelProperty(value = "profile_operation", dataType = "java.lang.Integer", example = "1")
     private byte profile_operation;
 
     public int getUser_id() {

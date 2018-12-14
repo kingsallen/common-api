@@ -5,6 +5,7 @@ package com.moseeker.vo.profile.basic;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
 
 import javax.annotation.Generated;
 import java.io.Serializable;
@@ -29,6 +30,7 @@ public class ProfileBasicVO implements Serializable {
 
     private Integer   profileId;
     private String    name;
+    @ApiModelProperty(value = "gender", dataType = "java.lang.Integer", example = "1")
     private Byte      gender;
     private Integer   nationalityCode;
     private String    nationalityName;
@@ -39,8 +41,10 @@ public class ProfileBasicVO implements Serializable {
     private String    qq;
     private String    motto;
     private String    selfIntroduction;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 

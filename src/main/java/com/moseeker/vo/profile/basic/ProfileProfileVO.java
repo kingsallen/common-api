@@ -5,6 +5,7 @@ package com.moseeker.vo.profile.basic;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
 
 import javax.annotation.Generated;
 import java.io.Serializable;
@@ -28,13 +29,18 @@ public class ProfileProfileVO implements Serializable {
 
     private Integer   id;
     private String    uuid;
+    @ApiModelProperty(value = "lang", dataType = "java.lang.Integer", example = "1")
     private Byte      lang;
     private Integer   source;
+    @ApiModelProperty(value = "completeness", dataType = "java.lang.Integer", example = "1")
     private Byte      completeness;
     private Integer   userId;
+    @ApiModelProperty(value = "disable", dataType = "java.lang.Integer", example = "1")
     private Byte      disable;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     private String    origin;

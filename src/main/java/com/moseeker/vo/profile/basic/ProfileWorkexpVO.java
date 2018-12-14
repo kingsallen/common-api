@@ -5,6 +5,7 @@ package com.moseeker.vo.profile.basic;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
 
 import javax.annotation.Generated;
 import java.io.Serializable;
@@ -31,7 +32,9 @@ public class ProfileWorkexpVO implements Serializable {
     private Integer   profileId;
     private Date      start;
     private Date      end;
+    @ApiModelProperty(value = "endUntilNow", dataType = "java.lang.Integer", example = "1")
     private Byte      endUntilNow;
+    @ApiModelProperty(value = "salaryCode", dataType = "java.lang.Integer", example = "1")
     private Byte      salaryCode;
     private Integer   industryCode;
     private String    industryName;
@@ -40,6 +43,7 @@ public class ProfileWorkexpVO implements Serializable {
     private Integer   positionCode;
     private String    positionName;
     private String    description;
+    @ApiModelProperty(value = "type", dataType = "java.lang.Integer", example = "1")
     private Byte      type;
     private Integer   cityCode;
     private String    cityName;
@@ -48,8 +52,10 @@ public class ProfileWorkexpVO implements Serializable {
     private String    reference;
     private String    resignReason;
     private String    achievement;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     private String    job;
