@@ -5,6 +5,7 @@ package com.moseeker.vo.profile.basic;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
 
 import javax.annotation.Generated;
 import java.io.Serializable;
@@ -31,20 +32,27 @@ public class ProfileEducationVO implements Serializable {
     private Integer   profileId;
     private Date      start;
     private Date      end;
+    @ApiModelProperty(value = "endUntilNow", dataType = "java.lang.Integer", example = "1")
     private Byte      endUntilNow;
     private Integer   collegeCode;
     private String    collegeName;
     private String    collegeLogo;
     private String    majorCode;
     private String    majorName;
+    @ApiModelProperty(value = "degree", dataType = "java.lang.Integer", example = "1")
     private Byte      degree;
     private String    description;
+    @ApiModelProperty(value = "isFull", dataType = "java.lang.Integer", example = "1")
     private Byte      isFull;
+    @ApiModelProperty(value = "isUnified", dataType = "java.lang.Integer", example = "1")
     private Byte      isUnified;
+    @ApiModelProperty(value = "isStudyAbroad", dataType = "java.lang.Integer", example = "1")
     private Byte      isStudyAbroad;
     private String    studyAbroadCountry;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     private Integer   countryId;

@@ -5,6 +5,7 @@ package com.moseeker.vo.profile.basic;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModelProperty;
 
 import javax.annotation.Generated;
 import java.io.Serializable;
@@ -34,8 +35,10 @@ public class ProfileAwardsVO implements Serializable {
     private String    awardWinningStatus;
     private String    level;
     private String    description;
+    @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 
