@@ -34,13 +34,4 @@ public class HrCompanyEmailInfoVO {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
 
-    /**
-     * Created by moseeker on 2018/9/28.
-     */
-    @Data
-    public static class JobPositionProfileFilterVO {
-
-        private Integer pid;
-        private Integer pfid;
-    }
 }

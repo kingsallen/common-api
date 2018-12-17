@@ -9,7 +9,6 @@ import lombok.Data;
 @Data
 public class JobPositionProfileFilterVO {
 
-
     private Integer pid;
     private Integer pfid;
 }
