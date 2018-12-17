@@ -21,4 +21,6 @@ public class PositionUpsertParams {
     private java.util.List<Integer> features;
     @ApiModelProperty(value = "职位的其他信息 ",required = false)
     private JobPositionExtVO extVo;
+    @ApiModelProperty(value = "职位筛选")
+    private JobPositionProfileFilterVO filter;
 }
