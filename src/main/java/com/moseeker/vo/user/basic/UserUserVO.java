@@ -34,7 +34,7 @@ public class UserUserVO {
     @ApiModelProperty("登录次数")
     private Integer loginCount;
     @ApiModelProperty("手机号(未验证)")
-    private Long mobile;
+    private String mobile;
     @ApiModelProperty("邮箱")
     private String email;
     @ApiModelProperty("is not activation 0:no 1:yes")
