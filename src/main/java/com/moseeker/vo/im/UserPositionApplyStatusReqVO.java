@@ -9,7 +9,7 @@ import lombok.Data;
  * @autho 王耀峰
  *
  */
-@ApiModel(value = "更新聊天记录中的s申请状态")
+@ApiModel(value = "更新聊天记录中的申请状态")
 @Data
 public class UserPositionApplyStatusReqVO {
 
