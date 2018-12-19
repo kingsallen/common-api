@@ -14,4 +14,5 @@ import lombok.Data;
 public class ProfileFormVO {
     private ProfileParsingVO profilePojo;
     private ProfileProfileVO profileProfile;
+    private int userId;
 }

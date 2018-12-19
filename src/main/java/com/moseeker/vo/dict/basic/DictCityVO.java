@@ -25,8 +25,8 @@ public class DictCityVO implements Serializable {
     private Boolean hotCity;
     @ApiModelProperty(value = "英语城市名", name = "ename", dataType = "string")
     private String ename;
-    @ApiModelProperty(value = "is_using 0:没在用 1:在使用", name = "active", dataType = "Boolean")
-    private Boolean active;
+    @ApiModelProperty(value = "is_using 0:没在用 1:在使用", name = "isUsing", dataType = "Boolean")
+    private Boolean isUsing;
 
     private List<DictCityVO> cities;
 }
