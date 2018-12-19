@@ -1,5 +1,6 @@
 package com.moseeker.vo.application;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -25,8 +26,10 @@ public class HrAppCvConfVO implements Serializable {
     @ApiModelProperty(value = "排序字段", required = false)
     private Integer priority;
     @ApiModelProperty(value = "创建时间", required = false)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
     @ApiModelProperty(value = "更新时间", required = false)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
     @ApiModelProperty(value = "是否禁用 0：可用1：不可用", required = false)
     private Integer disable;

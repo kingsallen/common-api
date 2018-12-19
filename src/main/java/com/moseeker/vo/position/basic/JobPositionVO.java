@@ -1,5 +1,6 @@
 package com.moseeker.vo.position.basic;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -30,8 +31,10 @@ public class JobPositionVO implements Serializable{
     @ApiModelProperty(value = "jobid from ATS or other channel",required = false)
     private Integer   lJobid;
     @ApiModelProperty(value = "发布日期",required = false)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private String    publishDate;
     @ApiModelProperty(value = "截止日期",required = false)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private String    stopDate;
     @ApiModelProperty(value = "Job responsibilities职位描述",required = false)
     private String    accountabilities;
@@ -54,6 +57,7 @@ public class JobPositionVO implements Serializable{
     @ApiModelProperty(value = "职位来源 0：Moseeker",required = false)
     private Integer   sourceId;
     @ApiModelProperty(value = "更新时间",required = false)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private String    updateTime;
     @ApiModelProperty(value = "事业群",required = false)
     private String    businessGroup;
