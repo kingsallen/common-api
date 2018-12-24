@@ -16,4 +16,10 @@ public class ProfileItemVO {
     private UserUserVO user;
     private Map<String, Object> resume;
     private String profile;
+
+    public ProfileItemVO(UserUserVO user, Map<String, Object> resume, String profile) {
+        this.user = user;
+        this.resume = resume;
+        this.profile = profile;
+    }
 }
