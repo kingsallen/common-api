@@ -15,4 +15,14 @@ public class MessageEmailVO {
      int applyType;
      int emailStatus;
      int applicationId;
+
+     public MessageEmailVO(int positionId, int applierId, int recommenderUserId, int origin, int applyType, int emailStatus, int applicationId) {
+          this.positionId = positionId;
+          this.applierId = applierId;
+          this.recommenderUserId = recommenderUserId;
+          this.origin = origin;
+          this.applyType = applyType;
+          this.emailStatus = emailStatus;
+          this.applicationId = applicationId;
+     }
 }
