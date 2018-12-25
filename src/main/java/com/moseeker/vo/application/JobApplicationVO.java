@@ -46,9 +46,9 @@ public class JobApplicationVO {
     private Integer   disable;
     @ApiModelProperty(value = "申请来源 0:微信企业端 1:微信聚合端 10:pc端", dataType = "int")
     private Integer   routine;
-    @ApiModelProperty(value = "该申请是否被浏览，0：已浏览，1：未浏览", dataType = "byte")
+    @ApiModelProperty(value = "该申请是否被浏览，0：已浏览，1：未浏览", dataType = "java.lang.Byte")
     private Byte      isViewed;
-    @ApiModelProperty(value = "是否不合适，0：合适，1：不合适", dataType = "byte")
+    @ApiModelProperty(value = "是否不合适，0：合适，1：不合适", dataType = "java.lang.Byte")
     private Byte      notSuitable;
     @ApiModelProperty(value = "公司编号", dataType = "int")
     private Integer   companyId;
@@ -57,7 +57,7 @@ public class JobApplicationVO {
     private Timestamp updateTime;
     @ApiModelProperty(value = "招聘进度", dataType = "int")
     private Integer   appTplId;
-    @ApiModelProperty(value = "是否是代理投递 0：正常数据，1：代理假投递", dataType = "byte")
+    @ApiModelProperty(value = "是否是代理投递 0：正常数据，1：代理假投递", dataType = "java.lang.Byte")
     private Byte      proxy;
     @ApiModelProperty(value = "投递区分， 0：profile投递， 1：email投递", dataType = "int")
     private Integer   applyType;
