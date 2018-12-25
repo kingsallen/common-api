@@ -18,4 +18,10 @@ public class UpsertProfileVO {
     private Integer userId;
     private Integer newUserId;
 
+    public UpsertProfileVO(Map<String, Object> resume, UserUserVO userUserVO, Integer userId, Integer newUserId) {
+        this.resume = resume;
+        this.userUserVO = userUserVO;
+        this.userId = userId;
+        this.newUserId = newUserId;
+    }
 }
