@@ -20,6 +20,7 @@ public class PageData<T> {
     private List<T> data;
     @ApiModelProperty(value = "每页数量",required = false)
     private Integer pageSize;
+    public PageData(){}
 
     public PageData(Integer total, Integer page, List<T> data, Integer pageSize) {
         if(page==null||page==0){
