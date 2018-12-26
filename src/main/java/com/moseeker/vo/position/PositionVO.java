@@ -3,6 +3,7 @@ package com.moseeker.vo.position;
 import com.moseeker.vo.company.basic.HrCompanyFeatureVO;
 import com.moseeker.vo.company.basic.HrCompanyVO;
 import com.moseeker.vo.company.basic.HrTeamVO;
+import com.moseeker.vo.company.basic.UserHrAccountVO;
 import com.moseeker.vo.dict.basic.DictCityVO;
 import com.moseeker.vo.position.JobPositionOtherVO;
 import com.moseeker.vo.position.basic.JobCustomVO;
@@ -57,5 +58,7 @@ public class PositionVO implements Serializable{
 	private SearchData searchData;
 	@ApiModelProperty(value = "行业数据" ,required = false)
 	private DictIndustryVO dictIndustryData;
+	@ApiModelProperty(value = "hr信息",required = false)
+	private UserHrAccountVO hr;
 
 }
