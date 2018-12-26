@@ -27,7 +27,9 @@ public class ProfileOtherVO implements Serializable {
 
     private static final long serialVersionUID = 235288756;
 
+    @ApiModelProperty(value = "profileId", example = "2")
     private Integer   profileId;
+    @ApiModelProperty(value = "other", example = "{\"gender\":\"男\",\"weight\":69,\"height\":178}")
     private String    other;
     @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
