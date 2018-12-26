@@ -6,6 +6,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 /**
  * Created by zztaiwll on 18/8/10.
@@ -32,10 +33,10 @@ public class JobPositionVO implements Serializable{
     private Integer   lJobid;
     @ApiModelProperty(value = "发布日期",required = false)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    private String    publishDate;
+    private Timestamp    publishDate;
     @ApiModelProperty(value = "截止日期",required = false)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    private String    stopDate;
+    private Timestamp    stopDate;
     @ApiModelProperty(value = "Job responsibilities职位描述",required = false)
     private String    accountabilities;
     @ApiModelProperty(value = "工作经验",required = false)
@@ -58,7 +59,7 @@ public class JobPositionVO implements Serializable{
     private Integer   sourceId;
     @ApiModelProperty(value = "更新时间",required = false)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    private String    updateTime;
+    private Timestamp updateTime;
     @ApiModelProperty(value = "事业群",required = false)
     private String    businessGroup;
     @ApiModelProperty(value = "0:全职，1：兼职：2：合同工 3:实习 9:其他",required = false)
