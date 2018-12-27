@@ -22,5 +22,7 @@ public class PositionUpsertParams {
     @ApiModelProperty(value = "职位的其他信息 ",required = false)
     private JobPositionExtVO extVo;
     @ApiModelProperty(value = "职位筛选")
-    private JobPositionProfileFilterVO filter;
+    private List<Integer> filter;
+    @ApiModelProperty(value = "配置的转发邮箱")
+    private List<String> ccEmailList;
 }
