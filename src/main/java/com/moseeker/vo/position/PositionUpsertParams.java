@@ -14,15 +14,12 @@ import java.util.List;
 @Data
 public class PositionUpsertParams {
     @ApiModelProperty(value = "职位的信息",required = true)
-    private com.moseeker.vo.position.basic.JobPositionVO position;
+    private JobPositionDataVO position;
     @ApiModelProperty(value = "职位的城市信息",required = false)
     private List<Integer> citys;
     @ApiModelProperty(value = "职位的福利特色id",required = false)
     private java.util.List<Integer> features;
     @ApiModelProperty(value = "职位的其他信息 ",required = false)
     private JobPositionExtVO extVo;
-    @ApiModelProperty(value = "职位筛选")
-    private List<Integer> filter;
-    @ApiModelProperty(value = "配置的转发邮箱")
-    private List<String> ccEmailList;
+
 }
