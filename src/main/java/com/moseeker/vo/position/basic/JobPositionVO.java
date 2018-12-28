@@ -148,5 +148,7 @@ public class JobPositionVO implements Serializable{
     private Integer   teamId;
     @ApiModelProperty(value = "简历申请是否抄送邮箱，0 否；1 是",required = false)
     private Byte      profileCcMailEnabled;
+    @ApiModelProperty(value = "是否是内推，0 否；1 是",required = false)
+    private Byte      isReferral;
 
 }
