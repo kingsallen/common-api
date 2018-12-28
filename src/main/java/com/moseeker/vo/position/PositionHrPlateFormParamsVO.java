@@ -38,6 +38,8 @@ public class PositionHrPlateFormParamsVO {
     private Integer pageNumber;
     @ApiModelProperty(value = "按照发布人查询的标志位，true是子账号 false是母账号，不传就是全查询",dataType = "java.lang.Boolean",required = false,example = "ture")
     private Boolean flag;
+    @ApiModelProperty(value = "子账号编号多个使用逗号隔开",dataType = "java.lang.String",required = false,example = "1")
+    private String accountId;
 
 
     @ApiModelProperty(value = "红包类型，hr_hb_config.type",dataType = "java.lang.Integer",required = false,example = "1")
