@@ -36,6 +36,8 @@ public class PositionHrPlateFormParamsVO {
     private Integer pageSize;
     @ApiModelProperty(value = "当前页码",dataType = "java.lang.Integer",required = false,example = "1")
     private Integer pageNumber;
+    @ApiModelProperty(value = "按照发布人查询的标志位，true是子账号 false是母账号，不传就是全查询",dataType = "java.lang.Boolean",required = false,example = "ture")
+    private Boolean flag;
 
 
     @ApiModelProperty(value = "红包类型，hr_hb_config.type",dataType = "java.lang.Integer",required = false,example = "1")
