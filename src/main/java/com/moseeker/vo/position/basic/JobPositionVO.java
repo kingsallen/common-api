@@ -1,10 +1,12 @@
 package com.moseeker.vo.position.basic;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 /**
  * Created by zztaiwll on 18/8/10.
@@ -30,9 +32,11 @@ public class JobPositionVO implements Serializable{
     @ApiModelProperty(value = "jobid from ATS or other channel",required = false)
     private Integer   lJobid;
     @ApiModelProperty(value = "发布日期",required = false)
-    private String    publishDate;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private Timestamp    publishDate;
     @ApiModelProperty(value = "截止日期",required = false)
-    private String    stopDate;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private Timestamp    stopDate;
     @ApiModelProperty(value = "Job responsibilities职位描述",required = false)
     private String    accountabilities;
     @ApiModelProperty(value = "工作经验",required = false)
@@ -54,7 +58,8 @@ public class JobPositionVO implements Serializable{
     @ApiModelProperty(value = "职位来源 0：Moseeker",required = false)
     private Integer   sourceId;
     @ApiModelProperty(value = "更新时间",required = false)
-    private String    updateTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private Timestamp updateTime;
     @ApiModelProperty(value = "事业群",required = false)
     private String    businessGroup;
     @ApiModelProperty(value = "0:全职，1：兼职：2：合同工 3:实习 9:其他",required = false)
@@ -143,5 +148,7 @@ public class JobPositionVO implements Serializable{
     private Integer   teamId;
     @ApiModelProperty(value = "简历申请是否抄送邮箱，0 否；1 是",required = false)
     private Byte      profileCcMailEnabled;
+    @ApiModelProperty(value = "是否是内推，0 否；1 是",required = false)
+    private Byte      isReferral;
 
 }

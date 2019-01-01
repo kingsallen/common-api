@@ -20,7 +20,6 @@ import java.sql.Timestamp;
 @EqualsAndHashCode(callSuper = false)
 @ApiModel(description = "团队信息")
 public class HrTeamVO {
-
     private Integer   id;
     @ApiModelProperty(value = "团队/部门名称")
     private String    name;
@@ -51,8 +50,6 @@ public class HrTeamVO {
     private Integer   disable;
     @ApiModelProperty(value = "团队小标题")
     private String    subTitle;
-//    @ApiModelProperty(value = "素材库图片处理参数,七牛格式")
-//    private String    res_attrs;
     @ApiModelProperty(value = "模板链接")
     private String    link;
 
