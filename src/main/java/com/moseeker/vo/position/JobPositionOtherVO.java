@@ -16,5 +16,7 @@ public class JobPositionOtherVO {
     private Integer newJdStatus;
     @ApiModelProperty(value = "是否全国 0是否 1是",required = false)
     private Integer cityFlag;
+    @ApiModelProperty(value = "职位模板名称")
+    private String cvTemplateName;
 
 }
