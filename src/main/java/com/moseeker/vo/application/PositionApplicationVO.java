@@ -20,4 +20,7 @@ public class PositionApplicationVO {
     private int positionId;
     @ApiModelProperty(value = "申请数量",dataType = "java.lang.int",required = true)
     private int total;
+    @ApiModelProperty(value = "申请总数量",dataType = "java.lang.int",required = true)
+    private int allTotal;
+
 }
