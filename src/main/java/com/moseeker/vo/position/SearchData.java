@@ -12,4 +12,8 @@ public class SearchData {
     private String degreeName;
     private String custom;
     private String title;
+    private String province;
+    private String features;
+    private String citys;
+    private String industry;
 }
