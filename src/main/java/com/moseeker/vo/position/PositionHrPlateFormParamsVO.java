@@ -50,6 +50,8 @@ public class PositionHrPlateFormParamsVO {
     private Integer teamId;
     @ApiModelProperty(value = "职位id的字符串[1,2,3,4]",dataType = "java.lang.String",required = false,example = "[1,2]")
     private String positionIds;
+    @ApiModelProperty(value = "职位模板id",dataType = "java.lang.Integer",required = false,example = "1")
+    private Integer templateId;
 
 
 }
