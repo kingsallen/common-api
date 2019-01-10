@@ -30,6 +30,7 @@ public class ActivityListVO {
     private Integer status;
     private Integer check;
     private Double remain;
+    private Byte dType;
 
     private List<Position> positionList;
 
@@ -208,5 +209,13 @@ public class ActivityListVO {
 
     public void setPositionList(List<Position> positionList) {
         this.positionList = positionList;
+    }
+
+    public Byte getdType() {
+        return dType;
+    }
+
+    public void setdType(Byte dType) {
+        this.dType = dType;
     }
 }
