@@ -32,6 +32,8 @@ public class ActivityListVO {
     private Double remain;
     private Byte dType;
 
+    private Integer estimatedTotal;
+
     private List<Position> positionList;
 
     public Position buildPosition() {
@@ -217,5 +219,13 @@ public class ActivityListVO {
 
     public void setdType(Byte dType) {
         this.dType = dType;
+    }
+
+    public Integer getEstimatedTotal() {
+        return estimatedTotal;
+    }
+
+    public void setEstimatedTotal(Integer estimatedTotal) {
+        this.estimatedTotal = estimatedTotal;
     }
 }
