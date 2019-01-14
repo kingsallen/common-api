@@ -1,5 +1,6 @@
 package com.moseeker.vo.redpacket;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.util.List;
@@ -33,6 +34,7 @@ public class ActivityListVO {
     private Integer status;
     private Integer check;
     private Double remain;
+    @JsonProperty(value = "dType")
     private Byte dType;
 
     private Integer throttle;
