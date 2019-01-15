@@ -62,5 +62,5 @@ public class UserHrAccountVO {
     @ApiModelProperty(value = "HR聊天是否托管给智能招聘助手，0 不托管，1 托管")
     private Integer   leaveToMobot;
     private String    remarkName;
-
+    private Integer applicationPositionCountFlag = 0; // 0 不需要统计职位和投递人数 1 需要
 }
