@@ -62,7 +62,7 @@ public class HrCompanyConfVO {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp applicationTime;
     @ApiModelProperty(value = "新jd页去设置状态0是为开启，1是用户开启，2是审核通过（使用新jd），3撤销（返回基础版） 默认是0")
-    private Integer   newjdStatus;
+    private Integer   newjdStatus = 0;
     @ApiModelProperty(value = "IM聊天开关，0：不开启，1：开启，2：开启+chatbot")
     private Byte      hrChat;
     @ApiModelProperty(value = "公司信息、团队信息、职位信息在仟寻展示，0: 否， 1: 是")
