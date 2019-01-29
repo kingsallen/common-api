@@ -8,17 +8,20 @@ import lombok.Data;
 import java.sql.Timestamp;
 
 /**
- * 猎头账号表
+ * 猎头账号VO
  *
  * @Author: lee
  * @Date: 2019/1/28
  */
 @Data
-@ApiModel("猎头账号表")
+@ApiModel("猎头账号VO")
 public class HeadhunterAccountVO {
     private Integer id;
-    private String email;//猎头邮箱
-    private String password;//登录密码
+    @ApiModelProperty(value = "猎头邮箱")
+    private String email;
+    @ApiModelProperty(value = "登录密码")
+    private String password;
+    @ApiModelProperty(value = "公司ID")
     private Integer companyId;
     private Integer hrId;
     private String username;
