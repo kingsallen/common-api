@@ -37,7 +37,7 @@ public class HeadhunterAccountVO {
     private Integer termOfProtection;//保护期
     private String mobile;//猎头手机号
     private String remark;//备注
-    @ApiModelProperty(value = "禁用状态, 0 : 启用， 1 ： 禁用", dataType = "java.lang.Integer", example = "0")
+    @ApiModelProperty(value = "禁用状态, 0 : 启用， 1 ： 禁用， 2 ： 新用户，需重置密码", dataType = "java.lang.Integer", example = "0")
     private Byte status;
     @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
