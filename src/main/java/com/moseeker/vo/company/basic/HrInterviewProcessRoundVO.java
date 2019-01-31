@@ -17,9 +17,7 @@ public class HrInterviewProcessRoundVO {
     @ApiModelProperty(value = "序列ID")
     private Integer  id;
     @ApiModelProperty(value = "面试流程ID")
-    private Integer   interviewProcessId ;
-    @ApiModelProperty(value = "HR ID")
-    private Integer hrId;
+    private Integer interviewProcessId ;
     @ApiModelProperty(value = "面试阶段名称")
     private String roundName;
     @ApiModelProperty(value = "状态 0 有效 1无效")
