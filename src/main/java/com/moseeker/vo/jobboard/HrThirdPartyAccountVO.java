@@ -21,5 +21,7 @@ public class HrThirdPartyAccountVO {
     private byte syncRequireCompany;
     private byte syncRequireDepartment;
     private String ext2;
-    
+    private Integer templateSender;
+
+
 }
