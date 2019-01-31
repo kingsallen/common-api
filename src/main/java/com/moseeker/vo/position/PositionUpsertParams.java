@@ -21,7 +21,6 @@ public class PositionUpsertParams {
     private java.util.List<Integer> features;
     @ApiModelProperty(name="extVo",value = "职位的其他信息 ",required = false)
     private JobPositionExtVO extVo;
-    @ApiModelProperty(name="",value = "面试流程id ",required = false)
-    private Integer interviewProcessId;
+
 
 }
