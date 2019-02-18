@@ -24,5 +24,4 @@ public class PositionUpsertParams {
     @ApiModelProperty(name="interviewProcessId",value = "面试id ",required = false)
     private Integer interviewProcessId;
 
-
 }
