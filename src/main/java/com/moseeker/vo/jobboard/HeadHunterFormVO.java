@@ -1,8 +1,7 @@
 package com.moseeker.vo.jobboard;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
-import java.util.List;
 
 /**
  * HeadHunterFormVO
@@ -13,24 +12,23 @@ import java.util.List;
 @Data
 public class HeadHunterFormVO {
     /**
-     * 猎头编号集合
-     */
-    private List<Integer> headHunterIdList;
-    /**
-     * 职位编号
-     */
-    private Integer positionId;
-    /**
      * 操作人
      */
-    private Integer hrId;
-    /**
-     * 对接渠道
-     */
-    private Integer channel;
-
+    @ApiModelProperty(value = "操作人")
+    private Integer userId;
     /**
      * 公司Id
      */
+    @ApiModelProperty(value = "公司Id", example = "39978")
     private Integer companyId;
+    /**
+     * 职位编号
+     */
+    @ApiModelProperty(value = "职位编号", example = "100")
+    private Integer positionId;
+    /**
+     * 对接渠道
+     */
+    private Channels channels;
+
 }
