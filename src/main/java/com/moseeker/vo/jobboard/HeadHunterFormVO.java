@@ -27,7 +27,7 @@ public class HeadHunterFormVO {
     /**
      * 对接渠道
      */
-    private Integer dockingType;
+    private Integer channel;
 
     /**
      * 公司Id
