@@ -66,6 +66,8 @@ public class HrCompanyVO {
     private Byte      fortune;
     @ApiModelProperty(value = "公司福利特色， 由公司下的职位的福利特色每天跑脚本合并而来，目前供支付宝使用")
     private String    feature;
+    @ApiModelProperty(value = "公司员工数量")
+    private Integer employeeNumber;
 
 
 }
