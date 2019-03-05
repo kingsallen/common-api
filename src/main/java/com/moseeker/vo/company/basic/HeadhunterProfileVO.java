@@ -19,7 +19,7 @@ import java.sql.Timestamp;
 public class HeadhunterProfileVO {
     private Integer id;
     @ApiModelProperty(value = "猎头账号Id")
-    private Integer headhunterAccountId;
+    private Integer headhunterId;
     @ApiModelProperty(value = "简历姓名")
     private String userName;
     @ApiModelProperty(value = "简历邮箱")

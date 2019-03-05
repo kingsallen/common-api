@@ -11,7 +11,7 @@ import lombok.Data;
  * @Date: 2019/2/22
  */
 @Data
-@ApiModel("猎头数据导出VO")
+@ApiModel("猎头数据参数VO")
 public class HeadhunterDataFormVO {
 
     @ApiModelProperty(value = "猎头账号Id")

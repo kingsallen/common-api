@@ -29,9 +29,11 @@ public class HeadhunterDataVO {
     @ApiModelProperty(value = "筛选人数")
     private Integer screenCount;
     @ApiModelProperty(value = "面试人数")
-    private Integer InterviewCount;
-    @ApiModelProperty(value = "录用人数")
+    private Integer interviewCount;
+    @ApiModelProperty(value = "offer人数")
     private Integer offerCount;
+    @ApiModelProperty(value = "待入职人数")
+    private Integer preEntryCount;
     @ApiModelProperty(value = "入职人数")
     private Integer entryCount;
     @ApiModelProperty(value = "开放时间")

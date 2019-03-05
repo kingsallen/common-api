@@ -32,8 +32,8 @@ public class HeadhunterCandidateVO {
     private String operationInfo;
     @ApiModelProperty(value = "猎头费用")
     private Double cost;
-    @ApiModelProperty(value = "时间")
-    private String time;
+    @ApiModelProperty(value = "推荐时间")
+    private String recommendTime;
 
 
 }
