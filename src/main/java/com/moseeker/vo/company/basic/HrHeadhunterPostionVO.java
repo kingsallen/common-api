@@ -17,6 +17,7 @@ import java.sql.Timestamp;
 @ApiModel("职位数据VO")
 public class HrHeadhunterPostionVO {
 
+    private Integer id;
     @ApiModelProperty(value = "职位名称")
     private String positionName;
     @ApiModelProperty(value = "地区")
@@ -25,10 +26,10 @@ public class HrHeadhunterPostionVO {
     private String departmentName;
     @ApiModelProperty(value = "发布人")
     private String hrName;
-    @ApiModelProperty(value = "发布时间", dataType= "string", example = "2018-12-10 10:12:45")
+    @ApiModelProperty(value = "发布时间", dataType = "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp syncTime;
     @ApiModelProperty(value = "候选人数")
-    private String candidateCount;
+    private Integer candidateCount;
 
 }

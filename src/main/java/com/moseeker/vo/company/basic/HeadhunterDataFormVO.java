@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * HeadhunterDataExportVO
+ * HeadhunterDataFormVO
  *
  * @Author: lee
  * @Date: 2019/2/22
@@ -19,5 +19,9 @@ public class HeadhunterDataFormVO {
     @ApiModelProperty(value = "职位名称")
     private String positionName;
     @ApiModelProperty(value = "发布人")
-    private String hrId;
+    private Integer hrId;
+    @ApiModelProperty(value = "每页条数")
+    private Integer pageSize;
+    @ApiModelProperty(value = "当前页码")
+    private Integer pageNum;
 }
