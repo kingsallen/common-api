@@ -31,5 +31,7 @@ public class HrHeadhunterPostionVO {
     private Timestamp syncTime;
     @ApiModelProperty(value = "候选人数")
     private Integer candidateCount;
+    @ApiModelProperty(value = "职位Id， job_position.id")
+    private Integer jobId;
 
 }
