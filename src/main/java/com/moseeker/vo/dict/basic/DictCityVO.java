@@ -15,11 +15,11 @@ import java.util.List;
 public class DictCityVO implements Serializable {
 
     private static final long serialVersionUID = 786604284;
-    @ApiModelProperty(value = "city_code", name = "code", dataType = "Integer")
+    @ApiModelProperty(value = "city_code", name = "code", dataType = "Long")
     private Integer code;
     @ApiModelProperty(value = "city_name", name = "name", dataType = "string")
     private String name;
-    @ApiModelProperty(value = "city_level", name = "level", dataType = "Integer")
+    @ApiModelProperty(value = "city_level", name = "level", dataType = "Long")
     private Integer level;
     @ApiModelProperty(value = "is_hot_city", name = "hotCity", dataType = "Boolean")
     private Boolean hotCity;

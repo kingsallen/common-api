@@ -26,9 +26,9 @@ public class ProfileSkillVO implements Serializable {
     private Integer profileId;
     @ApiModelProperty(value = "技能名称", example = "Java")
     private String name;
-    @ApiModelProperty(value = "掌握程度 0:未填写 1:了解, 2:掌握 3:熟练 4:精通", dataType = "Integer", example = "2")
+    @ApiModelProperty(value = "掌握程度 0:未填写 1:了解, 2:掌握 3:熟练 4:精通", dataType = "Long", example = "2")
     private Byte level;
-    @ApiModelProperty(value = "使用时长（月）", example = "10", dataType = "Integer")
+    @ApiModelProperty(value = "使用时长（月）", example = "10", dataType = "Long")
     private Integer month;
 
     @ApiModelProperty(name = "createTime", value = "创建时间", dataType = "string", example = "2018-11-29 15:30:00")

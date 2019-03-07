@@ -18,15 +18,15 @@ public class DictCollegeVO implements Serializable {
 
     private static final long serialVersionUID = -5091487502336372827L;
 
-    @ApiModelProperty(name = "code", value = "院校code", dataType = "Integer")
+    @ApiModelProperty(name = "code", value = "院校code", dataType = "Long")
     private Integer code;
     @ApiModelProperty(name = "name", value = "院校名字", dataType = "string")
     private String  name;
-    @ApiModelProperty(name = "province", value = "院校省份", dataType = "Integer")
+    @ApiModelProperty(name = "province", value = "院校省份", dataType = "Long")
     private Integer province;
     @ApiModelProperty(name = "logo", value = "院校logo", dataType = "string")
     private String  logo;
-    @ApiModelProperty(name = "countryCode", value = "院校所属国家code", dataType = "Integer")
+    @ApiModelProperty(name = "countryCode", value = "院校所属国家code", dataType = "Long")
     private Integer countryCode;
 
 

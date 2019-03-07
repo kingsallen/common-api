@@ -29,9 +29,9 @@ public class DictCountryVO implements Serializable {
     private String iconClass;
     @ApiModelProperty(name = "hotCountry", value = "热门国家", dataType = "boolean")
     private Boolean hotCountry;
-    @ApiModelProperty(name = "continentCode", value = "7大洲code", dataType = "Integer")
+    @ApiModelProperty(name = "continentCode", value = "7大洲code", dataType = "Long")
     private Integer continentCode;
-    @ApiModelProperty(name = "priority", value = "优先级", dataType = "Integer")
+    @ApiModelProperty(name = "priority", value = "优先级", dataType = "Long")
     private Integer priority;
 
 }
