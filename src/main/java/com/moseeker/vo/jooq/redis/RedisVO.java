@@ -13,7 +13,7 @@ import lombok.ToString;
 @ToString
 @ApiModel
 public class RedisVO {
-    @ApiModelProperty(name = "appId", value = "项目号", dataType = "Integer")
+    @ApiModelProperty(name = "appId", value = "项目号", dataType = "Long")
     private Integer appId;
     @ApiModelProperty(name = "keyIdentifier", value = "key修饰符", dataType = "string")
     private String keyIdentifier;
