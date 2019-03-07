@@ -17,10 +17,10 @@ import java.io.Serializable;
 public class DictMajorVO implements Serializable {
 
     private static final long serialVersionUID = 9109470338367353311L;
-    @ApiModelProperty(value = "字典code", name = "code", dataType = "Integer")
+    @ApiModelProperty(value = "字典code", name = "code", dataType = "Long")
     private Integer code;
     @ApiModelProperty(value = "字典name", name = "name", dataType = "string")
     private String name;
-    @ApiModelProperty(value = "字典level", name = "level", dataType = "Integer")
+    @ApiModelProperty(value = "字典level", name = "level", dataType = "Long")
     private Integer level;
 }
