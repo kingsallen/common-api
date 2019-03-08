@@ -4,22 +4,20 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-/**
- * HeadhunterCandidateFormVO
- *
- * @Author: lee
- * @Date: 2019/2/22
- */
 @Data
-@ApiModel("候选人表单数据VO")
+@ApiModel("猎头端候选人表单VO")
 public class HeadhunterCandidateFormVO {
 
+    @ApiModelProperty(value = "猎头职位Id")
+    private Integer jobId;
     @ApiModelProperty(value = "猎头账号Id")
-    private Integer headhunterAccountId;
-    @ApiModelProperty(value = "简历姓名")
-    private String userName;
-    @ApiModelProperty(value = "简历邮箱")
-    private String email;
-    @ApiModelProperty(value = "简历手机号码")
-    private String mobile;
+    private Integer headhunterId;
+    @ApiModelProperty(value = "搜索关键字")
+    private String keyword;
+    @ApiModelProperty(value = "当前状态")
+    private Integer status;
+    @ApiModelProperty(value = "每页条数")
+    private Integer pageSize;
+    @ApiModelProperty(value = "当前页码")
+    private Integer pageNum;
 }

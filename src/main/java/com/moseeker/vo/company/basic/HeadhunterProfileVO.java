@@ -20,13 +20,10 @@ public class HeadhunterProfileVO {
     private Integer id;
     @ApiModelProperty(value = "猎头账号Id")
     private Integer headhunterId;
-    @ApiModelProperty(value = "简历姓名")
-    private String userName;
-    @ApiModelProperty(value = "简历邮箱")
-    private String email;
-    @ApiModelProperty(value = "简历手机号码")
-    private String mobile;
-
+    @ApiModelProperty(value = "推荐说明")
+    private String recommendDesc;
+    @ApiModelProperty(value = "简历状态 0 ： 猎头上传， 1 ： hr 接收（正式简历）", dataType="java.lang.Integer")
+    private Byte type;
     private ProfileParsingVO profileParsingVO;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")

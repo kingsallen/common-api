@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.sql.Timestamp;
 
 /**
- * HeadhunterCandidateListVO
+ * HrHeadhunterCandidateListVO
  *
  * @Author: lee
  * @Date: 2019/2/22
  */
 @Data
 @ApiModel("候选人列表VO")
-public class HeadhunterCandidateListVO {
+public class HrHeadhunterCandidateListVO {
     @ApiModelProperty(value = "状态")
     private Integer status;
     @ApiModelProperty(value = "猎头公司id")
