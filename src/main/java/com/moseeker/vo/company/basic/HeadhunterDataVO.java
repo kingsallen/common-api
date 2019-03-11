@@ -36,7 +36,7 @@ public class HeadhunterDataVO {
     private Integer preEntryCount;
     @ApiModelProperty(value = "入职人数")
     private Integer entryCount;
-    @ApiModelProperty(value = "开放时间")
+    @ApiModelProperty(value = "同步时间")
     private String openDate;
     @ApiModelProperty(value = "进行时间")
     private Integer startingTime;
