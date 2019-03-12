@@ -14,13 +14,14 @@ import lombok.Data;
 @ApiModel("Hr查看的候选人数据")
 public class HrHeadhunterCandidateVO {
 
+    private Integer id;
     @ApiModelProperty(value = "候选人名称")
     private String candidateName;
     @ApiModelProperty(value = "猎头公司名称")
     private String headhunterCompanyName;
     @ApiModelProperty(value = "猎头顾问")
     private String headhunterName;
-    @ApiModelProperty(value = "保护期")
+    @ApiModelProperty(value = "剩余保护期")
     private Integer termOfProtection;
     @ApiModelProperty(value = "推荐说明")
     private String recommendDesc;
