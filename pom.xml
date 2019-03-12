@@ -4,6 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>common-api</artifactId>
     <packaging>jar</packaging>
+    <version>1.0.0</version>
     <parent>
         <groupId>com.moseeker</groupId>
         <artifactId>alphacloud</artifactId>
@@ -37,7 +38,7 @@
     <repositories>
         <!-- moseeker私服仓库 -->
         <repository>
-            <id>moseeker-snapshot</id>
+            <id>moseeker-releases</id>
             <url>http://maven.moseeker.com/repository/maven-public/</url>
         </repository>
     </repositories>
