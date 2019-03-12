@@ -29,7 +29,6 @@ public class HrInterviewProcessVO {
     private Integer deleted =0;
     @ApiModelProperty(value = "是否是默认面试流程")
     private Integer isDefaultProcess=0;
-
     @ApiModelProperty(value = "创建时间", dataType = "java.lang.String", example = "2018-11-28 16:00:00")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
