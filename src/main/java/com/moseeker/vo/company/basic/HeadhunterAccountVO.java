@@ -32,7 +32,8 @@ public class HeadhunterAccountVO {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp serviceEndTime;
     private String contractFilePath;
-    private Integer contractType;
+    @ApiModelProperty(value = "合同类型", example = "master")
+    private String contractType;
     private Double feeRate;
     private Integer termOfProtection;//保护期
     private String mobile;//猎头手机号

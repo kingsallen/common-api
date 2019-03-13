@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * HrHeadhunterCompanyVO
@@ -16,8 +17,13 @@ import java.sql.Timestamp;
 public class HrHeadhunterCompanyVO {
 
     private Integer   id;
+    @ApiModelProperty(value = "猎头公司全称")
     private String    name;
+    @ApiModelProperty(value = "猎头公司简称")
     private String    shortName;
+    @ApiModelProperty(value = "公司id")
+    private Integer companyId;
+    private List<HeadhunterAccountVO> headhunterAccountList;
     @ApiModelProperty(value = "创建时间", dataType= "string", example = "2019-02-15 17:00:00")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp createTime;
