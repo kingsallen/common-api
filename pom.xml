@@ -13,7 +13,7 @@
         <dependency>
             <groupId>com.moseeker</groupId>
             <artifactId>common-core</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <!-- 其他依赖 -->
         <dependency>
