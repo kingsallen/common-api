@@ -32,6 +32,8 @@ public class ConfigSysPointsConfTplVO {
     private Integer recruitOrder;
     @ApiModelProperty(value = "求职者的文案",required = false)
     private String  applierView;
+    @ApiModelProperty(value = "ats的状态名字",required = false)
+    private String atsName;
 
 }
 
