@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -14,7 +15,11 @@ import java.util.List;
  */
 @ApiModel(value = "HrInterviewProcessVO")
 @Data
-public class HrInterviewProcessVO {
+public class HrInterviewProcessVO implements Serializable {
+
+
+    private static final long serialVersionUID = 3941347221687593489L;
+
     @ApiModelProperty(value = "序列ID")
     private Integer  id;
     @ApiModelProperty(value = "公司ID")
