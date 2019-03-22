@@ -22,11 +22,11 @@ public class ApplicationProcessVO {
     private Integer companyId;
     @ApiModelProperty(name="hrId",value = "hr编号",required = true)
     private Integer hrId;
-    @ApiModelProperty(name="nowProcessId",value = "当前状态",required = true)
-    private Integer nowProcessId;
-    @ApiModelProperty(name="nextProcessId",value = "跳转到的状态",required = true)
-    private Integer nextProcessId;
-    @ApiModelProperty(name="applicationIdList",value = "申请id列表",required = true,dataType="java.util.List")
-    private List<Integer> applicationIdList;
+    @ApiModelProperty(name="processStatus",value = "跳转到的状态",required = true)
+    private Integer processStatus;
+    @ApiModelProperty(name="appIds",value = "申请id列表",required = true,dataType="java.util.List")
+    private List<Integer> appIds;
+    @ApiModelProperty(name="isGDPR",value = "申请id列表")
+    private Integer isGDPR;
 
 }
