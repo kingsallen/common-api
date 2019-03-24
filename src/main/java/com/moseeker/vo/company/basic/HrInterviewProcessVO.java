@@ -15,10 +15,8 @@ import java.util.List;
  */
 @ApiModel(value = "HrInterviewProcessVO")
 @Data
-public class HrInterviewProcessVO implements Serializable {
+public class HrInterviewProcessVO  {
 
-
-    private static final long serialVersionUID = 3941347221687593489L;
 
     @ApiModelProperty(value = "序列ID")
     private Integer  id;
