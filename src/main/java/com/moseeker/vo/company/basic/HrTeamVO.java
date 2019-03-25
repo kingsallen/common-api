@@ -50,6 +50,8 @@ public class HrTeamVO {
     private Integer   disable;
     @ApiModelProperty(value = "团队小标题")
     private String    subTitle;
+    @ApiModelProperty(value = "图片属性")
+    private String    resAttrs;
     @ApiModelProperty(value = "模板链接")
     private String    link;
 
