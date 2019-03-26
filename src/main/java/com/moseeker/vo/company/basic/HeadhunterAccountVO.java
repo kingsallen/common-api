@@ -25,11 +25,11 @@ public class HeadhunterAccountVO {
     private Integer companyId;
     private Integer hrId;
     private String username;
-    @ApiModelProperty(value = "服务开始日期", dataType= "string", example = "2018-12-10 10:12:45")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @ApiModelProperty(value = "服务开始日期", dataType= "string", example = "2018-12-10")
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Timestamp serviceStartTime;
-    @ApiModelProperty(value = "服务结束日期", dataType= "string", example = "2018-12-10 10:12:45")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @ApiModelProperty(value = "服务结束日期", dataType= "string", example = "2018-12-10")
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Timestamp serviceEndTime;
     private String contractFilePath;
     @ApiModelProperty(value = "合同类型", example = "master")
