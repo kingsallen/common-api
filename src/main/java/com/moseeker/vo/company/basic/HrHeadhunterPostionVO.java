@@ -33,5 +33,7 @@ public class HrHeadhunterPostionVO {
     private Integer candidateCount;
     @ApiModelProperty(value = "职位Id， job_position.id")
     private Integer jobId;
+    @ApiModelProperty(value = "职位状态 0 正常，1 停用")
+    private Integer status;
 
 }
