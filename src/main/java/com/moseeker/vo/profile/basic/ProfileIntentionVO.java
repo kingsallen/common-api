@@ -24,9 +24,9 @@ public class ProfileIntentionVO implements Serializable {
 
     private static final long serialVersionUID = -1715008600;
 
-    @ApiModelProperty(value = "主键", name = "id", dataType = "Integer")
+    @ApiModelProperty(value = "主键", name = "id", dataType = "Long")
     private Integer id;
-    @ApiModelProperty(value = "简历Id", name = "profileId", dataType = "Integer")
+    @ApiModelProperty(value = "简历Id", name = "profileId", dataType = "Long")
     private Integer profileId;
     @ApiModelProperty(value = "工作类型", dataType = "java.lang.Integer", example = "1")
     private Byte worktype;
