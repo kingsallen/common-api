@@ -23,4 +23,6 @@ public class JobPositionDataVO extends JobPositionVO{
     private List<Integer> filterIds;
     @ApiModelProperty(value = "邮件配置",example = "[]",required = false,dataType = "java.util.List")
     private List<String> emails;
+    @ApiModelProperty(name="",value = "面试流程id ",required = false)
+    private Integer interviewProcessId;
 }
