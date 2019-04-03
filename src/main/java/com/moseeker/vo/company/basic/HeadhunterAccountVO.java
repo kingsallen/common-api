@@ -23,6 +23,8 @@ public class HeadhunterAccountVO {
     private String password;
     @ApiModelProperty(value = "公司ID")
     private Integer companyId;
+    @ApiModelProperty(value = "猎头公司名称")
+    private String company;
     private Integer hrId;
     @ApiModelProperty(value = "hr公司ID")
     private Integer hrCompanyId;
