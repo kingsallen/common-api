@@ -35,7 +35,10 @@ public class HeadhunterAccountVO {
     @ApiModelProperty(value = "服务结束日期", dataType= "string", example = "2018-12-10")
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Timestamp serviceEndTime;
+    @ApiModelProperty(value = "合同文件路径")
     private String contractFilePath;
+    @ApiModelProperty(value = "合同文件名称")
+    private String contractFileName;
     @ApiModelProperty(value = "合同类型", example = "master")
     private String contractType;
     private Double feeRate;
