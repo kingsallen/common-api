@@ -24,6 +24,8 @@ public class HeadhunterAccountVO {
     @ApiModelProperty(value = "公司ID")
     private Integer companyId;
     private Integer hrId;
+    @ApiModelProperty(value = "hr公司ID")
+    private Integer hrCompanyId;
     private String username;
     @ApiModelProperty(value = "服务开始日期", dataType= "string", example = "2018-12-10")
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
