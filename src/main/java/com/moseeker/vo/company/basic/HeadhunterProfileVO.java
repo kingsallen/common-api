@@ -22,7 +22,7 @@ public class HeadhunterProfileVO {
     private Integer headhunterId;
     @ApiModelProperty(value = "推荐说明")
     private String recommendDesc;
-    @ApiModelProperty(value = "猎头职位Id")
+    @ApiModelProperty(value = "猎头职位Id，hr_headhunter_job.id")
     private Integer jobId;
     @ApiModelProperty(value = "简历状态 0 ： 猎头上传， 1 ： hr 接收（正式简历）", dataType="java.lang.Integer")
     private Byte type;
