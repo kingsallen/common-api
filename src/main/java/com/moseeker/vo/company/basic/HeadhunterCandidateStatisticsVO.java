@@ -5,7 +5,6 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * HeadhunterCandidateStatisticsVO
@@ -22,5 +21,5 @@ public class HeadhunterCandidateStatisticsVO {
     private Integer jobId;
     @ApiModelProperty(value = "总人数")
     private Integer total;
-    private List<Map<String, Object>> process;
+    private List<HeadhunterCandidateProcessVO> process;
 }
