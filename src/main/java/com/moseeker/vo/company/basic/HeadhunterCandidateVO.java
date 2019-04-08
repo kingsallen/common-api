@@ -22,5 +22,6 @@ public class HeadhunterCandidateVO {
     private String operationInfo;
     @ApiModelProperty(value = "推荐时间")
     private String recommendTime;
-
+    @ApiModelProperty(value = "用户id， user_user.id")
+    private Integer userId;
 }

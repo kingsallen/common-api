@@ -14,6 +14,7 @@ import lombok.Data;
 @ApiModel("Hr查看的候选人数据")
 public class HrHeadhunterCandidateVO {
 
+    @ApiModelProperty(name = "id", value = "候选人id")
     private Integer id;
     @ApiModelProperty(value = "候选人名称")
     private String candidateName;
@@ -35,6 +36,8 @@ public class HrHeadhunterCandidateVO {
     private Double cost;
     @ApiModelProperty(value = "推荐时间")
     private String recommendTime;
+    @ApiModelProperty(value = "用户id， user_user.id")
+    private Integer userId;
 
 
 }
