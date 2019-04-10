@@ -25,11 +25,11 @@ public class HrHeadhunterCandidateListVO {
     private Integer headhunterCompanyId;
     @ApiModelProperty(value = "申请职位")
     private Integer [] positionIds;
-    @ApiModelProperty(value = "推荐开始时间", dataType = "java.lang.String", example = "2018-12-10 10:12:45")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @ApiModelProperty(value = "推荐开始时间", dataType = "java.lang.String", example = "2018-12-10")
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Timestamp startTime;
-    @ApiModelProperty(value = "推荐结束时间", dataType = "java.lang.String", example = "2018-12-10 10:12:45")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @ApiModelProperty(value = "推荐结束时间", dataType = "java.lang.String", example = "2018-12-10")
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Timestamp endTime;
     @ApiModelProperty(value = "候选人名称")
     private String name;
