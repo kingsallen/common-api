@@ -21,4 +21,6 @@ public class HeadhunterOMSConfVO {
     private String loginUrl;
     @ApiModelProperty(name = "channelCount", value = "猎头渠道数量")
     private Integer channelCount;
+    @ApiModelProperty(name = "existChannelCount", value = "已存在的猎头渠道数量")
+    private Integer existChannelCount;
 }
