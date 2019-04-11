@@ -22,7 +22,7 @@ public class HrHeadhunterCandidateListVO {
     @ApiModelProperty(value = "状态")
     private Integer status;
     @ApiModelProperty(value = "猎头公司id")
-    private Integer headhunterCompanyId;
+    private Integer headhunterCompany;
     @ApiModelProperty(value = "申请职位")
     private Integer [] positionIds;
     @ApiModelProperty(value = "推荐开始时间", dataType = "java.lang.String", example = "2018-12-10")
