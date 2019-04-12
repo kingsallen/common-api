@@ -38,6 +38,8 @@ public class HrHeadhunterCandidateVO {
     private String recommendTime;
     @ApiModelProperty(value = "用户id， user_user.id")
     private Integer userId;
+    @ApiModelProperty(name = "appTplId", value = "appTplId")
+    private Integer appTplId;
 
 
 }
