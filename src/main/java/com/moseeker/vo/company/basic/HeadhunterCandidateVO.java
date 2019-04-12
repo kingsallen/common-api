@@ -8,6 +8,8 @@ import lombok.Data;
 @ApiModel("猎头端候选人信息")
 public class HeadhunterCandidateVO {
 
+    @ApiModelProperty(name = "id", value = "候选人Id")
+    private Integer id;
     @ApiModelProperty(value = "候选人名称")
     private String candidateName;
     @ApiModelProperty(value = "当前公司名称")
