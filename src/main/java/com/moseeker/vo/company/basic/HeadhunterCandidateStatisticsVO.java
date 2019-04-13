@@ -4,6 +4,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * HeadhunterCandidateStatisticsVO
  *
@@ -17,16 +19,7 @@ public class HeadhunterCandidateStatisticsVO {
     private Integer headhunterId;
     @ApiModelProperty(value = "猎头职位Id hr_headhunter_job.id")
     private Integer jobId;
-    @ApiModelProperty(value = "初筛人数")
-    private Integer screenCount;
-    @ApiModelProperty(value = "面试人数")
-    private Integer interviewCount;
-    @ApiModelProperty(value = "offer人数")
-    private Integer offerCount;
-    @ApiModelProperty(value = "入职人数")
-    private Integer entryCount;
-    @ApiModelProperty(value = "淘汰人数")
-    private Integer refuseCount;
     @ApiModelProperty(value = "总人数")
-    private Integer totalCount;
+    private Integer total;
+    private List<HeadhunterCandidateProcessVO> process;
 }

@@ -8,6 +8,8 @@ import lombok.Data;
 @ApiModel("猎头端候选人信息")
 public class HeadhunterCandidateVO {
 
+    @ApiModelProperty(name = "id", value = "候选人Id")
+    private Integer id;
     @ApiModelProperty(value = "候选人名称")
     private String candidateName;
     @ApiModelProperty(value = "当前公司名称")
@@ -22,5 +24,8 @@ public class HeadhunterCandidateVO {
     private String operationInfo;
     @ApiModelProperty(value = "推荐时间")
     private String recommendTime;
-
+    @ApiModelProperty(value = "用户id， user_user.id")
+    private Integer userId;
+    @ApiModelProperty(name = "jobId", value = "hr职位id， job_position.id")
+    private Integer jobId;
 }

@@ -18,6 +18,8 @@ public class HeadhunterLoginVO {
     private String email;
     @ApiModelProperty(value = "登录密码")
     private String password;
-    @ApiModelProperty(value = "公司ID")
+    @ApiModelProperty(value = "猎头公司ID")
     private Integer companyId;
+    @ApiModelProperty(value = "hr公司ID")
+    private Integer hrCompanyId;
 }

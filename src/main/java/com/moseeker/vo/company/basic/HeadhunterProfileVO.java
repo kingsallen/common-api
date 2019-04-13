@@ -1,12 +1,12 @@
 package com.moseeker.vo.company.basic;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.moseeker.vo.parsing.ProfileParsingVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.sql.Timestamp;
+import java.util.Map;
 
 /**
  * HeadhunterProfileVO
@@ -22,11 +22,11 @@ public class HeadhunterProfileVO {
     private Integer headhunterId;
     @ApiModelProperty(value = "推荐说明")
     private String recommendDesc;
-    @ApiModelProperty(value = "猎头职位Id")
+    @ApiModelProperty(value = "猎头职位Id，hr_headhunter_job.id")
     private Integer jobId;
     @ApiModelProperty(value = "简历状态 0 ： 猎头上传， 1 ： hr 接收（正式简历）", dataType="java.lang.Integer")
     private Byte type;
-    private ProfileParsingVO profileParsingVO;
+    private Map<String,Object> profileParsingVO;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     @ApiModelProperty(value = "创建时间", dataType = "java.lang.String", example = "2018-12-10 10:12:45")
