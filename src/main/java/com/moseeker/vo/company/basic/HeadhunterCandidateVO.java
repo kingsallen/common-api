@@ -26,4 +26,6 @@ public class HeadhunterCandidateVO {
     private String recommendTime;
     @ApiModelProperty(value = "用户id， user_user.id")
     private Integer userId;
+    @ApiModelProperty(name = "jobId", value = "hr职位id， job_position.id")
+    private Integer jobId;
 }
