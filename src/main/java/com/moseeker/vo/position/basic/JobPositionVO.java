@@ -114,6 +114,8 @@ public class JobPositionVO implements Serializable{
     private Byte      gender;
     @ApiModelProperty(name="publisher",value = "hr_account.id",required = false)
     private Integer   publisher;
+    @ApiModelProperty(name="publisherName",value = "publisherName",required = false)
+    private String  publisherName;
     @ApiModelProperty(name="appCvConfigId",value = "职位开启并配置自定义模板 hr_app_cv_conf.id",required = false)
     private Integer   appCvConfigId;
     @ApiModelProperty(name="source",value = "0:手动创建, 1:导入, 9:ATS导入",required = false)
