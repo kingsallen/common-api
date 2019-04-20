@@ -17,6 +17,7 @@ import java.sql.Timestamp;
 @ApiModel("职位数据VO")
 public class HrHeadhunterPostionVO {
 
+    @ApiModelProperty(name = "id", value = "猎头职位表id，hr_headhunter_job.id")
     private Integer id;
     @ApiModelProperty(value = "职位名称")
     private String positionName;
@@ -33,5 +34,7 @@ public class HrHeadhunterPostionVO {
     private Integer candidateCount;
     @ApiModelProperty(value = "职位Id， job_position.id")
     private Integer jobId;
+    @ApiModelProperty(value = "职位状态 0 正常，1 停用")
+    private Integer status;
 
 }
