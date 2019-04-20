@@ -71,6 +71,4 @@ public class JobApplicationVO {
     private Integer   origin;
     @ApiModelProperty(value = "接口调用方编号",required = false)
     private Integer appid;
-    @ApiModelProperty(value = "事件，0：无，1：HR推荐",required = false)
-    private Integer event;
 }
