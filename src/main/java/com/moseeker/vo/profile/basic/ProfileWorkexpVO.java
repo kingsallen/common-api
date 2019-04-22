@@ -6,6 +6,7 @@ package com.moseeker.vo.profile.basic;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 import javax.annotation.Generated;
 import java.io.Serializable;
@@ -74,6 +75,7 @@ public class ProfileWorkexpVO implements Serializable {
         this.industryCode = value.industryCode;
         this.industryName = value.industryName;
         this.companyId = value.companyId;
+        this.companyName =value.companyName;
         this.departmentName = value.departmentName;
         this.positionCode = value.positionCode;
         this.positionName = value.positionName;
@@ -101,6 +103,7 @@ public class ProfileWorkexpVO implements Serializable {
         Integer   industryCode,
         String    industryName,
         Integer   companyId,
+        String    companyName,
         String    departmentName,
         Integer   positionCode,
         String    positionName,
@@ -126,6 +129,7 @@ public class ProfileWorkexpVO implements Serializable {
         this.industryCode = industryCode;
         this.industryName = industryName;
         this.companyId = companyId;
+        this.companyName = companyName;
         this.departmentName = departmentName;
         this.positionCode = positionCode;
         this.positionName = positionName;
@@ -213,6 +217,14 @@ public class ProfileWorkexpVO implements Serializable {
 
     public void setCompanyId(Integer companyId) {
         this.companyId = companyId;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
     public String getDepartmentName() {
@@ -348,6 +360,7 @@ public class ProfileWorkexpVO implements Serializable {
         sb.append(", ").append(industryCode);
         sb.append(", ").append(industryName);
         sb.append(", ").append(companyId);
+        sb.append(", ").append(companyName);
         sb.append(", ").append(departmentName);
         sb.append(", ").append(positionCode);
         sb.append(", ").append(positionName);
