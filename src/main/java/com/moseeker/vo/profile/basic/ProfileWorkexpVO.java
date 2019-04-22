@@ -39,6 +39,8 @@ public class ProfileWorkexpVO implements Serializable {
     private Integer   industryCode;
     private String    industryName;
     private Integer   companyId;
+    @ApiModelProperty(name = "companyName", value = "公司名称")
+    private String   companyName;
     private String    departmentName;
     private Integer   positionCode;
     private String    positionName;
