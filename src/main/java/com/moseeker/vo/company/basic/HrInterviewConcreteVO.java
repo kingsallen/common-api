@@ -75,4 +75,14 @@ public class HrInterviewConcreteVO {
     @ApiModelProperty(value = "更新时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Timestamp updateTime;
+
+
+    @ApiModelProperty(value = "其他联系人姓名", dataType= "string", example = "张三")
+    private String contactName;
+
+    @ApiModelProperty(value = "其他联系人电话", dataType= "string", example = "15269385693")
+    private String contactPhone;
+
+
+
 }
