@@ -121,6 +121,9 @@ public enum ApplicationSource {
             case CARNOC:
                 origin = 16384;
                 break;
+            case TW104:
+                origin = 33554432;
+                break;
             default:
         }
         return origin;
