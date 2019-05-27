@@ -37,7 +37,7 @@ public class ActivityListVO {
     @JsonProperty(value = "dType")
     private Byte dType;
 
-    private Integer throttle;
+    private Double throttle;
 
     private Integer estimatedTotal;
 
