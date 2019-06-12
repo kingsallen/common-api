@@ -24,8 +24,8 @@ public class HeadhunterDataVO {
     private String headhunterName;
     @ApiModelProperty(value = "职位名称")
     private String positionName;
-    @ApiModelProperty(name ="status",value = "职位状态 0：正常，1：停止，2：删除",example = "0", dataType="java.lang.Integer")
-    private Byte status;
+    @ApiModelProperty(name ="status",value = "职位状态")
+    private String status;
     @ApiModelProperty(value = "筛选人数")
     private Integer screenCount;
     @ApiModelProperty(value = "面试人数")
@@ -36,6 +36,10 @@ public class HeadhunterDataVO {
     private Integer preEntryCount;
     @ApiModelProperty(value = "入职人数")
     private Integer entryCount;
+    @ApiModelProperty(value = "拒绝人数")
+    private Integer refuseCount;
+    @ApiModelProperty(value = "淘汰人数")
+    private Integer eliminationCount;
     @ApiModelProperty(value = "同步时间")
     private String openDate;
     @ApiModelProperty(value = "进行时间")
