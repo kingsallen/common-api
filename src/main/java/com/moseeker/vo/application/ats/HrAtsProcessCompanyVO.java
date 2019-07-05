@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
-@ApiModel("ats流程具体的企业配置项")
+@ApiModel("ats流程的信息")
 public class HrAtsProcessCompanyVO {
     @ApiModelProperty(name = "id",value = "主键id")
     private Integer id;
