@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
-@ApiModel("流程配置项西欧明星哦")
+@ApiModel("流程配置项具体信息")
 public class HrAtsProcessCompanyItemInfoVO extends HrAtsProcessCompanyItemVO{
     @ApiModelProperty(name="baseItemData",value = "配置型信息")
     private HrAtsProcessBaseItemInfoVO baseItemData;

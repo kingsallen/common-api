@@ -15,6 +15,8 @@ public class HrAtsProcessBaseVO {
     private Integer companyId;
     @ApiModelProperty(name = "type",value = "类别 1是筛选类 2是面食类型 3是服务类型 4offer类型 5其他类型  0默认类型这种状态是不对的")
     private Integer type;
+    @ApiModelProperty(name = "description",value = "描述")
+    private String description;
     @ApiModelProperty(name = "createTime",value = "主键id")
     private String createTime;
     @ApiModelProperty(name = "updateTime",value = "主键id")
