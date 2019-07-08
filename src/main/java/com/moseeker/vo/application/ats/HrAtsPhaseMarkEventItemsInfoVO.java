@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @ApiModel("标志事件信息")
-public class HrAtsProcessMarkEventItemsInfoVO extends HrAtsProcessEventItemsVO {
-    @ApiModelProperty(name="selected",value = "是否开启")
+public class HrAtsPhaseMarkEventItemsInfoVO extends HrAtsPhaseEventItemsVO {
+    @ApiModelProperty(name="selected",value = "是否开启 1是开启")
     private Integer selected;
 }

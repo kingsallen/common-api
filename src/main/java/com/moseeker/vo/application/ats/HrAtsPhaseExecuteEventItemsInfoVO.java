@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @ApiModel("标志事件信息")
-public class HrAtsProcessExecuteEventItemsInfoVO extends HrAtsProcessEventItemsVO {
+public class HrAtsPhaseExecuteEventItemsInfoVO extends HrAtsPhaseEventItemsVO {
     @ApiModelProperty(name="messageId",value="模板id")
     private Integer  messageId;
     @ApiModelProperty(name="name",value="模板名称")

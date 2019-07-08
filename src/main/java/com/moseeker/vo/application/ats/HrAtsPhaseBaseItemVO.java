@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @ApiModel("ats流程具体的企业配置项")
-public class HrAtsProcessBaseItemVO {
+public class HrAtsPhaseBaseItemVO {
     @ApiModelProperty(name = "id",value = "主键id")
     private Integer id;
     @ApiModelProperty(name = "name",value = "阶段名称")

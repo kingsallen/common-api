@@ -6,7 +6,7 @@ import lombok.Data;
 
 @ApiModel("招聘管理事件")
 @Data
-public class HrAtsProcessEventItemsVO {
+public class HrAtsPhaseEventItemsVO {
     @ApiModelProperty(name = "id",value = "主键id")
     private Integer id;
     @ApiModelProperty(name = "name",value = "事件名称")

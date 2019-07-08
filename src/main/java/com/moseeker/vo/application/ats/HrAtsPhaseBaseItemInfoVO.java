@@ -7,13 +7,13 @@ import lombok.Data;
 import java.util.List;
 @Data
 @ApiModel("招聘阶段具体信息")
-public class HrAtsProcessBaseItemInfoVO {
+public class HrAtsPhaseBaseItemInfoVO {
     @ApiModelProperty(name="base",value = "基本阶段信息")
-    private HrAtsProcessBaseVO base;
+    private HrAtsPhaseBaseVO base;
     @ApiModelProperty(name="basic",value = "阶段配置基本信息")
-    private HrAtsProcessBaseItemVO basic;
+    private HrAtsPhaseBaseItemVO basic;
     @ApiModelProperty(name="executeEventList",value = "执行事件列表")
-    private List<HrAtsProcessExecuteEventItemsInfoVO> executeEventList;
+    private List<HrAtsPhaseExecuteEventItemsInfoVO> executeEventList;
     @ApiModelProperty(name="markEventList",value = "标志事件列表")
-    private List<HrAtsProcessMarkEventItemsInfoVO> markEventList;
+    private List<HrAtsPhaseMarkEventItemsInfoVO> markEventList;
 }

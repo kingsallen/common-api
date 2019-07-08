@@ -8,7 +8,7 @@ import lombok.Data;
 @ApiModel("流程配置项具体信息")
 public class HrAtsProcessCompanyItemInfoVO extends HrAtsProcessCompanyItemVO{
     @ApiModelProperty(name="baseItemData",value = "配置型信息")
-    private HrAtsProcessBaseItemInfoVO baseItemData;
+    private HrAtsPhaseBaseItemInfoVO baseItemData;
     @ApiModelProperty(name="appNum",value = "申请数量")
     private int appNum;
 }
