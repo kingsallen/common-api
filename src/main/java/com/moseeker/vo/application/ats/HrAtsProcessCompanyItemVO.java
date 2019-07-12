@@ -15,6 +15,8 @@ public class HrAtsProcessCompanyItemVO {
     private Integer parentId;
     @ApiModelProperty(name = "itemId",value = "ats流程具体的企业配置项")
     private Integer itemId;
+    @ApiModelProperty(name = "disable",value = "0有效 1无效")
+    private Integer disable;
     @ApiModelProperty(name = "createTime",value = "创建时间")
     private String createTime;
     @ApiModelProperty(name = "updateTime",value = "更新时间")

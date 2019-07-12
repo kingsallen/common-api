@@ -9,8 +9,8 @@ import lombok.Data;
 public class HrAtsPhaseExecuteEventItemsInfoVO extends HrAtsPhaseEventItemsVO {
     @ApiModelProperty(name="messageId",value="模板id")
     private Integer  messageId;
-    @ApiModelProperty(name="name",value="模板名称")
-    private String name;
+    @ApiModelProperty(name="messageName",value="模板名称")
+    private String messageName;
     @ApiModelProperty(name="messageStatus",value="模板状态 0是有效 1是删除")
     private Integer messageStatus;
 }

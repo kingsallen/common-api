@@ -28,5 +28,6 @@ public class ApplicationProcessVO {
     private List<Integer> appIds;
     @ApiModelProperty(name="isGDPR",value = "申请id列表")
     private Integer isGDPR;
-
+    @ApiModelProperty(name="skinMessage",value = "是否跳过消息模板")
+    private int skinMessage=0;
 }

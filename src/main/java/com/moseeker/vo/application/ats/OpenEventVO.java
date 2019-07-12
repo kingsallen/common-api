@@ -5,12 +5,10 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
-@ApiModel("事件模板表")
-public class EventMessageVO {
+@ApiModel("标记事件表")
+public class OpenEventVO {
     @ApiModelProperty(name="eventId",value ="事件id" )
     private int eventId;
-    @ApiModelProperty(name="messageId",value ="模板id" )
-    private int messageId;
     @ApiModelProperty(name="eventOrder",value ="事件顺序" )
     private int eventOrder;
 }
