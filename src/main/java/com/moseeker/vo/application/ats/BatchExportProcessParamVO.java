@@ -11,8 +11,8 @@ import lombok.Data;
  */
 @Data
 public class BatchExportProcessParamVO {
-    @ApiModelProperty(name = "hrId", value = "hr编号", dataType = "int", required = true, example = "82752")
-    private Integer hrId;
+    @ApiModelProperty(name = "compoanyId", value = "公司Id", dataType = "int", required = true, example = "39978")
+    private Integer compoanyId;
     @ApiModelProperty(name = "positionId", value = "职位Id", dataType = "int", example = "1")
     private Integer positionId;
     @ApiModelProperty(name = "processId", value = "流程阶段id", dataType = "int", example = "2")
