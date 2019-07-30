@@ -21,6 +21,8 @@ public class HrAtsPhaseBaseVO {
     private String createTime;
     @ApiModelProperty(name = "updateTime",value = "主键id")
     private String updateTime;
+    @ApiModelProperty(name = "system",value = "是否是默认类型")
+    private int system;
 
 
 }
