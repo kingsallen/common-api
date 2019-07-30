@@ -1,5 +1,6 @@
 package com.moseeker.vo.dict.basic;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -7,6 +8,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
+@JsonFilter("emptyfilter")
 public class ConstantTreeVO  extends  BaseFieldValue{
     private Integer parentCode;
     @JsonIgnore
