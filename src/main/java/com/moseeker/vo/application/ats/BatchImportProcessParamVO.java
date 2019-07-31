@@ -18,5 +18,7 @@ public class BatchImportProcessParamVO {
     @ApiModelProperty(name = "hrId", value = "hrId", dataType = "int", required = true, example = "39978")
     private Integer hrId;
     private Integer timeout;
+    @ApiModelProperty(name = "emailAddress", value = "hr邮箱", dataType = "string", required = true, example = "ex@moseeker.com")
+    private String emailAddress;
     private List<HrAtsImportProcessVO> data;
 }
