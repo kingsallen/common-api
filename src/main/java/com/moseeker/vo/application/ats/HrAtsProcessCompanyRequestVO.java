@@ -11,4 +11,6 @@ import java.util.List;
 public class HrAtsProcessCompanyRequestVO extends HrAtsProcessCompanyVO {
     @ApiModelProperty(name="dataList",value = "流程具体信息")
     private List<HrAtsProcessCompanyItemVO> dataList;
+    @ApiModelProperty(name="hrId",value = "hr编号")
+    private Integer hrId;
 }
