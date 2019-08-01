@@ -23,5 +23,6 @@ public class PositionUpsertParams {
     private JobPositionExtVO extVo;
     @ApiModelProperty(name="interviewProcessId",value = "面试id ",required = false)
     private Integer interviewProcessId;
-
+    @ApiModelProperty(name="processId",value = "招聘流程",required = false)
+    private int processId;
 }

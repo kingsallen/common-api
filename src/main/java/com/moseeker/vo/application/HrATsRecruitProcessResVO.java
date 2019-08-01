@@ -1,10 +1,10 @@
 package com.moseeker.vo.application;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+        import io.swagger.annotations.ApiModel;
+        import io.swagger.annotations.ApiModelProperty;
+        import lombok.Data;
 
-import java.util.List;
+        import java.util.List;
 
 @Data
 @ApiModel("招聘修改返回结果")
