@@ -21,4 +21,6 @@ public class BatchExportProcessParamVO {
     private String startTime;
     @ApiModelProperty(name = "endTime", value = "结束时间", dataType = "java.lang.String", required = true, example = "2019-07-10")
     private String endTime;
+    @ApiModelProperty(name = "emailAddress", value = "hr邮箱", dataType = "string", required = true, example = "ex@moseeker.com")
+    private String emailAddress;
 }
