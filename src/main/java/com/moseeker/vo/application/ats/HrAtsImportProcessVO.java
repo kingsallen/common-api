@@ -27,4 +27,5 @@ public class HrAtsImportProcessVO {
     private String processId;
     @ApiModelProperty(name = "appId", value = "申请id", dataType = "int", required = true, example = "888")
     private Integer appId;
+    private String uuid;
 }
