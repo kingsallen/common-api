@@ -31,4 +31,5 @@ public class HrAtsImportProcessResultVO {
     private String result;
     @ApiModelProperty(name = "result", value = "失败原因", dataType = "string", required = true, example = "阶段标识错误")
     private String errorInfo;
+    private String uuid;
 }
