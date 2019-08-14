@@ -2,6 +2,7 @@ package com.moseeker.vo.messaging.messagecenter;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -11,6 +12,7 @@ import java.io.Serializable;
  * date 2019-08-13 16:26
  */
 @Data
+@Builder
 @ApiModel(description = "@提醒-@我的")
 public class MessageCenterOtherChatWithMeVO implements IMessageCenterBaseVO, Serializable {
 
