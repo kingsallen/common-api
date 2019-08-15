@@ -1,5 +1,6 @@
 package com.moseeker.vo.profile;
 
+import com.moseeker.enums.user.UserSource;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -15,4 +16,6 @@ public class RetrieveProfileVO {
     private Integer channel;
     @ApiModelProperty(name = "profile", value = "profile Json字符串", example = "{\"id\":1, \"name\": 2}")
     private String profile;
+    private UserSource source;
+
 }
