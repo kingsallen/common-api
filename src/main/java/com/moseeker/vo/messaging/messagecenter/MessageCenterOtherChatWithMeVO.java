@@ -1,5 +1,6 @@
 package com.moseeker.vo.messaging.messagecenter;
 
+import com.moseeker.constant.messaging.MessageCenterNoticeType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -14,7 +15,7 @@ import java.io.Serializable;
 @Data
 @Builder
 @ApiModel(description = "@提醒-@我的")
-public class MessageCenterOtherChatWithMeVO implements IMessageCenterBaseVO, Serializable {
+public class MessageCenterOtherChatWithMeVO implements IMessageCenterBaseVO{
 
     @ApiModelProperty("操作者id")
     private Integer hrId;
@@ -27,4 +28,9 @@ public class MessageCenterOtherChatWithMeVO implements IMessageCenterBaseVO, Ser
 
     @ApiModelProperty("@我的内容")
     private String remark;
+
+    @Override
+    public MessageCenterNoticeType getMessageCenterNoticeType() {
+        return MessageCenterNoticeType.ATTENTION;
+    }
 }

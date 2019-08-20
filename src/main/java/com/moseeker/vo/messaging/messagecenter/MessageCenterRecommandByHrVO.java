@@ -1,5 +1,6 @@
 package com.moseeker.vo.messaging.messagecenter;
 
+import com.moseeker.constant.messaging.MessageCenterNoticeType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -18,9 +19,11 @@ public class MessageCenterRecommandByHrVO implements IMessageCenterBaseVO, Seria
     @ApiModelProperty(name = "hrId",value = "hrid",required = true)
     private Integer hrId;
 
-    @ApiModelProperty(name = "positionId",value = "职位id",required = true)
-    private Integer positionId;
+    @ApiModelProperty(name = "applicationId",value = "申请id",required = true)
+    private Integer applicationId;
 
-    @ApiModelProperty(name = "candidateId",value = "候选人id",required = true)
-    private Integer candidateId;
+    @Override
+    public MessageCenterNoticeType getMessageCenterNoticeType() {
+        return MessageCenterNoticeType.RECOMMAND_BY_HR;
+    }
 }
