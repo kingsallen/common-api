@@ -16,7 +16,7 @@ import lombok.Data;
 @ApiModel(description = "消息中心-推荐-hr推荐")
 public class MessageCenterRecommandByHrVO implements IMessageCenterBaseVO{
 
-    @ApiModelProperty(name = "hrId",value = "hrid",required = true)
+    @ApiModelProperty(name = "hrId",value = "hrId",required = true)
     private Integer hrId;
 
     @ApiModelProperty(name = "applicationId",value = "申请id",required = true)
