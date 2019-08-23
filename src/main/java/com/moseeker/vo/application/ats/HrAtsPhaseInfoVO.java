@@ -17,4 +17,6 @@ public class HrAtsPhaseInfoVO {
     private int baseItemId;
     @ApiModelProperty(name="baseId",value = "基础类型的id")
     private int baseId;
+    @ApiModelProperty(name="baseType",value = "基础类型的type")
+    private int baseType;
 }
