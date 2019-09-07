@@ -20,6 +20,6 @@ public class MessageCenterCandidateObsoleteVO implements IMessageCenterBaseVO {
 
     @Override
     public MessageCenterNoticeType getMessageCenterNoticeType() {
-        return null;
+        return MessageCenterNoticeType.OTHER_FAILURE;
     }
 }
