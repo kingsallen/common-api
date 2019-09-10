@@ -17,6 +17,4 @@ public class ApplicationArchiveParamsVO {
     private Integer archiveReasonCode;
     @ApiModelProperty(name = "archiveReason", value = "归档原因")
     private String archiveReason;
-    @ApiModelProperty(name = "operator", value = "操作人")
-    private String operator;
 }
