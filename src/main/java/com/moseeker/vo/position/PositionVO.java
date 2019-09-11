@@ -60,5 +60,7 @@ public class PositionVO implements Serializable{
 	private DictIndustryVO dictIndustryData;
 	@ApiModelProperty(value = "hr信息",required = false)
 	private UserHrAccountVO hr;
+	@ApiModelProperty(value = "流程信息",required = false)
+	private int processId;
 
 }
