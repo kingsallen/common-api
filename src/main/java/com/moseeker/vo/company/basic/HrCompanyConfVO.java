@@ -79,6 +79,8 @@ public class HrCompanyConfVO {
     private Byte      veryeastSwitch;
     @ApiModelProperty(value = "51薪资面议开关 0：未开启，1：开启")
     private Byte      job51SalaryDiscuss;
+    @ApiModelProperty(value = "ats版本 0是未开启new_ats_process流程 1表示开启了new_ats_process流程")
+    private Integer  newAtsStatus;
 
 
 }
