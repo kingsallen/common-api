@@ -42,6 +42,7 @@ public class ActivityListVO {
     private Integer estimatedTotal;
 
     private List<Position> positionList;
+    private Integer theme;
 
     public Position buildPosition() {
         return new Position();
