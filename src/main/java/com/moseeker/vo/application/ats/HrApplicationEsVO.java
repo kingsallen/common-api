@@ -6,5 +6,6 @@ import lombok.Data;
 public class HrApplicationEsVO {
     private HrAtsPhaseBaseItemVO base;
     private int phaseId;
-    private int isViewed;
+    private int appId;
+    private int userId;
 }
