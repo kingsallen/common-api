@@ -152,5 +152,6 @@ public class JobPositionVO implements Serializable{
     private Byte      profileCcMailEnabled;
     @ApiModelProperty(name="isReferral",value = "是否是内推，0 否；1 是",required = false)
     private Byte      isReferral;
-
+    @ApiModelProperty(name = "firstPinyin",value = "首字母拼音",required = false)
+    private String firstPinyin;
 }
