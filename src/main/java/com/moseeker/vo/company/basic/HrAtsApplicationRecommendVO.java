@@ -19,8 +19,11 @@ public class HrAtsApplicationRecommendVO {
     private Integer   hrId;
     @ApiModelProperty(value = "面试官id",required = true)
     private Integer   interviewerId;
-    @ApiModelProperty(value = "初筛结果 0 未反馈 1 初筛通过 2 淘汰",required = true)
+    @ApiModelProperty(value = "初筛结果 0 未反馈 1 已反馈",required = true)
+    //TODO
     private Integer   recommendStatus;
+    @ApiModelProperty(name = "postScript",value ="附言")
+    private String   postScript;
     @ApiModelProperty(name = "disable",value ="状态：0 有效  1 无效 2 逻辑删除",required = true)
     private Integer   disable;
     @ApiModelProperty(value = "创建时间", dataType= "string", example = "2018-12-10 10:12:45")

@@ -42,6 +42,8 @@ public class HrHeadhunterCandidateVO {
     private Integer appTplId;
     @ApiModelProperty(value = "接收时间")
     private String receiveTime;
+    @ApiModelProperty(name = "applicationId", value = "申请id")
+    private Integer applicationId;
 
 
 }
