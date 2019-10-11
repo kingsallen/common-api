@@ -64,5 +64,7 @@ public class PositionVO implements Serializable{
 	private int processId;
 	@ApiModelProperty(value = "流程信息名称",required = false)
 	private String processName;
+	@ApiModelProperty(value = "工作地点信息",required = false)
+	private List<PositionAddressVO> addresses;
 
 }
