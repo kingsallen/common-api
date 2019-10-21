@@ -1,9 +1,8 @@
 package com.moseeker.vo.company.response;
 
-import com.moseeker.util.StringUtils;
+import com.moseeker.vo.search.MyGeoPoint;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import org.elasticsearch.common.geo.GeoPoint;
 
 @Data
 public class CompanyAddressDataVO {
@@ -41,5 +40,5 @@ public class CompanyAddressDataVO {
     private String latitude;
 
     @ApiModelProperty("地理位置")
-    private GeoPoint point;
+    private MyGeoPoint point;
 }
