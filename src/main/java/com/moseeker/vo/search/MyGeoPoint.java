@@ -3,7 +3,8 @@ package com.moseeker.vo.search;
 public class MyGeoPoint {
     private double lat;
     private double lon;
-
+    public MyGeoPoint() {
+    }
     public MyGeoPoint(double lat, double lon) {
         this.lat = lat;
         this.lon = lon;
