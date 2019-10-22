@@ -9,6 +9,8 @@ public class ApplicationPageRequestVo {
 
     private Integer companyId;
 
+    private Integer sourceId;
+
     private Integer hrId;
 
     private Integer positionId;
