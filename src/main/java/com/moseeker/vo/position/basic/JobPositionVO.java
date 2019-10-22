@@ -154,4 +154,6 @@ public class JobPositionVO implements Serializable{
     private Byte      isReferral;
     @ApiModelProperty(name = "firstPinyin",value = "首字母拼音",required = false)
     private String firstPinyin;
+    @ApiModelProperty(name = "distance",value = "该职位所在地址距离用户最近距离",required = false)
+    private Double distance;
 }
