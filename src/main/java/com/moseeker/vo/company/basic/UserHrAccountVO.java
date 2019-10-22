@@ -63,4 +63,10 @@ public class UserHrAccountVO {
     private Integer   leaveToMobot;
     private String    remarkName;
     private Integer applicationPositionCountFlag = 0; // 0 不需要统计职位和投递人数 1 需要
+    @ApiModelProperty(value = "工号")
+    private String jobNumber;
+    @ApiModelProperty(value = "部门id")
+    private Integer deparmentId;
+    @ApiModelProperty(value = "负责部门id")
+    private String managedDepartmentId;
 }
