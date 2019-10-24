@@ -10,6 +10,8 @@ import java.util.List;
 public class ApplicationArchiveParamsVO {
     @ApiModelProperty(name = "hrId", value = "hrId", dataType = "int")
     private Integer hrId;
+    @ApiModelProperty(name = "userId", value = "userId", dataType = "int")
+    private Integer userId;
     @ApiModelProperty(name = "applicationId", value = "职位id", dataType = "int")
     private List<Integer> applicationIds;
     @ApiModelProperty(name = "archiveType", value = "归档类型 1:已入职 2:放弃入职 3:淘汰 4:手动上传归档", dataType = "int")
