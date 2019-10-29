@@ -154,4 +154,8 @@ public class JobPositionVO implements Serializable{
     private Byte      isReferral;
     @ApiModelProperty(name = "firstPinyin",value = "首字母拼音",required = false)
     private String firstPinyin;
+    @ApiModelProperty(name = "notOffice",value = "office职位:0  非office职位:1",required = false)
+    private Byte      notOffice;
+    @ApiModelProperty(name = "sendEmail",value = "发送过邮件的邮箱地址",required = false)
+    private String     sendEmail;
 }

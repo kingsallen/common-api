@@ -4,6 +4,7 @@ import com.moseeker.vo.company.basic.HrCompanyFeatureVO;
 import com.moseeker.vo.company.basic.HrCompanyVO;
 import com.moseeker.vo.company.basic.HrTeamVO;
 import com.moseeker.vo.company.basic.UserHrAccountVO;
+import com.moseeker.vo.company.response.CompanyAddressDataVO;
 import com.moseeker.vo.dict.basic.DictCityVO;
 import com.moseeker.vo.position.JobPositionOtherVO;
 import com.moseeker.vo.position.basic.JobCustomVO;
@@ -64,5 +65,8 @@ public class PositionVO implements Serializable{
 	private int processId;
 	@ApiModelProperty(value = "流程信息名称",required = false)
 	private String processName;
-
+	@ApiModelProperty(value = "职位地址信息",required = false)
+	private List<CompanyAddressDataVO> addresses;
+	@ApiModelProperty(value = "招聘负责人信息",required = false)
+	private PositionResponsibleUser responsible;
 }
