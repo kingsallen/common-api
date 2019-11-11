@@ -1,5 +1,6 @@
 package com.moseeker.vo.company.response;
 
+import com.moseeker.vo.search.MyGeoPoint;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -37,4 +38,7 @@ public class CompanyAddressDataVO {
 
     @ApiModelProperty("纬度")
     private String latitude;
+
+    @ApiModelProperty("地理位置")
+    private MyGeoPoint point;
 }

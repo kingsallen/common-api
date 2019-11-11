@@ -28,5 +28,9 @@ public class ApplicationCommunicationVO {
     private Byte communicationStatus;
     @ApiModelProperty(value = "创建者id")
     private Byte creatorType;
+    @ApiModelProperty(value = "创建时间(无需填写)")
+    private Timestamp createTime;
+    @ApiModelProperty(value = "更新时间(无需填写)")
+    private Timestamp updateTime;
 
 }
