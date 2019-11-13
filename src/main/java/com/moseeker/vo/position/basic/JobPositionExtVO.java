@@ -20,5 +20,7 @@ public class JobPositionExtVO {
     private Integer pid;
     @ApiModelProperty(value = "SuccessFactors对接",dataType = "String",required = false,example = "111")
     private String extra;
+    @ApiModelProperty(value = "SuccessFactors对接",dataType = "String",required = false,example = "111")
+    private String ext;
     
 }
