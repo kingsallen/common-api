@@ -25,4 +25,6 @@ public class PositionUpsertParams {
     private Integer interviewProcessId;
     @ApiModelProperty(name="processId",value = "招聘流程",required = false)
     private int processId;
+    @ApiModelProperty(name="hrId",value = "操作人id",required = false)
+    private int hrId;
 }

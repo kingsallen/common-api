@@ -18,4 +18,6 @@ public class UserProfileInfoVO {
     private String address;
     @ApiModelProperty(value = "工作年限")
     private Integer workExpYears;
+    @ApiModelProperty(value = "姓名")
+    private String userName;
 }
