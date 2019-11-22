@@ -36,8 +36,8 @@ public class HrCompanyInterviewVO {
     @ApiModelProperty(name = "interview_type",value = "面试形式 dictdb.dict_constant",required = true)
     private Integer interviewType;
 
-    @ApiModelProperty(name = "interview_round_name",value = "面试轮次名称  hr_interview_process_round.name",required = true)
-    private String interviewRoundName;
+    @ApiModelProperty(name = "interview_round",value = "面试轮次名称(1初试2复试3终试)",required = true)
+    private String interviewRound;
 
     @ApiModelProperty(value = "面试开始时间", dataType= "string", example = "2018-12-10 10:12:45")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
