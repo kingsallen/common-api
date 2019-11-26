@@ -54,6 +54,6 @@ public class JobApplicationDataVO extends JobApplicationVO {
     private int processId;
     @ApiModelProperty(value = "阶段名称",name = "phaseName",required = false,dataType = "java.lang.string",example = "qqqq")
     private String phaseName;
-
-
+    @ApiModelProperty(value = "申请的渠道来源")
+    private List<ApplicationChannelVO> channels;
 }
