@@ -47,4 +47,8 @@ public enum HRRoleTypeEnum {
         }
         return HRRoleTypeEnum.HR;
     }
+
+    public static Boolean canLoginPC(Integer roleType){
+        return !roleType.equals(HRRoleTypeEnum.MANAGER.getType())&&!roleType.equals(HRRoleTypeEnum.INTERVIEWER.getType());
+    }
 }
