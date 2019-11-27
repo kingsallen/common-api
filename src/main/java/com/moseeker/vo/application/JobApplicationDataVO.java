@@ -56,4 +56,6 @@ public class JobApplicationDataVO extends JobApplicationVO {
     private String phaseName;
     @ApiModelProperty(value = "申请的渠道来源")
     private List<ApplicationChannelVO> channels;
+    @ApiModelProperty(value = "是否有权限查看（true表示有权限，false表示没有权限）",name = "hasAuthority",dataType = "java.lang.boolean",example = "false")
+    private boolean hasAuthority;
 }
