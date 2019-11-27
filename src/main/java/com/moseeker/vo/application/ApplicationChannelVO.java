@@ -42,8 +42,8 @@ public class ApplicationChannelVO {
     private Integer sort;
 
     @ApiModelProperty(value = "投递来源")
-    private String deliverySource;
+    private String sourceName;
 
     @ApiModelProperty(value = "渠道分类名称")
-    private String categoryName;
+    private String category;
 }
