@@ -6,7 +6,6 @@ import lombok.Data;
 
 /**
  * HrHeadhunterCandidateVO
- *
  * @Author: lee
  * @Date: 2019/2/22
  */
@@ -44,6 +43,8 @@ public class HrHeadhunterCandidateVO {
     private String receiveTime;
     @ApiModelProperty(name = "applicationId", value = "申请id")
     private Integer applicationId;
-
-
+    @ApiModelProperty(name = "companyId", value = "公司id")
+    private Integer companyId;
+    @ApiModelProperty(name = "headhunterId", value = "猎头id")
+    private Integer headhunterId;
 }

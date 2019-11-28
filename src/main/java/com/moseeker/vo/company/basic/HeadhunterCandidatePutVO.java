@@ -14,4 +14,8 @@ public class HeadhunterCandidatePutVO {
     private Integer id;
     @ApiModelProperty(value = "猎头费用")
     private Double cost;
+    @ApiModelProperty(value = "候选人userId")
+    private Integer userId;
+    @ApiModelProperty(value = "职位id")
+    private Integer positionId;
 }
