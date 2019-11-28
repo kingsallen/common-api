@@ -81,6 +81,10 @@ public class HrCompanyConfVO {
     private Byte      job51SalaryDiscuss;
     @ApiModelProperty(value = "ats版本 0是未开启new_ats_process流程 1表示开启了new_ats_process流程")
     private Integer  newAtsStatus;
-
-
+    @ApiModelProperty(value = "MoBot头像")
+    private String    mobotHeadImg;
+    @ApiModelProperty(value = "Mobot名称")
+    private String    mobotName;
+    @ApiModelProperty(value = "Mobot欢迎语")
+    private String    mobotWelcome;
 }
