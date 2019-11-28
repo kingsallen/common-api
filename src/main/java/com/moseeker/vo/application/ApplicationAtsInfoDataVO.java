@@ -19,6 +19,8 @@ public class ApplicationAtsInfoDataVO {
 
     private Integer processId;
 
+    private Integer lApplicationId;
+
     private Integer recommenderUserId;
 
     private Integer atsStatus;
