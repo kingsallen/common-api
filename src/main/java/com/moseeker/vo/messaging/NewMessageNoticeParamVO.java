@@ -25,6 +25,6 @@ public class NewMessageNoticeParamVO {
 
     private boolean isQRcode;
 
-    private Map<String,String> originParam;
+    private Map<String,Object> originParam;
 
 }
