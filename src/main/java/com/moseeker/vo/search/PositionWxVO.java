@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -16,12 +17,15 @@ import java.util.Map;
 @ApiModel("微信端职位查询VO")
 public class PositionWxVO {
 
-    @ApiModelProperty(value = "查询条数", required = true, dataType = "int")
-    private Integer querySize;
+//    @ApiModelProperty(value = "查询条数", required = true, dataType = "int")
+//    private Integer querySize;
     @ApiModelProperty(value = "公司id", required = true, dataType = "int")
     private Integer companyId;
     private boolean isReferral;
-    private Map<String, Object> searchCondition;
-    private Integer salaryTop;
-    private Integer salaryBottom;
+//    private Map<String, Object> searchCondition;
+//    private Integer salaryTop;
+//    private Integer salaryBottom;
+    private String displayLocale;
+    private List<ConfSearchItem> conf_search_seq;
+    private Map<String, String> params;
 }
