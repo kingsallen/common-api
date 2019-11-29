@@ -19,6 +19,9 @@ public enum MessagePlaceholderEnum {
     callback_url("callbackUrl","${callbackUrl}","#相关连接#",""),
     deadline("deadline","${deadline}","#截止日期#",""),
     rqcode("rqcode","${rqcode}","#二维码#",""),
+    interviewer_name("interviewerName","${interviewerName}","#面试官姓名#",""),
+    recommended_name("recommendedName","${recommendedName}","#被推荐者姓名#",""),recommended_phone("recommendedPhone","${recommendedPhone}","#被推荐者电话#",""),
+    recommender_name("recommenderName","${recommenderName}","#推荐人姓名#",""),recommender_role("recommenderRole","${recommenderRole}","#推荐人角色#",""),
     reciver_name("reciverName","${reciverName}","#接收人#",""),
     link("link","${link}","#链接#","")
     ;
