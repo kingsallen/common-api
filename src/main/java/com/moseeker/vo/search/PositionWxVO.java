@@ -17,15 +17,15 @@ import java.util.Map;
 @ApiModel("微信端职位查询VO")
 public class PositionWxVO {
 
-//    @ApiModelProperty(value = "查询条数", required = true, dataType = "int")
-//    private Integer querySize;
     @ApiModelProperty(value = "公司id", required = true, dataType = "int")
     private Integer companyId;
+    @ApiModelProperty(value = "是否内推", required = true, dataType = "int")
     private boolean isReferral;
-//    private Map<String, Object> searchCondition;
-//    private Integer salaryTop;
-//    private Integer salaryBottom;
+
+    @ApiModelProperty(value = "展示语言", required = true, dataType = "string", example = "en_US")
     private String displayLocale;
-    private List<ConfSearchItem> conf_search_seq;
+    @ApiModelProperty(value = "公司数据库配置项", required = true, dataType = "java.util.List")
+    private List<Integer> confSearchSeq;
+    @ApiModelProperty(value = "链接参数", required = true, dataType = "java.util.Map", example = "{\"did\":39978,\"degree\":2}")
     private Map<String, String> params;
 }
