@@ -7,7 +7,7 @@ import java.util.Map;
 
 public enum MessagePlaceholderEnum {
 
-    position_title("positionTitle","${positionTitle}","#职位名称#","job"),position_starttime("positionStarttime","${positionStarttime}","#入职日期#",""),position_location("positionLocation","${positionLocation}","#入职地点#",""),applied_position("appliedPosition","${appliedPosition}","#应聘职位#","keyword1"),
+    position_title("positionTitle","${positionTitle}","#职位名称#","keyword1"),position_starttime("positionStarttime","${positionStarttime}","#入职日期#",""),position_location("positionLocation","${positionLocation}","#入职地点#",""),applied_position("appliedPosition","${appliedPosition}","#应聘职位#","keyword1"),
     hr_name("hrName","${hrName}","#HR姓名#",""),hr_mobile("hrMobile","${hrMobile}","#HR电话#",""),hr_email("hrEmail","${hrEmail}","#HR邮箱#",""),
     applier_name("applierName","${applierName}","#求职者姓名#","keyword2"),applier_phone("applierPhone","${applierPhone}","#求职者电话#",""),applier_email("applierEmail","${applierEmail}","#求职者邮箱#",""),
     company_name("companyName","${companyName}","#公司名称#","company"),company_abbreviation("companyAbbreviation","${companyAbbreviation}","#公司简称#",""),
