@@ -23,6 +23,8 @@ public class NewMessageNoticeParamVO {
 
     private String openId;
 
+    private Integer wechatId;
+
     private boolean isQRcode;
 
     private Map<String,Object> originParam;
