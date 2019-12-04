@@ -23,7 +23,8 @@ public enum MessagePlaceholderEnum {
     recommended_name("recommendedName","${recommendedName}","#被推荐者姓名#",""),recommended_phone("recommendedPhone","${recommendedPhone}","#被推荐者电话#",""),recommended_reason("recommendedReason","${recommendedReason}","#被推荐原因#",""),
     recommender_name("recommenderName","${recommenderName}","#推荐人姓名#",""),recommender_role("recommenderRole","${recommenderRole}","#推荐人角色#",""),
     reciver_name("reciverName","${reciverName}","#接收人#",""),
-    link("link","${link}","#链接#","")
+    link("link","${link}","#链接#",""),
+    full_time("fullTime","${fullTime}","#完整时间#","keyword3")
     ;
     private String key;
     private String mqPlaceholder;
