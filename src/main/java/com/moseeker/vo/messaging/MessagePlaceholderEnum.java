@@ -14,7 +14,7 @@ public enum MessagePlaceholderEnum {
     hr_wx_name("hrWxName","${hrWxName}","#公众号名称#",""),
     salary_type("salarType","${salarType}","#薪资类别#",""),salary("salary","${salary}","#薪资数额#",""),
     profile_submit_date("profileSubmitDate","${profileSubmitDate}","#投递时间#","time"),
-    interview_date("interviewDate","${interviewDate}","#面试日期#","keyword3"),interview_day_time("interviewDayTime","${interviewDayTime}","#面试时间#",""),changed_interview_date("changedInterviewDate","${changedInterviewDate}","#变更后的面试日期#",""),changed_interview_day_time("changedInterviewDayTime","${changedInterviewDayTime}","#变更后的面试时间#",""),interview_time("interviewTime","${interviewTime}","#面试时长#",""),interview_type("interviewType","${interviewType}","#面试形式#",""),interview_location("interviewLocation","${interviewLocation}","#面试地点#","keyword4"),
+    interview_date("interviewDate","${interviewDate}","#面试日期#","keyword3"),interview_day_time("interviewDayTime","${interviewDayTime}","#面试时间#",""),changed_interview_date("changedInterviewDate","${changedInterviewDate}","#变更后的面试日期#",""),changed_interview_day_time("changedInterviewDayTime","${changedInterviewDayTime}","#变更后的面试时间#",""),interview_time("interviewTime","${interviewTime}","#面试时长#",""),interview_type("interviewType","${interviewType}","#面试形式#",""),interview_location("interviewLocation","${interviewLocation}","#面试地点#","keyword4"),original_interview_type("originalInterviewType","${originalInterviewType}","#原面试形式#",""),
     headhunter_name("headhunterName","${headhunterName}","#猎头姓名#",""),headhunter_company("headhunterCompany","${headhunterCompany}","#猎头公司#",""),
     callback_url("callbackUrl","${callbackUrl}","#相关连接#",""),
     deadline("deadline","${deadline}","#截止日期#",""),
