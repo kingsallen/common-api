@@ -5,6 +5,8 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.sql.Timestamp;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zztaiwll on 18/9/20.
@@ -71,4 +73,6 @@ public class JobApplicationVO {
     private Integer   origin;
     @ApiModelProperty(value = "接口调用方编号",required = false)
     private Integer appid;
+    @ApiModelProperty(value = "来源渠道")
+    private List<Map<String,String>> channel;
 }
