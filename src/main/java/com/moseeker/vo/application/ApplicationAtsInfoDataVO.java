@@ -21,6 +21,8 @@ public class ApplicationAtsInfoDataVO {
 
     private Integer lApplicationId;
 
+    private Integer appTplId;
+
     private Integer recommenderUserId;
 
     private Integer atsStatus;
